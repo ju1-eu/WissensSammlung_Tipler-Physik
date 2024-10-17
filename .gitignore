@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.env
+.env
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtuelle Umgebungen
+meinenv/
+.venv/
+.env/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+.virtual_documents/
+
+# LaTeX
+*.aux *.log *.out *.toc *.bbl *.blg *.fdb_latexmk *.synctex.gz *.fls *.bcf *.run.xml
+docs/MindMaps/mindmap.pdf
+docs/LaTeX/latex_vorlage.pdf
+docs/start.md
+# HTML
+*.html
+# Ausnahme: Verfolge die Datei template.html
+!template.html
+
+# Editor spezifisch
+!.vscode/
+.idea/
