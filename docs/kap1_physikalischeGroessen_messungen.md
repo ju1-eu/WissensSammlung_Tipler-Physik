@@ -72,6 +72,7 @@ Quelle: Tipler/Mosca Physik. 9. Aufl., 2024
   - [Problemstellung](#problemstellung)
   - [Annahmen](#annahmen)
   - [Lösung](#lösung)
+    - [Umrechnung von cm/km zu m/km](#umrechnung-von-cmkm-zu-mkm)
   - [Plausibilitätsprüfung](#plausibilitätsprüfung)
   - [Weiterführende Betrachtung](#weiterführende-betrachtung)
   - [Hinweis zur Softwareberechnung](#hinweis-zur-softwareberechnung)
@@ -86,16 +87,16 @@ Quelle: Tipler/Mosca Physik. 9. Aufl., 2024
   - [Problemstellung](#problemstellung-2)
   - [Verteilungsfunktion](#verteilungsfunktion)
   - [Lösung](#lösung-2)
-    - [1. Mittleres Ergebnis ⟨s⟩](#1-mittleres-ergebnis-s)
-    - [2. Quadratisch gemitteltes Ergebnis s\_rms](#2-quadratisch-gemitteltes-ergebnis-s_rms)
+    - [1. Mittleres Ergebnis $\\langle s \\rangle$](#1-mittleres-ergebnis-langle-s-rangle)
+    - [2. Quadratisch gemitteltes Ergebnis $s\_{rms}$](#2-quadratisch-gemitteltes-ergebnis-s_rms)
   - [Plausibilitätsprüfung](#plausibilitätsprüfung-2)
   - [Weiterführende Betrachtung](#weiterführende-betrachtung-2)
 - [Beispiel 1.6: Pendelschwingungen](#beispiel-16-pendelschwingungen)
   - [Problemstellung](#problemstellung-3)
   - [Lösung](#lösung-3)
     - [1. Mittlere Schwingungsdauer ⟨T⟩](#1-mittlere-schwingungsdauer-t)
-    - [2. Standardabweichung σ\_T](#2-standardabweichung-σ_t)
-    - [3. Standardabweichung des Mittelwerts σ\_⟨T⟩](#3-standardabweichung-des-mittelwerts-σ_t)
+    - [2. Standardabweichung $\\sigma\_T$](#2-standardabweichung-sigma_t)
+    - [3. Standardabweichung des Mittelwerts $\\sigma\_{\\langle T \\rangle}$](#3-standardabweichung-des-mittelwerts-sigma_langle-t-rangle)
   - [Plausibilitätsprüfung](#plausibilitätsprüfung-3)
   - [Weiterführende Betrachtung](#weiterführende-betrachtung-3)
 - [Verständnisaufgaben](#verständnisaufgaben)
@@ -208,19 +209,19 @@ Definition des Kilogramms über die Planck-Konstante
 
 Rechnen Sie 5 m/s in km/h um.
 
-Lösung:
+**Lösung:**
 
 1. Ausgangswert: 5 m/s
 2. Umrechnung Meter in Kilometer: 1 km = 1000 m
 3. Umrechnung Sekunden in Stunden: 1 h = 3600 s
 4. Berechnung:
-   $$5 \frac{m}{s} \cdot \frac{3600 s}{1 h} \cdot \frac{1 km}{1000 m} = 18 \frac{km}{h}$$
+   $$5 \frac{\text{m}}{\text{s}} \cdot \frac{3600 \, \text{s}}{1 \, \text{h}} \cdot \frac{1 \, \text{km}}{1000 \, \text{m}} = 18 \frac{\text{km}}{\text{h}}$$
 5. Ergebnis: 5 m/s = 18 km/h
 
 ## 3. Dimensionen physikalischer Größen
 
 ### Beispiel:
-Dimension der Beschleunigung: [L]/[T]²
+Dimension der Beschleunigung: $[\text{L}]/[\text{T}]^2$
 
 ### Vorgehensweise:
 1. Identifizierung der beteiligten Grundgrößen
@@ -228,19 +229,20 @@ Dimension der Beschleunigung: [L]/[T]²
 3. Aufstellen der Dimensionsgleichung
 
 ### Übung mit Lösung:
-Bestimmen Sie die Dimension der Energie in der Gleichung E = mc².
+Bestimmen Sie die Dimension der Energie in der Gleichung $E = mc^2$.
 
-Lösung:
+**Lösung:**
 
 1. Identifizierung der Größen:
-   - E: Energie
-   - m: Masse [M]
-   - c: Lichtgeschwindigkeit [L]/[T]
+   - $E$: Energie
+   - $m$: Masse $[\text{M}]$
+   - $c$: Lichtgeschwindigkeit $[\text{L}]/[\text{T}]$
 2. Aufstellung der Dimensionsgleichung:
-   $$[E] = [M] \cdot ([L]/[T])^2$$
+   $$[E] = [\text{M}] \cdot \left(\frac{[\text{L}]}{[\text{T}]}\right)^2$$
 3. Ausmultiplizieren:
-   $$[E] = [M] \cdot [L]^2/[T]^2$$
-4. Ergebnis: Die Dimension der Energie ist [M][L]²[T]⁻²
+   $$[E] = [\text{M}] \cdot [\text{L}]^2/[\text{T}]^2$$
+4. Ergebnis: Die Dimension der Energie ist $[\text{M}][\text{L}]^2[\text{T}]^{-2}$
+
 
 ## 4. Signifikante Stellen und Größenordnungen
 
@@ -263,18 +265,20 @@ Lösung:
 1. Identifizierung der signifikanten Stellen:
    - 4,2 hat zwei signifikante Stellen
    - 0,0031 hat zwei signifikante Stellen
-2. Durchführung der Multiplikation:
-   4,2 · 0,0031 = 0,01302
-3. Bestimmung der Anzahl signifikanter Stellen im Ergebnis:
-   Das Ergebnis kann nicht mehr signifikante Stellen haben als der Faktor mit den wenigsten signifikanten Stellen (hier: zwei)
-4. Rundung des Ergebnisses auf zwei signifikante Stellen:
-   0,01302 ≈ 0,013
-5. Ergebnis: 4,2 · 0,0031 = 0,013
+2. Durchführung der Multiplikation:  
+   $4,2 \cdot 0,0031 = 0,01302$  
+3. Bestimmung der Anzahl signifikanter Stellen im Ergebnis:  
+   Das Ergebnis kann nicht mehr signifikante Stellen haben als der Faktor mit den wenigsten signifikanten Stellen (hier: zwei)  
+4. Rundung des Ergebnisses auf zwei signifikante Stellen:  
+   $0,01302 \approx 0,013$  
+5. Ergebnis: $4,2 \cdot 0,0031 = 0,013$
+
 
 ## 5. Messgenauigkeit und Messfehler
 
 ### Beispiel:
-Messung der Länge eines Tisches: l = (1,50 ± 0,01) m
+Messung der Länge eines Tisches: $l = (1,50 \pm 0,01) \, \text{m}$
+
 
 ### Vorgehensweise:
 1. Durchführung mehrerer Messungen
@@ -297,11 +301,12 @@ Lösung:
    
    $$\sigma = 0,027 \text{ s}$$
 
-3. Ergebnis:
-   Mittelwert: ⟨T⟩ = 2,01 s
-   Standardabweichung: σ = 0,03 s
-   
-   Angabe mit Messunsicherheit: T = (2,01 ± 0,03) s
+3. Ergebnis:  
+   Mittelwert: $\langle T \rangle = 2,01 \, \text{s}$  
+   Standardabweichung: $\sigma = 0,03 \, \text{s}$  
+
+   Angabe mit Messunsicherheit: $T = (2,01 \pm 0,03) \, \text{s}$
+
 
 # Erklärungen zu wichtigen Tabellen und Diagrammen
 
@@ -311,41 +316,41 @@ Lösung:
 
 | Vielfaches | Vorsatz | Abkürzung |
 | ---------- | ------- | --------- |
-| 10¹⁸       | Exa     | E         |
-| 10¹⁵       | Peta    | P         |
-| 10¹²       | Tera    | T         |
-| 10⁹        | Giga    | G         |
-| 10⁶        | Mega    | M         |
-| 10³        | Kilo    | k         |
-| 10²        | Hekto   | h         |
-| 10¹        | Deka    | da        |
-| 10⁻¹       | Dezi    | d         |
-| 10⁻²       | Zenti   | c         |
-| 10⁻³       | Milli   | m         |
-| 10⁻⁶       | Mikro   | μ         |
-| 10⁻⁹       | Nano    | n         |
-| 10⁻¹²      | Piko    | p         |
-| 10⁻¹⁵      | Femto   | f         |
-| 10⁻¹⁸      | Atto    | a         |
+| $10^{18}$  | Exa     | E         |
+| $10^{15}$  | Peta    | P         |
+| $10^{12}$  | Tera    | T         |
+| $10^9$     | Giga    | G         |
+| $10^6$     | Mega    | M         |
+| $10^3$     | Kilo    | k         |
+| $10^2$     | Hekto   | h         |
+| $10^1$     | Deka    | da        |
+| $10^{-1}$  | Dezi    | d         |
+| $10^{-2}$  | Zenti   | c         |
+| $10^{-3}$  | Milli   | m         |
+| $10^{-6}$  | Mikro   | $\mu$     |
+| $10^{-9}$  | Nano    | n         |
+| $10^{-12}$ | Piko    | p         |
+| $10^{-15}$ | Femto   | f         |
+| $10^{-18}$ | Atto    | a         |
 
-> Hinweis: Die Vorsätze Hekto (h), Deka (da) und Dezi (d) sind keine Potenzen von 10³ oder 10⁻³ und werden selten verwendet. Eine Ausnahme bildet Zenti (c), das bei der Längeneinheit (1 cm = 10⁻² m) üblich ist. Beachte, dass die Abkürzungen für Vorsätze ab 10⁶ großgeschrieben werden, alle anderen hingegen kleingeschrieben.
-
+> Hinweis: Die Vorsätze Hekto (h), Deka (da) und Dezi (d) sind keine Potenzen von $10^3$ oder $10^{-3}$ und werden selten verwendet. Eine Ausnahme bildet Zenti (c), das bei der Längeneinheit (1 cm = $10^{-2}$ m) üblich ist. Beachte, dass die Abkürzungen für Vorsätze ab $10^6$ großgeschrieben werden, alle anderen hingegen kleingeschrieben.
 
 ## 3. Dimensionen physikalischer Größen
 
 ### Tabelle 1.2: Dimensionen und SI-Einheiten einiger physikalischer Größen aus der Mechanik
 
 
-| Größe             | Dimension        | SI-Einheit  |
-| ----------------- | ---------------- | ----------- |
-| Flächeninhalt A   | L²               | m²          |
-| Volumen V         | L³               | m³          |
-| Geschwindigkeit v | L/T              | m/s         |
-| Beschleunigung a  | L/T²             | m/s²        |
-| Kraft F           | M · L/T²         | kg · m/s²   |
-| Druck p           | F/A = M/(L · T²) | kg/(m · s²) |
-| Dichte ρ          | m/V = M/L³       | kg/m³       |
-| Energie E         | M · L²/T²        | kg · m²/s²  |
+| Größe               | Dimension               | SI-Einheit                              |
+| ------------------- | ----------------------- | --------------------------------------- |
+| Flächeninhalt $A$   | $L^2$                   | $\text{m}^2$                            |
+| Volumen $V$         | $L^3$                   | $\text{m}^3$                            |
+| Geschwindigkeit $v$ | $L/T$                   | $\text{m/s}$                            |
+| Beschleunigung $a$  | $L/T^2$                 | $\text{m/s}^2$                          |
+| Kraft $F$           | $M \cdot L/T^2$         | $\text{kg} \cdot \text{m/s}^2$          |
+| Druck $p$           | $F/A = M/(L \cdot T^2)$ | $\text{kg}/(\text{m} \cdot \text{s}^2)$ |
+| Dichte $\rho$       | $m/V = M/L^3$           | $\text{kg/m}^3$                         |
+| Energie $E$         | $M \cdot L^2/T^2$       | $\text{kg} \cdot \text{m}^2/\text{s}^2$ |
+
 
 
 Diese Tabelle ist nützlich für Dimensionsanalysen und Einheitenumrechnungen.
@@ -358,57 +363,59 @@ Typische Größenordnungen für Längen, Massen und Zeitintervalle im Universum.
 
 Tab. Größenordnungen im Universum
 
-| Länge oder Größe (m)       | Wert  |
-| -------------------------- | ----- |
-| Protonradius               | 10⁻¹⁵ |
-| Atomradius                 | 10⁻¹⁰ |
-| Virus                      | 10⁻⁷  |
-| Riesenamöbe                | 10⁻⁴  |
-| Walnuss                    | 10⁻²  |
-| Mensch                     | 10⁰   |
-| Höchster Berg              | 10⁴   |
-| Erde                       | 10⁷   |
-| Sonne                      | 10⁹   |
-| Abstand Erde–Sonne         | 10¹¹  |
-| Sonnensystem               | 10¹³  |
-| Abstand zum nächsten Stern | 10¹⁶  |
-| Milchstraße/Galaxis        | 10²¹  |
-| Sichtbares Universum       | 10²⁶  |
+| Länge oder Größe (m)       | Wert       |
+| -------------------------- | ---------- |
+| Protonradius               | $10^{-15}$ |
+| Atomradius                 | $10^{-10}$ |
+| Virus                      | $10^{-7}$  |
+| Riesenamöbe                | $10^{-4}$  |
+| Walnuss                    | $10^{-2}$  |
+| Mensch                     | $10^{0}$   |
+| Höchster Berg              | $10^{4}$   |
+| Erde                       | $10^{7}$   |
+| Sonne                      | $10^{9}$   |
+| Abstand Erde–Sonne         | $10^{11}$  |
+| Sonnensystem               | $10^{13}$  |
+| Abstand zum nächsten Stern | $10^{16}$  |
+| Milchstraße/Galaxis        | $10^{21}$  |
+| Sichtbares Universum       | $10^{26}$  |
 
-| Masse (kg)          | Wert  |
-| ------------------- | ----- |
-| Elektron            | 10⁻³⁰ |
-| Proton              | 10⁻²⁷ |
-| Aminosäure          | 10⁻²⁵ |
-| Hämoglobin          | 10⁻²² |
-| Grippevirus         | 10⁻¹⁹ |
-| Riesenamöbe         | 10⁻⁸  |
-| Regentropfen        | 10⁻⁶  |
-| Ameise              | 10⁻²  |
-| Mensch              | 10²   |
-| Saturn-V-Rakete     | 10⁶   |
-| Pyramide            | 10¹⁰  |
-| Erde                | 10²⁴  |
-| Sonne               | 10³⁰  |
-| Milchstraße/Galaxis | 10⁴¹  |
-| Universum           | 10⁵²  |
 
-| Zeitintervall (s)                                  | Wert  |
-| -------------------------------------------------- | ----- |
-| Licht durchquert den Atomkern                      | 10⁻²³ |
-| Schwingungsperiode des sichtbaren Lichts           | 10⁻¹⁵ |
-| Schwingungsperiode von Mikrowellenstrahlung        | 10⁻¹⁰ |
-| Halbwertszeit eines Myons                          | 10⁻⁶  |
-| Schwingungsperiode der höchsten noch hörbaren Töne | 10⁻⁴  |
-| Periode des menschlichen Herzschlags               | 10⁰   |
-| Halbwertszeit freier Neutronen                     | 10³   |
-| Umdrehungszeit der Erdrotation                     | 10⁵   |
-| Umlaufzeit der Erde um die Sonne                   | 10⁷   |
-| Lebensdauer eines Menschen                         | 10⁹   |
-| Halbwertszeit von Plutonium-239                    | 10¹²  |
-| Lebenszeit eines Gebirges                          | 10¹⁵  |
-| Alter der Erde                                     | 10¹⁷  |
-| Alter des Universums                               | 10¹⁸  |
+| Masse (kg)          | Wert       |
+| ------------------- | ---------- |
+| Elektron            | $10^{-30}$ |
+| Proton              | $10^{-27}$ |
+| Aminosäure          | $10^{-25}$ |
+| Hämoglobin          | $10^{-22}$ |
+| Grippevirus         | $10^{-19}$ |
+| Riesenamöbe         | $10^{-8}$  |
+| Regentropfen        | $10^{-6}$  |
+| Ameise              | $10^{-2}$  |
+| Mensch              | $10^{2}$   |
+| Saturn-V-Rakete     | $10^{6}$   |
+| Pyramide            | $10^{10}$  |
+| Erde                | $10^{24}$  |
+| Sonne               | $10^{30}$  |
+| Milchstraße/Galaxis | $10^{41}$  |
+| Universum           | $10^{52}$  |
+
+
+| Zeitintervall (s)                                  | Wert       |
+| -------------------------------------------------- | ---------- |
+| Licht durchquert den Atomkern                      | $10^{-23}$ |
+| Schwingungsperiode des sichtbaren Lichts           | $10^{-15}$ |
+| Schwingungsperiode von Mikrowellenstrahlung        | $10^{-10}$ |
+| Halbwertszeit eines Myons                          | $10^{-6}$  |
+| Schwingungsperiode der höchsten noch hörbaren Töne | $10^{-4}$  |
+| Periode des menschlichen Herzschlags               | $10^{0}$   |
+| Halbwertszeit freier Neutronen                     | $10^{3}$   |
+| Umdrehungszeit der Erdrotation                     | $10^{5}$   |
+| Umlaufzeit der Erde um die Sonne                   | $10^{7}$   |
+| Lebensdauer eines Menschen                         | $10^{9}$   |
+| Halbwertszeit von Plutonium-239                    | $10^{12}$  |
+| Lebenszeit eines Gebirges                          | $10^{15}$  |
+| Alter der Erde                                     | $10^{17}$  |
+| Alter des Universums                               | $10^{18}$  |
 
 
 
@@ -774,13 +781,15 @@ Verstehen der Konzepte der Messgenauigkeit, verschiedener Arten von Messfehlern 
 
 ### Rechenbeispielen
 
-1. Systematischer Fehler:
+1. **Systematischer Fehler:**
+
    **Beispiel:** Ein Thermometer zeigt stets 1.5°C zu viel an.
-   
+
    **Korrektur:**
 
-   Gemessene Temperatur: $T_{gemessen} = 25.3°C$
-   Korrektur: $T_{korrigiert} = T_{gemessen} - 1.5°C = 25.3°C - 1.5°C = 23.8°C$
+   Gemessene Temperatur: $T_{\text{gemessen}} = 25.3^\circ \text{C}$  
+   Korrektur: $T_{\text{korrigiert}} = T_{\text{gemessen}} - 1.5^\circ \text{C} = 25.3^\circ \text{C} - 1.5^\circ \text{C} = 23.8^\circ \text{C}$
+
 
 
 2. Mittelwertberechnung:
@@ -925,6 +934,31 @@ Umrechnung in Meter:
 
 $$1,7 \times 10^{-5} \text{ cm/km} \approx 2 \times 10^{-7} \text{ m/km}$$
 
+
+Hier ist die Erklärung der Umrechnung von $1,7 \times 10^{-5} \text{ cm/km}$ zu $2 \times 10^{-7} \text{ m/km}$ im gewünschten Format:
+
+### Umrechnung von cm/km zu m/km
+
+Die Umrechnung erfolgt in zwei Schritten:
+
+1. Umwandlung von Zentimetern (cm) in Meter (m):
+   
+   $1 \text{ cm} = 10^{-2} \text{ m}$
+
+2. Anwendung dieser Umrechnung auf den gegebenen Wert:
+
+   $1,7 \times 10^{-5} \text{ cm/km} = 1,7 \times 10^{-5} \times 10^{-2} \text{ m/km}$
+
+   $= 1,7 \times 10^{-7} \text{ m/km}$
+
+3. Rundung auf eine signifikante Stelle:
+
+   $1,7 \times 10^{-7} \text{ m/km} \approx 2 \times 10^{-7} \text{ m/km}$
+
+Die Approximation auf $2 \times 10^{-7} \text{ m/km}$ ist eine Rundung auf eine signifikante Stelle, was in vielen praktischen Anwendungen ausreichend genau ist.
+
+Diese Umrechnung zeigt, dass $1,7 \times 10^{-5} \text{ cm/km}$ tatsächlich sehr nahe an $2 \times 10^{-7} \text{ m/km}$ liegt, wobei der gerundete Wert für einfachere Berechnungen oder Abschätzungen verwendet werden kann.
+
 ## Plausibilitätsprüfung
 
 Überprüfen wir das Ergebnis:
@@ -1011,11 +1045,12 @@ Gesucht sind:
 
 ## Verteilungsfunktion
 
-$n_25 = 1, n_22 = 2, n_20 = 3, n_18 = 5, n_15 = 3, n_10 = 1$
+$n_{25} = 1, \, n_{22} = 2, \, n_{20} = 3, \, n_{18} = 5, \, n_{15} = 3, \, n_{10} = 1$
+
 
 ## Lösung
 
-### 1. Mittleres Ergebnis ⟨s⟩
+### 1. Mittleres Ergebnis $\langle s \rangle$
 
 Wir verwenden die Formel: $\langle s \rangle = \frac{1}{n} \sum\limits_{i} n_i s_i$
 
@@ -1028,9 +1063,9 @@ $$
 \end{align*}
 $$
 
-### 2. Quadratisch gemitteltes Ergebnis s_rms
+### 2. Quadratisch gemitteltes Ergebnis $s_{rms}$
 
-Zuerst berechnen wir ⟨s²⟩:
+Zuerst berechnen wir $\langle s^2 \rangle$:
 
 $$
 \begin{align*}
@@ -1072,15 +1107,16 @@ $T_6 = 2,00$ s, $T_7 = 2,03$ s, $T_8 = 1,97$ s, $T_9 = 2,02$ s, $T_{10} = 1,96$ 
 
 Gesucht sind:
 
-- Die mittlere Schwingungsdauer ⟨T⟩
-- Die Standardabweichung σ_T
-- Die Standardabweichung des Mittelwerts σ_⟨T⟩
+- Die mittlere Schwingungsdauer: $\langle T \rangle$
+- Die Standardabweichung: $\sigma_T$
+- Die Standardabweichung des Mittelwerts: $\sigma_{\langle T \rangle}$
+
 
 ## Lösung
 
 ### 1. Mittlere Schwingungsdauer ⟨T⟩
 
-Wir verwenden die Formel: $\langle T \rangle = \frac{1}{n} \sum_{i} T_i$
+Wir verwenden die Formel: $\langle T \rangle = \frac{1}{n} \sum\limits_{i} T_i$
 
 $$
 \begin{align*}
@@ -1091,7 +1127,7 @@ $$
 \end{align*}
 $$
 
-### 2. Standardabweichung σ_T
+### 2. Standardabweichung $\sigma_T$
 
 Wir verwenden die Formel: $\sigma_T = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n} (T_i - \langle T \rangle)^2}$
 
@@ -1099,17 +1135,17 @@ $$
 \sigma_T = \sqrt{\frac{1}{9}\sum_{i=1}^{10} (T_i - 2,01\text{ s})^2} = 0,03\text{ s}
 $$
 
-### 3. Standardabweichung des Mittelwerts σ_⟨T⟩
+### 3. Standardabweichung des Mittelwerts $\sigma_{\langle T \rangle}$
 
 Wir verwenden die Formel: $\sigma_{\langle T \rangle} = \frac{\sigma_T}{\sqrt{n}} = \sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n (T_i - \langle T \rangle)^2}$
 
 $$
-\sigma_{\langle T \rangle} = \sqrt{\frac{1}{10 \cdot 9}\sum_{i=1}^{10} (T_i - 2,01\text{ s})^2} = 0,01\text{ s}
+\sigma_{\langle T \rangle} = \sqrt{\frac{1}{10 \cdot 9}\sum\limits_{i=1}^{10} (T_i - 2,01\text{ s})^2} = 0,01\text{ s}
 $$
 
 ## Plausibilitätsprüfung
 
-Die Standardabweichung des Mittelwerts σ_⟨T⟩ (0,01 s) ist kleiner als die Standardabweichung der Einzelmessung σ_T (0,03 s), was plausibel ist, da der Mittelwert in der Regel genauer ist als eine Einzelmessung.
+Die Standardabweichung des Mittelwerts $\sigma_{\langle T \rangle}$ (0,01 s) ist kleiner als die Standardabweichung der Einzelmessung $\sigma_T$ (0,03 s), was plausibel ist, da der Mittelwert in der Regel genauer ist als eine Einzelmessung.
 
 ## Weiterführende Betrachtung
 
@@ -1175,7 +1211,7 @@ $$n = \frac{m}{m_{\text{Molekül}}} = \frac{60 \text{ kg}}{29,9 \times 10^{-27} 
 ## 1.6 Schätzung des Benzinverbrauchs in den USA
 
 a) Schätzung des täglichen Benzinverbrauchs:
-- Annahme: 3 × 10⁸ Fahrzeuge in den USA
+- Annahme: $3 \times 10^8$ Fahrzeuge in den USA
 - Durchschnittlicher Verbrauch: 5 Liter pro Tag pro Fahrzeug
 
 Täglicher Gesamtverbrauch:
@@ -1260,24 +1296,27 @@ Diese Lösungen basieren auf der Dimensionsanalyse, einem fundamentalen Konzept 
 
 ## 1.10 Umrechnung der Geschwindigkeit eines Überschallflugzeugs
 
-Gegeben:
+**Gegeben:**
 
 - Schallgeschwindigkeit in Luft: 343 m/s
 - Fluggeschwindigkeit: Mach 2 (doppelte Schallgeschwindigkeit)
 
-Berechnung:
+**Berechnung:**
 
-$$v = 2 \cdot (343 \text{ m/s}) = 686 \text{ m/s}$$
+$$v = 2 \cdot (343 \, \text{m/s}) = 686 \, \text{m/s}$$
 
-Umrechnung in km/h:
+**Umrechnung in km/h:**
 
-$$\begin{aligned}
-v &= 686 \text{ m/s} \cdot \frac{1 \text{ km}}{10^3 \text{ m}} \cdot \frac{3600 \text{ s}}{1 \text{ h}} \\
-&= 686 \cdot 3,6 \text{ km/h} \\
-&\approx 2470 \text{ km/h}
-\end{aligned}$$
+$$
+\begin{aligned}
+v &= 686 \, \text{m/s} \cdot \frac{1 \, \text{km}}{10^3 \, \text{m}} \cdot \frac{3600 \, \text{s}}{1 \, \text{h}} \\
+&= 686 \cdot 3.6 \, \text{km/h} \\
+&\approx 2470 \, \text{km/h}
+\end{aligned}
+$$
 
 Die Geschwindigkeit des Überschallflugzeugs beträgt also etwa 2470 km/h.
+
 
 ## 1.11 Bestimmung der SI-Einheiten von Ausdrücken
 
