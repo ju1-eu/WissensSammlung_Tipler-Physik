@@ -60,10 +60,12 @@ Quelle: Tipler/Mosca Physik. 9. Aufl., 2023
   pip install numpy pandas matplotlib openpyxl
   python pdf_extractor.py
 
-  python einheiten_umrechnung.py
-  python messgenauigkeit_analyse.py
-  python signifikante_stellen_analyse.py
-  python schwingungsdauer_analyse.py
+
+  python klausur_auswertung.py           
+  python si_einheiten_umrechnung.py
+  python reifenabrieb_berechnung.py      
+  python schwingungsdauer_analyse.py     
+  schwingungsdauer_messungen.xlsx 
   ```
 
 - Thema "Physikalische Größen und Messungen"
@@ -111,6 +113,18 @@ Quelle: Tipler/Mosca Physik. 9. Aufl., 2023
 - Visualisiere die Zusammenhänge
 
 - Beispiele mit schrittweisen Rechenbeispielen im Markdown-Format mit LaTeX-Mathematik
+
+
+Thema “Physikalische Größen und Messungen”
+Lesestufe: Bachelor-Niveau
+beachte die Sprachstil-Richtlinien
+Ausgabe: Markdown mit LaTeX-Mathematik
+
+Aufgabe: 
+
+Eingabe: [ ]
+
+Lösung: [ ]
 
 
 ### Sprachstil: klar, präzise und sachlich
