@@ -84,7 +84,7 @@ Letzte Aktualisierung: 2024-10-19
 Nachrüstung einer Verbraucherbatterie
 
 
-![Batterie-Trennrelais](images/Batterie-Trennrelais/Batterie-Trennrelais-1.pdf){width=60%}
+![Batterie-Trennrelais](images/batterie_trennrelais.png){width=60%}
 
 - **Zweck:** In Fahrzeugen, die im Stand längere Zeit mit Strom versorgt werden müssen, ist eine zweite Batterie erforderlich.
 - **Vorteil:** Die Verbraucherbatterie ermöglicht die Nutzung des Bordnetzes ohne die Gefahr, dass die Starterbatterie entladen wird und der Motor nicht starten kann.
