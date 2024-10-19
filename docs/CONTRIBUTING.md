@@ -6,6 +6,14 @@ date: "2024-10-13"
 
 # Mitwirken am Projekt
 
+Letzte Aktualisierung: 2024-10-19
+
+## Inhaltsverzeichnis
+
+- [Mitwirken am Projekt](#mitwirken-am-projekt)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [Zusätzliche Hinweise](#zusätzliche-hinweise)
+
 Um eine reibungslose Zusammenarbeit zu gewährleisten, beachten Sie bitte die folgenden Richtlinien:
 
 1. **Repository forken**

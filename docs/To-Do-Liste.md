@@ -6,7 +6,7 @@ date: "2024-09-29"
 
 # To-Do-Liste
 
-bearbeitet am 29. September 2024
+Letzte Aktualisierung: 2024-10-19
 
 - [To-Do-Liste](#to-do-liste)
   - [Inhalt](#inhalt)

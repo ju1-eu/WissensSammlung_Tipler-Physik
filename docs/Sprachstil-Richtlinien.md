@@ -1,7 +1,7 @@
 ---
 title: "Sprachstil-Richtlinien"
 author: "Jan Unger"
-date: "2024-10-17"
+date: "2024-10-19"
 ---
 
 # Sprachstil: klar, präzise und sachlich

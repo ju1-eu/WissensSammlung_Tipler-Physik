@@ -1,6 +1,17 @@
+---
+title: "Sprach-und-Textanalyse-Begriffe"
+author: "Jan Unger"
+date: "2024-10-13"
+---
+
 # Begriffe der Sprach- und Textanalyse
 
+Letzte Aktualisierung: 2024-10-19
+
+## Inhaltsverzeichnis
+
 - [Begriffe der Sprach- und Textanalyse](#begriffe-der-sprach--und-textanalyse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [KI-Prompts](#ki-prompts)
     - [Buch bearbeiten](#buch-bearbeiten)
     - [Sprachstil: klar, präzise und sachlich](#sprachstil-klar-präzise-und-sachlich)
@@ -18,6 +29,7 @@
     - [9. **Gegenargumente**](#9-gegenargumente)
     - [10. **Redaktionelles Feedback**](#10-redaktionelles-feedback)
   - [Fazit](#fazit)
+
 
 ## KI-Prompts
 
