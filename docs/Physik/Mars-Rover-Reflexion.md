@@ -178,7 +178,7 @@ Informatikpraktikum MTR <https://wiki.hshl.de/wiki/index.php/Informatikpraktikum
 
 ## Funktionsprinzip Ultraschall-Abstandssensors
 
-![Ultraschallmodul Prinzip](images/ultrasonic_prinzip.png)
+![Ultraschallmodul Prinzip](images/ultraschall_prinzip.png)
 
 Sensor ist wie ein Fledermaus, die Schallwellen aussendet, um sich zu orientieren. Wenn du auf einen Knopf drückst (das ist das 10 Mikrosekunden lange Signal), sagst du der "Fledermaus-Sensor", dass sie ihre "Ultraschallrufe" aussenden soll. Diese "Rufe" sind sehr, sehr hoch, viel höher als jedes Geräusch, das wir hören können, und sie passieren ganz schnell hintereinander, genau 8 Mal in einem winzigen Moment.
 

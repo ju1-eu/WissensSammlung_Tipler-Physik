@@ -14,6 +14,7 @@ Letzte Aktualisierung: 2024-10-19
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [KI-Prompts](#ki-prompts)
     - [Buch bearbeiten](#buch-bearbeiten)
+      - [Thema “Physikalische Größen und Messungen”](#thema-physikalische-größen-und-messungen)
     - [Sprachstil: klar, präzise und sachlich](#sprachstil-klar-präzise-und-sachlich)
   - [Sprachliche Mittel und Stilistik](#sprachliche-mittel-und-stilistik)
     - [1. **Sprachstil**](#1-sprachstil)
@@ -114,6 +115,9 @@ Quelle: Tipler/Mosca Physik. 9. Aufl., 2023
 - Erstelle Zusammenfassung, beachte Zusammenfassung in Kapitel_1_PhysikalischeGroessen.pdf
   - Ausgabe: Markdown mit LaTeX-Mathematik
 
+- **Kernpunkte zusammenfassen** und das Konzept etwas vertiefen
+  - Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
+
 - Erstelle eine schrittweise Berechnung der Aufgaben, beachte Aufgaben in Kapitel_1_PhysikalischeGroessen.pdf
   - Ausgabe: Markdown mit LaTeX-Mathematik
 
@@ -127,7 +131,8 @@ Quelle: Tipler/Mosca Physik. 9. Aufl., 2023
 - Beispiele mit schrittweisen Rechenbeispielen im Markdown-Format mit LaTeX-Mathematik
 
 
-Thema “Physikalische Größen und Messungen”
+#### Thema “Physikalische Größen und Messungen”
+
 Lesestufe: Bachelor-Niveau
 beachte die Sprachstil-Richtlinien
 Ausgabe: Markdown mit LaTeX-Mathematik
@@ -141,49 +146,83 @@ Lösung: [ ]
 
 ### Sprachstil: klar, präzise und sachlich
 
-Lesestufe: Bachelor-Niveau. Sprache: Deutsch
+Lesestufe: Bachelor-Niveau. Sprache: Deutsch, beachte Sprachstil-Richtlinien
 
-**Sprachstil-Richtlinien**:
+**Prüfe**: die mathematischen Inhalte auf Präzision und Korrektheit und sicherstellen, dass die Notationskonventionen für LaTeX-Mathematik in deutschsprachigen Markdown-Dokumenten korrekt angewendet werden.
 
-1. **Klarheit und Präzision**:
-   - Verwenden Sie kurze und eindeutige Sätze.
-   - Formulieren Sie Ihre Gedanken direkt und vermeiden Sie unnötige Ausschmückungen.
+**1. Dezimalzahlen mit Komma als Trennzeichen:**
 
-2. **Fachterminologie angemessen einsetzen**:
-   - Nutzen Sie relevante Fachbegriffe, um Genauigkeit zu gewährleisten.
-   - Erklären Sie komplexe Begriffe kurz, falls sie für das Verständnis essenziell sind.
+In deutschsprachigen Dokumenten wird das Komma als Dezimaltrennzeichen verwendet.
 
-3. **Objektivität**:
-   - Schreiben Sie in einem neutralen Ton und vermeiden Sie subjektive Meinungen.
-   - Vermeiden Sie emotionale oder wertende Ausdrücke.
+**Beispiel:**
+$$2{,}5~\text{A}$$
 
-4. **Struktur und Gliederung**:
-   - Organisieren Sie Ihre Notizen logisch mit Überschriften und Unterpunkten.
-   - Nutzen Sie Aufzählungen und Nummerierungen, um Informationen übersichtlich darzustellen.
+Das Komma wird in `{,}` gesetzt, und die Einheit (`A`) wird mit `\text{}` dargestellt.
 
-5. **Konsistenter Stil**:
-   - Halten Sie sich an eine einheitliche Zeitform (meist Präsens) und Perspektive.
-   - Verwenden Sie durchgehend die gleiche Terminologie für zentrale Konzepte.
+**2. Einheiten immer im Textmodus:**
 
-6. **Vermeidung von Umgangssprache**:
-   - Vermeiden Sie umgangssprachliche Ausdrücke oder Abkürzungen.
-   - Setzen Sie stattdessen auf formelle und akademische Sprache.
+Einheiten werden immer im Textmodus angegeben, um sicherzustellen, dass sie korrekt formatiert sind und nicht im mathematischen Modus erscheinen.
 
-7. **Aktive statt passive Formulierungen**:
-   - Bevorzugen Sie aktive Sätze, um Ihre Aussagen klarer zu gestalten.
-   - Beispiel: Statt "Es wurde festgestellt, dass..." schreiben Sie "Studien haben festgestellt, dass...".
+**Beispiel:**
+$$12{,}5~\text{A} \quad 15~\text{m/s} \quad 100~\text{N/mm}^2$$
 
-8. **Beispiele und Veranschaulichungen**:
-   - Nutzen Sie Beispiele, um komplexe Zusammenhänge zu verdeutlichen.
-   - Seien Sie jedoch sparsam mit Metaphern und Analogien, um die Sachlichkeit zu bewahren.
+Hier werden die Einheiten "Ampere", "Meter pro Sekunde" und "Newton pro Quadratmillimeter" korrekt dargestellt.
 
-9. **Prägnanz**:
-   - Konzentrieren Sie sich auf die wesentlichen Informationen.
-   - Entfernen Sie redundante oder irrelevante Details.
+**3. Verwendung von geschützten Leerzeichen zwischen Zahl und Einheit:**
 
-10. **Überprüfung und Korrekturlesen**:
-    - Lesen Sie Ihre Notizen nach dem Schreiben noch einmal durch.
-    - Achten Sie auf Rechtschreibung, Grammatik und Verständlichkeit.
+Ein geschütztes Leerzeichen (`~`) wird zwischen Zahl und Einheit verwendet, um Zeilenumbrüche zwischen diesen zu vermeiden.
+
+**Beispiel:**
+$$150~\text{W} \quad 8{,}4~\text{mm} \quad 5~\text{V}$$
+
+**4. Formeln und Einheiten in Brüchen:**
+
+Brüche sollten mit `\frac{}{}` geschrieben werden, und Einheiten werden im Textmodus verwendet.
+
+**Beispiel:**
+$$I = \frac{P}{U} = \frac{60~\text{W}}{12~\text{V}} = 5~\text{A}$$
+
+**5. Prozentangaben:**
+
+Zwischen der Zahl und dem Prozentzeichen wird kein Leerzeichen eingefügt.
+
+**Beispiel:**
+$$33{,}63\%$$
+
+**6. Winkelangaben in Grad:**
+
+Winkelangaben werden mit dem Gradzeichen `^\circ` dargestellt.
+
+**Beispiel:**
+$$83{,}57^\circ$$
+
+**7. Quadrat- und Kubikeinheiten:**
+
+Bei Quadrat- und Kubikeinheiten wird der Exponent direkt nach der Einheit im Textmodus hinzugefügt.
+
+**Beispiel:**
+$$\text{cm}^2 \quad \text{m}^3 \quad \text{N/mm}^2$$
+
+**8. Multiplikation in Einheiten:**
+
+Bei zusammengesetzten Einheiten wird das Malzeichen `\cdot` verwendet, um die Einheiten korrekt zu trennen.
+
+**Beispiel:**
+$$600~\text{N}\cdot\text{mm}^{-2}$$
+
+**9. Spannungsfall und andere physikalische Größen:**
+
+Physikalische Größen wie Spannung, Kraft, Druck etc. werden in Textform in der Mathematikumgebung formatiert, um ihre Bedeutung deutlich zu machen.
+
+**Beispiel:**
+$$U_\text{v} = 0{,}5~\text{V}$$
+
+**10. Verwendung von Indizes und Hochstellungen:**
+
+Für Indizes und Hochstellungen wird `_{}` bzw. `^{}` verwendet.
+
+**Beispiel:**
+$$A_\text{max} \quad F_\text{Zug}$$
 
 ## Sprachliche Mittel und Stilistik
 

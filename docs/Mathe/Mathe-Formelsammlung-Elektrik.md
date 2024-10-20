@@ -9,26 +9,26 @@ date: "2024-10-19"
 Letzte Aktualisierung: 2024-10-19
 
 - [Mathe Formelsammlung](#mathe-formelsammlung)
-  - [Grundlagen](#grundlagen)
+  - [Größenordnungen und Einheiten](#größenordnungen-und-einheiten)
   - [Elektrotechnik](#elektrotechnik)
 
-## Grundlagen
+## Größenordnungen und Einheiten
 
 **Eingabe Rechner**
 
-z. B. $20~\text{mV} = 20 \times 10^{-3} \quad \curvearrowright$ Rechner: $20 \text{EE} -3 = 0,02$
+z. B. $20~\text{mV} = 20 \times 10^{-3}~\text{V} \quad \curvearrowright$ Rechner: $20 \text{ EE} -3 = 0{,}02$
 
 $10^3 = 1.000 = 1 \times 10^3$
 
-$10^{-3} = \frac{1}{1000} = 0,001 = 1 \times 10^{-3}$
+$10^{-3} = \frac{1}{1.000} = 0{,}001 = 1 \times 10^{-3}$
 
 $10^6 = 1.000.000 = 1 \times 10^6$
 
-$10^{-6} = \frac{1}{1.000.000} = 0,000001 = 1 \times 10^{-6}$
+$10^{-6} = \frac{1}{1.000.000} = 0{,}000001 = 1 \times 10^{-6}$
 
-$\boxed{K \times m = 1 \quad 10^3 \times 10^{-3} = 1 \quad 1.000 \times \frac{1}{1000} = 1}$
+$\boxed{K \times m = 1 \quad 10^3 \times 10^{-3} = 1 \quad 1.000 \times \frac{1}{1.000} = 1}$
 
-**Größen**
+**Größenpräfixe**
 
 $\boxed{K = 10^3 \quad M = 10^6 \quad G = 10^9 \quad T = 10^{12}}$
 
@@ -36,185 +36,199 @@ $\boxed{m = 10^{-3} \quad \mu = 10^{-6} \quad n = 10^{-9} \quad p = 10^{-12}}$
 
 **Einheiten** 
 
-**Faktor** Länge 10, Fläche 100, Volumen 1000
+Faktor: Länge 10, Fläche 100, Volumen 1000
 
-$\boxed{\mu m \quad mm \quad cm \quad dm \quad m \quad km}$
+$\boxed{\mu\text{m} \quad \text{mm} \quad \text{cm} \quad \text{dm} \quad \text{m} \quad \text{km}}$
 
-$1~l = 1~dm^3 \quad 10~ml = 1~cl = 0,01~l$
+$1~\text{l} = 1~\text{dm}^3 \quad 10~\text{ml} = 1~\text{cl} = 0{,}01~\text{l}$
 
-$\frac{g}{cm^3} \quad \frac{kg}{dm^3} \quad \frac{t}{m^3}$
+$\frac{\text{g}}{\text{cm}^3} \quad \frac{\text{kg}}{\text{dm}^3} \quad \frac{\text{t}}{\text{m}^3}$
 
-**Prozent** $10~\% = \frac{10}{100} = 0,1$
+**Prozent** $10~\% = \frac{10}{100} = 0{,}1$
 
-**km/h in m/s** $\Rightarrow \frac{km/h}{3,6} \quad \frac{km}{h} \Rightarrow \frac{m}{s} \Rightarrow \frac{1000}{3600}$ 
+**km/h in m/s** $\Rightarrow \frac{\text{km/h}}{3{,}6} \quad \frac{\text{km}}{\text{h}} \Rightarrow \frac{\text{m}}{\text{s}} \Rightarrow \frac{1000}{3600}$ 
 
-**Stunden:Min:Sek in Dezimalstunden** $\Rightarrow \text{h} + \frac{Min}{60} + \frac{Sek}{60 \cdot 60}$ 
+**Stunden:Min:Sek in Dezimalstunden** $\Rightarrow \text{h} + \frac{\text{Min}}{60} + \frac{\text{Sek}}{60 \cdot 60}$ 
 
-**Zoll in mm** $1~\text{Zoll} = 25,4~mm$
+**Zoll in mm** $1~\text{Zoll} = 25{,}4~\text{mm}$
 
-**Kreisfläche** $\boxed{\frac{d^2 \cdot \pi}{4}} \quad \text{Hinweis: }\frac{\pi}{4} \approx 0,785$
+**Kreisfläche** $\boxed{A = \frac{d^2 \cdot \pi}{4}} \quad \text{Hinweis: }\frac{\pi}{4} \approx 0{,}785$
 
 **Masse** $\boxed{m = V \cdot \rho}$ Dichte bleibt immer gleich $\to$ Volumen ändert sich
 
 **Volumen** $\boxed{V = A \cdot h}$
 
-**Umfang** $\boxed{Umfang = d \cdot \pi}$
+**Umfang** $\boxed{U = d \cdot \pi}$
 
-**Drehmoment** $\boxed{M = F \cdot r}$
+**Drehmoment** $\boxed{\mathbf{M} = \mathbf{F} \times \mathbf{r}}$
+
+Dabei gilt: $\mathbf{M}~[\text{N} \cdot \text{m}] = \mathbf{F}~[\text{N}] \times \mathbf{r}~[\text{m}]$
+
+$\mathbf{M}$: Drehmomentvektor $[\text{N} \cdot \text{m}]$
+$\mathbf{F}$: Kraftvektor $[\text{N}]$
+$\mathbf{r}$: Ortsvektor (Hebelarm) $[\text{m}]$
+
+**Kraft** $\boxed{\mathbf{F} = m \cdot \mathbf{a}}$
+
+Dabei gilt: $\mathbf{F}~[\text{N}] = m~[\text{kg}] \cdot \mathbf{a}~[\text{m/s}^2]$
+
+$\mathbf{F}$: Kraftvektor in Newton $[\text{N}]$
+$m$: Masse (Skalar) in Kilogramm $[\text{kg}]$
+$\mathbf{a}$: Beschleunigungsvektor in Meter pro Sekunde zum Quadrat $[\text{m/s}^2]$
 
 ## Elektrotechnik
  
-**SPANNUNG** $U~\text{Volt}~[V]$
+**SPANNUNG** $U~\text{Volt}~[\text{V}]$
 
-**STROM** $I~\text{Ampere}~[A]$
+**STROM** $I~\text{Ampere}~[\text{A}]$
 
 **WIDERSTAND** $R~\text{Ohm}~[\Omega]$
 
 **Reihe**
 
 1. Strombegrenzung
-1. Spannungsteilung
+2. Spannungsteilung
 
 **Parallel**
 
 1. Stromflusserhöhung
-1. Leistungsteilung $\boxed{R_{ges} = \frac{R_{Teil}}{n}}$
+2. Leistungsteilung $\boxed{R_{\text{ges}} = \frac{R_{\text{Teil}}}{n}}$
 
-**OHMSCHE GESETZ**
+**OHMSCHES GESETZ**
 
-$\boxed{I = \frac{U}{R}} \quad \bigl[\frac{V}{\Omega}\bigl] = A \quad
- \boxed{R = \frac{U}{I}} \quad \bigl[\frac{V}{A}\bigl] = \Omega \quad
- \boxed{U = R \cdot I} \quad [\Omega \cdot A] = V$
+$\boxed{I = \frac{U}{R}} \quad \bigl[\frac{\text{V}}{\Omega}\bigr] = \text{A} \quad
+ \boxed{R = \frac{U}{I}} \quad \bigl[\frac{\text{V}}{\text{A}}\bigr] = \Omega \quad
+ \boxed{U = R \cdot I} \quad [\Omega \cdot \text{A}] = \text{V}$
 
 **STROMDICHTE**
 
-$\boxed{J = \frac{I}{A}} \quad \bigl[\frac{A}{mm^2}\bigl] \quad
- \boxed{I = J \cdot A} \quad \bigl[\frac{A \cdot mm^2}{mm^2}\bigl] = A \quad
- \boxed{A = \frac{I}{J}} \quad \bigl[\frac{A \cdot mm^2}{A}\bigl] = mm^2$
+$\boxed{J = \frac{I}{A}} \quad \bigl[\frac{\text{A}}{\text{mm}^2}\bigr] \quad
+ \boxed{I = J \cdot A} \quad \bigl[\frac{\text{A} \cdot \text{mm}^2}{\text{mm}^2}\bigr] = \text{A} \quad
+ \boxed{A = \frac{I}{J}} \quad \bigl[\frac{\text{A} \cdot \text{mm}^2}{\text{A}}\bigr] = \text{mm}^2$
 
-**LEITWERT** $S$ Siemens
+**LEITWERT** $G$ Siemens $[\text{S}]$
 
-$\boxed{G = \frac{1}{R}} \quad \bigl[\frac{1}{\Omega}\bigl] = S \quad \boxed{R = \frac{1}{G}} \quad \bigl[\frac{1}{S} = \Omega\bigl]$
+$\boxed{G = \frac{1}{R}} \quad \bigl[\frac{1}{\Omega}\bigr] = \text{S} \quad \boxed{R = \frac{1}{G}} \quad \bigl[\frac{1}{\text{S}}\bigr] = \Omega$
 
 **LEITERWIDERSTAND** 
 
-$\boxed{R_l = \frac{\rho \cdot l}{A}} \quad  \bigl[\frac{\Omega \cdot mm^2 \cdot m}{m \cdot mm^2}\bigl] = \Omega \quad 
-\boxed{A = \frac{\rho \cdot l}{R_l}} \quad  \bigl[\frac{\Omega \cdot mm^2 \cdot m}{m \cdot \Omega}\bigl] = mm^2$
+$\boxed{R_\text{l} = \frac{\rho \cdot l}{A}} \quad  \bigl[\frac{\Omega \cdot \text{mm}^2 \cdot \text{m}}{\text{m} \cdot \text{mm}^2}\bigr] = \Omega \quad 
+\boxed{A = \frac{\rho \cdot l}{R_\text{l}}} \quad  \bigl[\frac{\Omega \cdot \text{mm}^2 \cdot \text{m}}{\text{m} \cdot \Omega}\bigr] = \text{mm}^2$
 
-$\boxed{l = \frac{R_l \cdot A}{\rho}} \quad  \bigl[\frac{\Omega \cdot mm^2 \cdot m}{\Omega \cdot mm^2}\bigl] = m$
+$\boxed{l = \frac{R_\text{l} \cdot A}{\rho}} \quad  \bigl[\frac{\Omega \cdot \text{mm}^2 \cdot \text{m}}{\Omega \cdot \text{mm}^2}\bigr] = \text{m}$
 
-**SPEZIFISCHER WIDERSTAND** $\rho$ rho
+**SPEZIFISCHER WIDERSTAND** $\rho$ (rho)
 
-$\rho \quad \bigl[\frac{\Omega \cdot mm^2}{m}\bigl] \quad \rho_{Cu} = 0,0178~\frac{\Omega \cdot mm^2}{m}$
+$\rho \quad \bigl[\frac{\Omega \cdot \text{mm}^2}{\text{m}}\bigr] \quad \rho_{\text{Cu}} = 0{,}0178~\frac{\Omega \cdot \text{mm}^2}{\text{m}}$
 
-**ELEKTRISCHE LEITFÄHIGKEIT** $\kappa$ Kappa
+**ELEKTRISCHE LEITFÄHIGKEIT** $\kappa$ (Kappa)
 
-$\boxed{\kappa = \frac{1}{\rho}} \quad \bigl[\frac{m}{\Omega \cdot mm^2}\bigl] \quad \kappa_{Cu} = 56~\frac{m}{\Omega \cdot mm^2}$
+$\boxed{\kappa = \frac{1}{\rho}} \quad \bigl[\frac{\text{m}}{\Omega \cdot \text{mm}^2}\bigr] \quad \kappa_{\text{Cu}} = 56~\frac{\text{m}}{\Omega \cdot \text{mm}^2}$
 
 **REIHENSCHALTUNG**
 
-$\boxed{U_{ges} = U_{R_1} + U_{R_2} + U_{R_3} + \dots + U_{R_n}} \quad \bigl[V + V + V\bigl] = V$ 
+$\boxed{U_{\text{ges}} = U_{R_1} + U_{R_2} + U_{R_3} + \dots + U_{R_n}} \quad [\text{V} + \text{V} + \text{V}] = \text{V}$ 
 
-$\boxed{U_{teil} = \frac{U_{ges}}{n}} \quad \bigl[\frac{V}{1}\bigl] = V$
+$\boxed{U_{\text{teil}} = \frac{U_{\text{ges}}}{n}} \quad \bigl[\frac{\text{V}}{1}\bigr] = \text{V}$
 
-$\boxed{I_{ges} = I_{R_1} = I_{R_2} = I_{R_3} = \dots = I_{R_n}} \quad \bigl[A = A = A\bigl] = A$ 
+$\boxed{I_{\text{ges}} = I_{R_1} = I_{R_2} = I_{R_3} = \dots = I_{R_n}} \quad [\text{A} = \text{A} = \text{A}] = \text{A}$ 
 
-$\boxed{R_{ges} = R_1 + R_2 + R_3 + \dots + R_n} \quad \bigl[\Omega + \Omega + \Omega\bigl] = \Omega$ 
+$\boxed{R_{\text{ges}} = R_1 + R_2 + R_3 + \dots + R_n} \quad [\Omega + \Omega + \Omega] = \Omega$ 
 
 **SPANNUNGSVERLUST** (Spannungsfall)
 
-$U_{ges} = U_v + U_k;\quad U_k = U_{ges} - U_v;\quad U_v = U_{ges} - U_k$
+$U_{\text{ges}} = U_\text{v} + U_\text{k};\quad U_\text{k} = U_{\text{ges}} - U_\text{v};\quad U_\text{v} = U_{\text{ges}} - U_\text{k}$
 
-$U_v = R_l \cdot I;\quad R_l = \frac{\rho \cdot l}{A} \quad \bigl[\frac{\Omega \cdot mm^2 \cdot m}{m \cdot mm^2}\bigl] = \Omega$
+$U_\text{v} = R_\text{l} \cdot I;\quad R_\text{l} = \frac{\rho \cdot l}{A} \quad \bigl[\frac{\Omega \cdot \text{mm}^2 \cdot \text{m}}{\text{m} \cdot \text{mm}^2}\bigr] = \Omega$
 
-$U_k = U_{ges} - R_l \cdot I$
+$U_\text{k} = U_{\text{ges}} - R_\text{l} \cdot I$
 
-$\boxed{U_v = \frac{\rho \cdot l \cdot I}{A}} \quad \bigl[\frac{\Omega \cdot mm^2 \cdot m \cdot A}{m \cdot mm^2}\bigl] = V \quad \rho_{Cu} = 0,0178~\frac{\Omega \cdot mm^2}{m}$
+$\boxed{U_\text{v} = \frac{\rho \cdot l \cdot I}{A}} \quad \bigl[\frac{\Omega \cdot \text{mm}^2 \cdot \text{m} \cdot \text{A}}{\text{m} \cdot \text{mm}^2}\bigr] = \text{V} \quad \rho_{\text{Cu}} = 0{,}0178~\frac{\Omega \cdot \text{mm}^2}{\text{m}}$
 
-$U_{v_{~\%}} = \frac{U_v \cdot 100}{U_{ges}} \quad \bigl[\frac{V \cdot ~\%}{V}\bigl] = ~\%$
+$U_{v_{~\%}} = \frac{U_\text{v} \cdot 100}{U_{\text{ges}}} \quad \bigl[\frac{\text{V} \cdot ~\%}{\text{V}}\bigr] = ~\%$
 
-$\boxed{U_{v_{max}} = 0,5~V}$
+$\boxed{U_{v_{\text{max}}} = 0{,}5~\text{V}}$
 
 $\boxed{\text{max. Leiterwiderstand} = 1~\Omega}$ (außer Starterhauptleitung)
 
 **INNENWIDERSTAND** (von Spannungsquellen)
 
-$U_q = U_k + U_i \quad [V + V] = V$
+$U_\text{q} = U_\text{k} + U_\text{i} \quad [\text{V} + \text{V}] = \text{V}$
 
-$U_k = U_q - U_i \quad [V - V] = V$
+$U_\text{k} = U_\text{q} - U_\text{i} \quad [\text{V} - \text{V}] = \text{V}$
 
-$U_i = U_q - U_k \quad [V - V] = V$
+$U_\text{i} = U_\text{q} - U_\text{k} \quad [\text{V} - \text{V}] = \text{V}$
 
-$U_i = I \cdot R_i \quad [A \cdot \Omega] = V$
+$U_\text{i} = I \cdot R_\text{i} \quad [\text{A} \cdot \Omega] = \text{V}$
 
-$U_k = I \cdot R_a \quad [A \cdot \Omega] = V$
+$U_\text{k} = I \cdot R_a \quad [\text{A} \cdot \Omega] = \text{V}$
 
-$I = \frac{U_i}{R_i} \quad [\frac{V}{\Omega}] = A$
+$I = \frac{U_\text{i}}{R_\text{i}} \quad \bigl[\frac{\text{V}}{\Omega}\bigr] = \text{A}$
 
-$I = \frac{U_k}{R_a} \quad [\frac{V}{\Omega}] = A$
+$I = \frac{U_\text{k}}{R_a} \quad \bigl[\frac{\text{V}}{\Omega}\bigr] = \text{A}$
 
-$I = \frac{U_q}{R_{ges}} \quad [\frac{V}{\Omega}] = A$
+$I = \frac{U_\text{q}}{R_{\text{ges}}} \quad \bigl[\frac{\text{V}}{\Omega}\bigr] = \text{A}$
 
-$I = \frac{U_q}{R_i + R_a} \quad [\frac{V}{\Omega + \Omega}] = A$
+$I = \frac{U_\text{q}}{R_\text{i} + R_a} \quad \bigl[\frac{\text{V}}{\Omega + \Omega}\bigr] = \text{A}$
 
-$\boxed{U_k = U_q - I \cdot R_i} \quad [V - A \cdot \Omega \to V - V] = V$
+$\boxed{U_\text{k} = U_\text{q} - I \cdot R_\text{i}} \quad [\text{V} - \text{A} \cdot \Omega \to \text{V} - \text{V}] = \text{V}$
 
-$\boxed{R_i = \frac{U_i}{I}} \quad [\frac{V}{A}] = \Omega$
+$\boxed{R_\text{i} = \frac{U_\text{i}}{I}} \quad \bigl[\frac{\text{V}}{\text{A}}\bigr] = \Omega$
 
-$\boxed{U_k = U_q - U_i - U_v} \quad \boxed{R_{ges} = R_i + R_l + R_\text{ü} + R_{La}}$
+$\boxed{U_\text{k} = U_\text{q} - U_\text{i} - U_\text{v}} \quad \boxed{R_{\text{ges}} = R_\text{i} + R_\text{l} + R_{\text{ü}} + R_{\text{La}}}$
 
 *Herleitung*
 
-$U_k = U_q - I \cdot R_i$  $\quad | +I \cdot R_i$
+$U_\text{k} = U_\text{q} - I \cdot R_\text{i}$  $\quad | +I \cdot R_\text{i}$
 
-$U_k + I \cdot R_i = U_q - I \cdot R_i + I \cdot R_i$ $\quad |  -U_k$
+$U_\text{k} + I \cdot R_\text{i} = U_\text{q} - I \cdot R_\text{i} + I \cdot R_\text{i}$ $\quad |  -U_\text{k}$
 
-$-U_k + U_k + I \cdot R_i = U_q - U_k$  $\quad | :I$
+$-U_\text{k} + U_\text{k} + I \cdot R_\text{i} = U_\text{q} - U_\text{k}$  $\quad | :I$
 
-$\frac{I \cdot R_i}{I} = \frac{U_q - U_k}{I}$ $\quad \bigl[\frac{V - V}{A} \to \frac{V}{A}\bigl] = \Omega$
+$\frac{I \cdot R_\text{i}}{I} = \frac{U_\text{q} - U_\text{k}}{I}$ $\quad \bigl[\frac{\text{V} - \text{V}}{\text{A}} \to \frac{\text{V}}{\text{A}}\bigr] = \Omega$
 
-$R_i = \frac{U_i}{I}$
+$R_\text{i} = \frac{U_\text{i}}{I}$
 
 **PARALLELSCHALTUNG**
 
-$\boxed{I_{ges} = I_{R_1} + I_{R_2} + I_{R_3} + \dots + I_{R_n}}\quad [A + A + A] = A$
+$\boxed{I_{\text{ges}} = I_{R_1} + I_{R_2} + I_{R_3} + \dots + I_{R_n}}\quad [\text{A} + \text{A} + \text{A}] = \text{A}$
 
-$\boxed{U_{ges} = U_{R_1} = U_{R_2} = U_{R_3} = \dots = U_{R_n}}\quad [V = V = V] = V$
+$\boxed{U_{\text{ges}} = U_{R_1} = U_{R_2} = U_{R_3} = \dots = U_{R_n}}\quad [\text{V} = \text{V} = \text{V}] = \text{V}$
 
-$\boxed{R_{ges} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \dots + \frac{1}{R_n}}} \quad \bigl[\frac{1}{\frac{1}{\Omega} + \frac{1}{\Omega} + \frac{1}{\Omega}} = \frac{1}{\frac{1}{\Omega}} = \frac{1}{S}\bigl] = \Omega$
+$\boxed{R_{\text{ges}} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \dots + \frac{1}{R_n}}} \quad \bigl[\frac{1}{\frac{1}{\Omega} + \frac{1}{\Omega} + \frac{1}{\Omega}} = \frac{1}{\frac{1}{\Omega}} = \frac{1}{\text{S}}\bigr] = \Omega$
 
-Ersatzwiderstand $\boxed{R_{ges} = \frac{R_{Teil}}{n}} \quad \bigl[\frac{\Omega}{1}\bigl] = \Omega \quad \to \text{Anzahl } n = \frac{R_{Teil}}{R_{ges}} \quad \bigl[\frac{\Omega}{\Omega}\bigl] = 1$ 
+Ersatzwiderstand $\boxed{R_{\text{ges}} = \frac{R_{\text{Teil}}}{n}} \quad \bigl[\frac{\Omega}{1}\bigr] = \Omega \quad \to \text{Anzahl } n = \frac{R_{\text{Teil}}}{R_{\text{ges}}} \quad \bigl[\frac{\Omega}{\Omega}\bigr] = 1$ 
 
 n = Anzahl der Widerstände (gleich große Widerstände)
 
-$\boxed{R_{ges} = \frac{R_1 \cdot R_2}{R_1 + R_2}}$
+$\boxed{R_{\text{ges}} = \frac{R_1 \cdot R_2}{R_1 + R_2}}$
 
-$R_{ges} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}}$
+$R_{\text{ges}} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}}$
 
-$\to R_{1} = \frac{1}{\frac{1}{R_{ges}} - \frac{1}{R_2} - \frac{1}{R_3}} \quad \to R_{2} = \frac{1}{\frac{1}{R_{ges}} - \frac{1}{R_1} - \frac{1}{R_3}}  \quad \to R_{3} = \frac{1}{\frac{1}{R_{ges}} - \frac{1}{R_1} - \frac{1}{R_2}}$
+$\to R_{1} = \frac{1}{\frac{1}{R_{\text{ges}}} - \frac{1}{R_2} - \frac{1}{R_3}} \quad \to R_{2} \to R_{2} = \frac{1}{\frac{1}{R_{\text{ges}}} - \frac{1}{R_1} - \frac{1}{R_3}} \quad \to R_{3} = \frac{1}{\frac{1}{R_{\text{ges}}} - \frac{1}{R_1} - \frac{1}{R_2}}$
 
-**LEISTUNG** $P$ (Power) Watt, $[W], [kW]$
+**LEISTUNG** $P$ (Power) Watt, $[\text{W}], [\text{kW}]$
 
-$\boxed{P = U \cdot I} \quad [V \cdot A] = W$
+$\boxed{P = U \cdot I} \quad [\text{V} \cdot \text{A}] = \text{W}$
 
-$\boxed{U = \frac{P}{I}} \quad [\frac{W}{A} \to \frac{V \cdot A}{A}] = V$
+$\boxed{U = \frac{P}{I}} \quad \bigl[\frac{\text{W}}{\text{A}} \to \frac{\text{V} \cdot \text{A}}{\text{A}}\bigr] = \text{V}$
 
-$\boxed{I = \frac{P}{U}} \quad [\frac{W}{V} \to \frac{V \cdot A}{V}] = A$
+$\boxed{I = \frac{P}{U}} \quad \bigl[\frac{\text{W}}{\text{V}} \to \frac{\text{V} \cdot \text{A}}{\text{V}}\bigr] = \text{A}$
 
 **wenn $I$ fehlt** (Einsetzverfahren)
 
-$P = U \cdot I \quad [V \cdot A] = W, \quad I = \frac{U}{R} \quad [\frac{V}{\Omega}] = A$
+$P = U \cdot I \quad [\text{V} \cdot \text{A}] = \text{W}, \quad I = \frac{U}{R} \quad \bigl[\frac{\text{V}}{\Omega}\bigr] = \text{A}$
 
-$P = U \cdot \frac{U}{R} \to \boxed{P = \frac{U^2}{R}} \quad [\frac{V \cdot V}{\Omega} \to A \cdot V] = W$
+$P = U \cdot \frac{U}{R} \to \boxed{P = \frac{U^2}{R}} \quad \bigl[\frac{\text{V} \cdot \text{V}}{\Omega} \to \text{A} \cdot \text{V}\bigr] = \text{W}$
 
 **wenn $U$ fehlt** (Einsetzverfahren)
 
-$P = U \cdot I \quad [V \cdot A] = W, \quad U = R \cdot I \quad [\Omega \cdot A] = V$
+$P = U \cdot I \quad [\text{V} \cdot \text{A}] = \text{W}, \quad U = R \cdot I \quad [\Omega \cdot \text{A}] = \text{V}$
 
-$P = R \cdot I \cdot I \to \boxed{P = R \cdot I^2} \quad [\Omega \cdot A \cdot A \to V \cdot A] = W$
+$P = R \cdot I \cdot I \to \boxed{P = R \cdot I^2} \quad [\Omega \cdot \text{A} \cdot \text{A} \to \text{V} \cdot \text{A}] = \text{W}$
 
-**Lampe** $12~V/55~W$ 
+**Lampe** $12~\text{V}/55~\text{W}$ 
 
-1. $R_{La} = \frac{U^2}{P}$
-2. $I_{tat} = \frac{U_k}{R_{La}} = \frac{U_{ges} - U_v}{R_{La}}$
-3. $P_{tat} = U_k \cdot I_{tat}$
+1. $R_{\text{La}} = \frac{U^2}{P}$
+2. $I_{\text{tat}} = \frac{U_\text{k}}{R_{\text{La}}} = \frac{U_{\text{ges}} - U_\text{v}}{R_{\text{La}}}$
+3. $P_{\text{tat}} = U_\text{k} \cdot I_{\text{tat}}$
