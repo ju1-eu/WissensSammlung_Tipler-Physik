@@ -15,24 +15,32 @@ Quelle: Rießinger, Thomas. Mathematik für Ingenieure: Eine anschauliche Einfü
 - [Vektorrechnung - Koordinatendarstellung](#vektorrechnung---koordinatendarstellung)
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [Prompt](#prompt)
-  - [Bemerkung](#bemerkung)
-  - [Definition](#definition)
-  - [Satz](#satz)
-  - [Satz](#satz-1)
-  - [Satz](#satz-2)
-  - [Berechnungen](#berechnungen)
+  - [Einleitung](#einleitung)
+  - [Grundlagen der Vektordarstellung](#grundlagen-der-vektordarstellung)
+    - [Bemerkung: Vektoren in der Ebene und im Raum](#bemerkung-vektoren-in-der-ebene-und-im-raum)
+    - [Definition: Rechtssystem und Linkssystem](#definition-rechtssystem-und-linkssystem)
+  - [Eigenschaften und Operationen von Vektoren](#eigenschaften-und-operationen-von-vektoren)
+    - [Satz 1: Länge eines Vektors](#satz-1-länge-eines-vektors)
+    - [Satz 2: Winkelbeziehungen in der Ebene](#satz-2-winkelbeziehungen-in-der-ebene)
+    - [Satz 3: Grundrechenarten für Vektoren](#satz-3-grundrechenarten-für-vektoren)
+  - [Anwendungsbeispiele](#anwendungsbeispiele)
+    - [Beispiel 1: Kräfteaddition in der Ebene](#beispiel-1-kräfteaddition-in-der-ebene)
+    - [Beispiel 2: Vektorzerlegung in der Robotik](#beispiel-2-vektorzerlegung-in-der-robotik)
+  - [Visuelle Darstellung](#visuelle-darstellung)
+  - [Zusammenfassung und Ausblick](#zusammenfassung-und-ausblick)
+  - [Rechenbeispiele](#rechenbeispiele)
     - [Beispiel 1: Berechnung der Länge eines Vektors in der Ebene](#beispiel-1-berechnung-der-länge-eines-vektors-in-der-ebene)
     - [Beispiel 2: Berechnung der Länge eines Vektors im Raum](#beispiel-2-berechnung-der-länge-eines-vektors-im-raum)
     - [Beispiel 3: Berechnung des Richtungswinkels eines Vektors](#beispiel-3-berechnung-des-richtungswinkels-eines-vektors)
-    - [Beispiel 2.2.8 (ii): Berechnung der Koordinaten eines Vektors und seines Winkels](#beispiel-228-ii-berechnung-der-koordinaten-eines-vektors-und-seines-winkels)
-    - [Beispiel 2.2.8 (iii): Berechnung der resultierenden Kraftvektoren](#beispiel-228-iii-berechnung-der-resultierenden-kraftvektoren)
-    - [Beispiel 2.2.10 (i): Berechnung einer Vektoroperation](#beispiel-2210-i-berechnung-einer-vektoroperation)
-    - [Beispiel 2.2.10 (ii): Berechnung der resultierenden Kraft](#beispiel-2210-ii-berechnung-der-resultierenden-kraft)
-    - [Beispiel 2.2.10 (iii): Berechnung der resultierenden Kraft aus drei Vektoren](#beispiel-2210-iii-berechnung-der-resultierenden-kraft-aus-drei-vektoren)
+    - [Beispiel 4: Berechnung der Koordinaten eines Vektors und seines Winkels](#beispiel-4-berechnung-der-koordinaten-eines-vektors-und-seines-winkels)
+    - [Beispiel 5: Berechnung der resultierenden Kraftvektoren](#beispiel-5-berechnung-der-resultierenden-kraftvektoren)
+    - [Beispiel 6: Berechnung einer Vektoroperation](#beispiel-6-berechnung-einer-vektoroperation)
+    - [Beispiel 7: Berechnung der resultierenden Kraft](#beispiel-7-berechnung-der-resultierenden-kraft)
+    - [Beispiel 8: Berechnung der resultierenden Kraft aus drei Vektoren](#beispiel-8-berechnung-der-resultierenden-kraft-aus-drei-vektoren)
       - [Schritt 1: Koordinatendarstellung der Kräfte](#schritt-1-koordinatendarstellung-der-kräfte)
       - [Schritt 2: Addition der Vektoren](#schritt-2-addition-der-vektoren)
       - [Schritt 3: Betrag der resultierenden Kraft](#schritt-3-betrag-der-resultierenden-kraft)
-    - [Beispiel 2.2.10 (iv)](#beispiel-2210-iv)
+    - [Beispiel 9](#beispiel-9)
 
 ## Prompt
 
@@ -55,80 +63,120 @@ Quelle: Rießinger, Thomas. Mathematik für Ingenieure: Eine anschauliche Einfü
 
 ---
 
-## Bemerkung
+## Einleitung
 
-**(i) Ebene:**
-Ein Vektor $a$ in der Ebene lässt sich als Linearkombination von zwei Einheitsvektoren $e_1$ und $e_2$ darstellen. Die Koordinatendarstellung eines Vektors $a$ lautet:
-$$
-a = a_1 \cdot e_1 + a_2 \cdot e_2
-$$
-wobei $a_1$ und $a_2$ die Komponenten von $a$ in den Richtungen von $e_1$ und $e_2$ sind. Die Einheitsvektoren haben die Koordinatendarstellungen:
-$$
-e_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad e_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
-$$
+Die Vektorrechnung in Koordinatendarstellung ist ein fundamentales Konzept in den Ingenieurwissenschaften und der Physik. Sie ermöglicht die präzise Beschreibung und Analyse von gerichteten Größen wie Kräften, Geschwindigkeiten oder elektrischen Feldern. Für Ingenieursstudierende ist dieses Thema von großer Bedeutung, da es die Grundlage für viele fortgeschrittene Konzepte in der Mechanik, Elektrotechnik und anderen technischen Disziplinen bildet.
 
-**(ii) Raum:**
-Ein Vektor $a$ im Raum hat drei Koordinaten $a_1, a_2, a_3$ und wird als Linearkombination von drei Einheitsvektoren dargestellt:
-$$
-a = a_1 \cdot e_1 + a_2 \cdot e_2 + a_3 \cdot e_3
-$$
+## Grundlagen der Vektordarstellung
+
+### Bemerkung: Vektoren in der Ebene und im Raum
+
+**(i) Ebene:** 
+Ein Vektor $\mathbf{a}$ in der Ebene lässt sich als Linearkombination von zwei Einheitsvektoren $\mathbf{e}_1$ und $\mathbf{e}_2$ darstellen. Die Koordinatendarstellung eines Vektors $\mathbf{a}$ lautet:
+
+$$ \mathbf{a} = a_1 \cdot \mathbf{e}_1 + a_2 \cdot \mathbf{e}_2 = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} $$
+
+wobei $a_1$ und $a_2$ die Komponenten von $\mathbf{a}$ in den Richtungen von $\mathbf{e}_1$ und $\mathbf{e}_2$ sind. Die Einheitsvektoren haben die Koordinatendarstellungen:
+
+$$ \mathbf{e}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad \mathbf{e}_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix} $$
+
+**(ii) Raum:** 
+Ein Vektor $\mathbf{a}$ im Raum hat drei Koordinaten $a_1, a_2, a_3$ und wird als Linearkombination von drei Einheitsvektoren dargestellt:
+
+$$ \mathbf{a} = a_1 \cdot \mathbf{e}_1 + a_2 \cdot \mathbf{e}_2 + a_3 \cdot \mathbf{e}_3 = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} $$
+
 wobei die Einheitsvektoren im Raum die Koordinaten haben:
-$$
-e_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \quad e_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \quad e_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}
-$$
 
-## Definition
+$$ \mathbf{e}_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \quad \mathbf{e}_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \quad \mathbf{e}_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} $$
 
-Ein System von drei Vektoren $x, y, z$ im Raum bildet ein **Rechtssystem**, wenn man die rechte Hand so halten kann, dass Daumen, Zeigefinger und Mittelfinger in Richtung von $x, y$ bzw. $z$ zeigen. Analog wird ein **Linkssystem** definiert.
+Diese Darstellung ermöglicht es uns, komplexe räumliche Beziehungen in einfache numerische Ausdrücke zu übersetzen, was besonders in der Computersimulation und numerischen Analyse von großem Nutzen ist.
 
-## Satz
+### Definition: Rechtssystem und Linkssystem
 
-Die Länge (oder der Betrag) eines Vektors $a$ in der Ebene oder im Raum ist gegeben durch:
+Ein System von drei Vektoren $\mathbf{x}, \mathbf{y}, \mathbf{z}$ im Raum bildet ein **Rechtssystem**, wenn man die rechte Hand so halten kann, dass Daumen, Zeigefinger und Mittelfinger in Richtung von $\mathbf{x}, \mathbf{y}$ bzw. $\mathbf{z}$ zeigen. Analog wird ein **Linkssystem** definiert.
+
+Diese Unterscheidung ist wichtig in der Physik und Technik, da viele Phänomene (z.B. elektromagnetische Felder) sich je nach verwendetem Koordinatensystem unterschiedlich verhalten können.
+
+## Eigenschaften und Operationen von Vektoren
+
+### Satz 1: Länge eines Vektors
+
+Die Länge (oder der Betrag) eines Vektors $\mathbf{a}$ ist gegeben durch:
 
 **(i) Für Vektoren in der Ebene:**
-$$
-\text{Länge}(a) = \sqrt{a_1^2 + a_2^2}
-$$
+$$ |\mathbf{a}| = \sqrt{a_1^2 + a_2^2} $$
 
 **(ii) Für Vektoren im Raum:**
-$$
-\text{Länge}(a) = \sqrt{a_1^2 + a_2^2 + a_3^2}
-$$
+$$ |\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2} $$
 
-## Satz
+Diese Formel ist eine Verallgemeinerung des Satzes des Pythagoras und findet Anwendung in vielen Bereichen, von der Berechnung von Entfernungen bis zur Bestimmung von Kräften in der Mechanik.
 
-Ein Vektor $a$ in der Ebene, dessen Anfangspunkt der Nullpunkt ist und der mit der positiven x-Achse den Winkel $\varphi$ bildet, hat die Komponenten:
-$$
-a_1 = |a| \cdot \cos(\varphi), \quad a_2 = |a| \cdot \sin(\varphi)
-$$
-wobei $|a|$ der Betrag des Vektors ist.
+### Satz 2: Winkelbeziehungen in der Ebene
 
-## Satz
+Ein Vektor $\mathbf{a}$ in der Ebene, dessen Anfangspunkt der Nullpunkt ist und der mit der positiven x-Achse den Winkel $\varphi$ bildet, hat die Komponenten:
+
+$$ a_1 = |\mathbf{a}| \cdot \cos(\varphi), \quad a_2 = |\mathbf{a}| \cdot \sin(\varphi) $$
+
+wobei $|\mathbf{a}|$ der Betrag des Vektors ist. Diese Beziehung ist besonders nützlich in der Physik und Ingenieurwissenschaft, wenn Kräfte oder Bewegungen in verschiedene Richtungen zerlegt werden müssen.
+
+### Satz 3: Grundrechenarten für Vektoren
 
 Die Grundrechenarten für Vektoren in der Koordinatendarstellung lauten:
 
 **(i) Addition und Subtraktion:**
-$$
-\begin{pmatrix} a_1 \\ a_2 \end{pmatrix} \pm \begin{pmatrix} b_1 \\ b_2 \end{pmatrix} = \begin{pmatrix} a_1 \pm b_1 \\ a_2 \pm b_2 \end{pmatrix}
-$$
+$$ \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \pm \begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix} = \begin{pmatrix} a_1 \pm b_1 \\ a_2 \pm b_2 \\ a_3 \pm b_3 \end{pmatrix} $$
 
 **(ii) Skalare Multiplikation:**
-$$
-\lambda \cdot \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} = \begin{pmatrix} \lambda \cdot a_1 \\ \lambda \cdot a_2 \end{pmatrix}
-$$
-für $\lambda \in \mathbb{R}$.
+$$ \lambda \cdot \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} = \begin{pmatrix} \lambda \cdot a_1 \\ \lambda \cdot a_2 \\ \lambda \cdot a_3 \end{pmatrix}, \quad \lambda \in \mathbb{R} $$
 
-**(iii) Vektoren im Raum:**
-$$
-\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \pm \begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix} = \begin{pmatrix} a_1 \pm b_1 \\ a_2 \pm b_2 \\ a_3 \pm b_3 \end{pmatrix}
-$$
+Diese Operationen bilden die Grundlage für komplexere Berechnungen in der Vektoranalysis und finden Anwendung in verschiedenen Bereichen wie der Statik, Dynamik und Elektromagnetismus.
 
-**(iv) Skalare Multiplikation im Raum:**
-$$
-\lambda \cdot \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} = \begin{pmatrix} \lambda \cdot a_1 \\ \lambda \cdot a_2 \\ \lambda \cdot a_3 \end{pmatrix}
-$$
+## Anwendungsbeispiele
 
-## Berechnungen
+### Beispiel 1: Kräfteaddition in der Ebene
+
+Ein Objekt wird von zwei Kräften beeinflusst: $\mathbf{F}_1$ mit $2{,}0~\text{N}$ unter $45^\circ$ und $\mathbf{F}_2$ mit $3{,}0~\text{N}$ unter $30^\circ$ zur x-Achse. Berechnen Sie die resultierende Kraft.
+
+**Lösung:**
+
+1. Bestimmung der Vektorkomponenten:
+   $\mathbf{F}_1 = \begin{pmatrix} 2{,}0 \cdot \cos(45^\circ) \\ 2{,}0 \cdot \sin(45^\circ) \end{pmatrix} = \begin{pmatrix} 1{,}41 \\ 1{,}41 \end{pmatrix}~\text{N}$
+   $\mathbf{F}_2 = \begin{pmatrix} 3{,}0 \cdot \cos(30^\circ) \\ 3{,}0 \cdot \sin(30^\circ) \end{pmatrix} = \begin{pmatrix} 2{,}60 \\ 1{,}50 \end{pmatrix}~\text{N}$
+
+2. Addition der Kräfte:
+   $\mathbf{F}_\text{res} = \mathbf{F}_1 + \mathbf{F}_2 = \begin{pmatrix} 4{,}01 \\ 2{,}91 \end{pmatrix}~\text{N}$
+
+3. Berechnung des Betrags und der Richtung:
+   $|\mathbf{F}_\text{res}| = \sqrt{4{,}01^2 + 2{,}91^2} \approx 4{,}96~\text{N}$
+   $\varphi = \arctan\left(\frac{2{,}91}{4{,}01}\right) \approx 36{,}0^\circ$
+
+Die resultierende Kraft hat also einen Betrag von $4{,}96~\text{N}$ und wirkt unter einem Winkel von $36{,}0^\circ$ zur x-Achse.
+
+### Beispiel 2: Vektorzerlegung in der Robotik
+
+Ein Roboterarm soll ein Objekt mit einer Kraft von $10{,}0~\text{N}$ unter einem Winkel von $60^\circ$ zur Horizontalen anheben. Berechnen Sie die horizontale und vertikale Komponente der Kraft.
+
+**Lösung:**
+
+$\mathbf{F} = \begin{pmatrix} 10{,}0 \cdot \cos(60^\circ) \\ 10{,}0 \cdot \sin(60^\circ) \end{pmatrix} = \begin{pmatrix} 5{,}00 \\ 8{,}66 \end{pmatrix}~\text{N}$
+
+Die horizontale Komponente beträgt $5{,}00~\text{N}$, die vertikale $8{,}66~\text{N}$.
+
+## Visuelle Darstellung
+
+![Vektoraddition](images/vector_addition.png)
+
+Dieses Python-Skript erstellt eine visuelle Darstellung der Vektoraddition aus Beispiel 1. Es zeigt die Vektoren $\mathbf{F}_1$, $\mathbf{F}_2$ und den resultierenden Vektor $\mathbf{F}_\text{res}$ in einem zweidimensionalen Koordinatensystem.
+
+## Zusammenfassung und Ausblick
+
+Die Vektorrechnung in Koordinatendarstellung ist ein grundlegendes Werkzeug in den Ingenieurwissenschaften und der Physik. Sie ermöglicht die präzise Beschreibung und Manipulation von gerichteten Größen in zwei- und dreidimensionalen Räumen. Die vorgestellten Konzepte und Beispiele zeigen, wie dieses mathematische Werkzeug auf praktische Probleme angewendet werden kann.
+
+In weiterführenden Studien bauen komplexere Konzepte wie Vektorfelder, Gradienten und Rotationen auf diesen Grundlagen auf. Diese finden Anwendung in der Strömungsmechanik, Elektromagnetismus und vielen anderen Bereichen der Ingenieurwissenschaften.
+
+Das Verständnis der Vektorrechnung in Koordinatendarstellung ist daher nicht nur für die unmittelbare Anwendung wichtig, sondern bildet auch die Basis für fortgeschrittene mathematische Methoden in der Ingenieurspraxis.
+
+## Rechenbeispiele
 
 ### Beispiel 1: Berechnung der Länge eines Vektors in der Ebene
 
@@ -207,7 +255,7 @@ $$
 **Ergebnis:**
 Der Winkel $\varphi$, den der Vektor $a$ mit der x-Achse bildet, beträgt $53,13^\circ$.
 
-### Beispiel 2.2.8 (ii): Berechnung der Koordinaten eines Vektors und seines Winkels
+### Beispiel 4: Berechnung der Koordinaten eines Vektors und seines Winkels
 
 Gegeben sei der Vektor $b = \begin{pmatrix} -1 \\ 2 \end{pmatrix}$. Es soll die Länge des Vektors sowie der Winkel $\varphi$, den der Vektor mit der positiven x-Achse bildet, berechnet werden.
 
@@ -248,7 +296,7 @@ Die Länge des Vektors beträgt $|b| \approx 2,236$, und der Winkel $\varphi$, d
 
 ---
 
-### Beispiel 2.2.8 (iii): Berechnung der resultierenden Kraftvektoren
+### Beispiel 5: Berechnung der resultierenden Kraftvektoren
 
 Gegeben sind zwei Kräfte $\vec{F}_1$ und $\vec{F}_2$, die an einem Massenpunkt angreifen. Die Beträge und Winkel der Kräfte sind:
 - $\vec{F}_1$: Betrag $|F_1| = 2$, Winkel $\varphi_1 = 30^\circ$
@@ -311,7 +359,7 @@ $$
 Die resultierende Kraft beträgt $|\vec{F}| \approx 3,464$ und wirkt unter einem Winkel von $60^\circ$.
 
 
-### Beispiel 2.2.10 (i): Berechnung einer Vektoroperation
+### Beispiel 6: Berechnung einer Vektoroperation
 
 Gegeben ist die Vektoroperation:
 $$
@@ -346,7 +394,7 @@ $$
 \begin{pmatrix} 2 \\ 6 \\ -1 \end{pmatrix}
 $$
 
-### Beispiel 2.2.10 (ii): Berechnung der resultierenden Kraft
+### Beispiel 7: Berechnung der resultierenden Kraft
 
 In diesem Beispiel geht es um die Berechnung der resultierenden Kraft $\vec{F}$ durch die Addition zweier Kräfte $\vec{F}_1$ und $\vec{F}_2$.
 
@@ -397,7 +445,7 @@ $$
 Die resultierende Kraft $\vec{F}$ hat den Betrag $2\sqrt{3}$ und greift unter einem Winkel von $60^\circ$ an.
 
 
-### Beispiel 2.2.10 (iii): Berechnung der resultierenden Kraft aus drei Vektoren
+### Beispiel 8: Berechnung der resultierenden Kraft aus drei Vektoren
 
 In diesem Beispiel sollen drei Kräfte $\vec{F}_1$, $\vec{F}_2$ und $\vec{F}_3$ vektoriell addiert werden, um die resultierende Kraft $\vec{F}$ zu bestimmen.
 
@@ -526,7 +574,7 @@ $$
 
 Die Schritte und Werte sind korrekt.
 
-### Beispiel 2.2.10 (iv)
+### Beispiel 9
 
 Gegeben:
 - Zwei Kräfte $\vec{F}_1$ und $\vec{F}_2$ greifen an einen Massenpunkt an und ergeben eine resultierende Kraft $\vec{F}$.

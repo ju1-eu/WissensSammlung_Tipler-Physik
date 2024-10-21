@@ -160,6 +160,7 @@ Quelle: Tipler/Mosca Physik. 9. Aufl., 2023
   - Vektorendarstellung, Koordinatenursprung (0,0,0), Pfeile und Längen
   - rechtshändiges Koordinatensystem
   - sinnvoller Name für das Python-Skript
+  - B5-Querformat: Größe von 250 x 176 mm
 
 
 ### Sprachstil: klar, präzise und sachlich
