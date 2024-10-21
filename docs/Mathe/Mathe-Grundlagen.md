@@ -14,8 +14,8 @@ Letzte Aktualisierung: 2024-10-20
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [Prompt](#prompt)
   - [Einmaleins (1x1)](#einmaleins-1x1)
-  - [Quadratzahlen ($1^2$ bis $25^2$)](#quadratzahlen-12-bis-252)
-  - [Kubikzahlen ($1^3$ bis $9^3$)](#kubikzahlen-13-bis-93)
+  - [Quadratzahlen bis 25](#quadratzahlen-bis-25)
+  - [Kubikzahlen bis 9](#kubikzahlen-bis-9)
   - [Griechisches Alphabet](#griechisches-alphabet)
   - [Vorsätze für Zehnerpotenzen](#vorsätze-für-zehnerpotenzen)
   - [Potenzgesetze](#potenzgesetze)
@@ -91,7 +91,7 @@ beachte die Sprachstil-Richtlinien
 
 Eingabe: [siehe Anhang ]
 
-Ausgabe: Markdown mit LaTeX-Mathematik (`$...$` oder `$...$`)
+Ausgabe: Markdown mit LaTeX-Mathematik (`$...$` oder `$$...$$`)
 
 
 
@@ -99,7 +99,7 @@ Aufgabe: Schreibe in Markdown
 
 Eingabe: [ ]
 
-Ausgabe: Markdown mit LaTeX-Mathematik (`$...$` oder `$...$`)
+Ausgabe: Markdown mit LaTeX-Mathematik
 
 
 
@@ -116,7 +116,7 @@ Ausgabe: Markdown mit LaTeX-Mathematik (`$...$` oder `$...$`)
 |    8 |   16 |   24 |   32 |   40 |   48 |   56 |   64 |   72 |
 |    9 |   18 |   27 |   36 |   45 |   54 |   63 |   72 |   81 |
 
-## Quadratzahlen ($1^2$ bis $25^2$)
+## Quadratzahlen bis 25
 
 | Zahl | Quadrat | Zahl | Quadrat |
 | ---: | ------: | ---: | ------: |
@@ -134,7 +134,7 @@ Ausgabe: Markdown mit LaTeX-Mathematik (`$...$` oder `$...$`)
 |   12 |     144 |   25 |     625 |
 |   13 |     169 |      |         |
 
-## Kubikzahlen ($1^3$ bis $9^3$)
+## Kubikzahlen bis 9
 
 | Zahl | Kubik |
 | ---: | ----: |
@@ -1062,7 +1062,7 @@ $$\boxed{\begin{aligned}
 10\% \text{ von } 100 &\rightarrow 10.0 = 10 \\
 100\% \text{ von } 100 &\rightarrow 100. = 100 \\
 \text{Rabatt} 10\% &\rightarrow 100 \times 0.90 = 90 \\
-\text{Rabatt} 25\% &\rightarrow 100 \times 0.75 = 75 \$$10pt]
+\text{Rabatt} 25\% &\rightarrow 100 \times 0.75 = 75 \\
 \text{Grundwert 1000:} \\
 1\% \text{ von } 1000 &\rightarrow 10.00 = 10 \\
 10\% \text{ von } 1000 &\rightarrow 100.0 = 100 \\

@@ -1,12 +1,12 @@
 ---
-title: "Vektorrechnung_Kap_Koordinatendarstellung"
+title: "Vektorrechnung_Koordinatendarstellung"
 author: "Jan Unger"
 date: "2024-10-19"
 ---
 
 # Vektorrechnung - Koordinatendarstellung
 
-Letzte Aktualisierung: 2024-10-20
+Letzte Aktualisierung: 2024-10-21
 
 Quelle: Rießinger, Thomas. Mathematik für Ingenieure: Eine anschauliche Einführung für das praxisorientierte Studium. 9. Auflage, Springer Vieweg, 2013.
 
@@ -15,21 +15,24 @@ Quelle: Rießinger, Thomas. Mathematik für Ingenieure: Eine anschauliche Einfü
 - [Vektorrechnung - Koordinatendarstellung](#vektorrechnung---koordinatendarstellung)
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [Prompt](#prompt)
-  - [Koordinatendarstellung von Vektoren](#koordinatendarstellung-von-vektoren)
-  - [Vektoroperationen in Koordinatendarstellung](#vektoroperationen-in-koordinatendarstellung)
-  - [Definitionen](#definitionen)
-  - [Sätze](#sätze)
-  - [Einheitsvektoren](#einheitsvektoren)
-  - [Beispiele](#beispiele)
-    - [Beispiel 1: Berechnung des Betrags eines zweidimensionalen Vektors](#beispiel-1-berechnung-des-betrags-eines-zweidimensionalen-vektors)
-    - [Beispiel 2: Berechnung des Betrags eines dreidimensionalen Vektors](#beispiel-2-berechnung-des-betrags-eines-dreidimensionalen-vektors)
-    - [Beispiel 3: Bestimmung der Koordinaten und des Winkels eines Vektors](#beispiel-3-bestimmung-der-koordinaten-und-des-winkels-eines-vektors)
-    - [Beispiel 4: Vektoraddition und -subtraktion](#beispiel-4-vektoraddition-und--subtraktion)
-    - [Beispiel 5: Skalare Multiplikation](#beispiel-5-skalare-multiplikation)
-    - [Beispiel 6: Kraftvektorberechnung](#beispiel-6-kraftvektorberechnung)
-    - [Beispiel 7: Berechnung der resultierenden Kräfte](#beispiel-7-berechnung-der-resultierenden-kräfte)
-    - [Beispiel 8: Berechnung der fehlenden Kraft](#beispiel-8-berechnung-der-fehlenden-kraft)
-    - [Beispiele 9](#beispiele-9)
+  - [Bemerkung](#bemerkung)
+  - [Definition](#definition)
+  - [Satz](#satz)
+  - [Satz](#satz-1)
+  - [Satz](#satz-2)
+  - [Berechnungen](#berechnungen)
+    - [Beispiel 1: Berechnung der Länge eines Vektors in der Ebene](#beispiel-1-berechnung-der-länge-eines-vektors-in-der-ebene)
+    - [Beispiel 2: Berechnung der Länge eines Vektors im Raum](#beispiel-2-berechnung-der-länge-eines-vektors-im-raum)
+    - [Beispiel 3: Berechnung des Richtungswinkels eines Vektors](#beispiel-3-berechnung-des-richtungswinkels-eines-vektors)
+    - [Beispiel 2.2.8 (ii): Berechnung der Koordinaten eines Vektors und seines Winkels](#beispiel-228-ii-berechnung-der-koordinaten-eines-vektors-und-seines-winkels)
+    - [Beispiel 2.2.8 (iii): Berechnung der resultierenden Kraftvektoren](#beispiel-228-iii-berechnung-der-resultierenden-kraftvektoren)
+    - [Beispiel 2.2.10 (i): Berechnung einer Vektoroperation](#beispiel-2210-i-berechnung-einer-vektoroperation)
+    - [Beispiel 2.2.10 (ii): Berechnung der resultierenden Kraft](#beispiel-2210-ii-berechnung-der-resultierenden-kraft)
+    - [Beispiel 2.2.10 (iii): Berechnung der resultierenden Kraft aus drei Vektoren](#beispiel-2210-iii-berechnung-der-resultierenden-kraft-aus-drei-vektoren)
+      - [Schritt 1: Koordinatendarstellung der Kräfte](#schritt-1-koordinatendarstellung-der-kräfte)
+      - [Schritt 2: Addition der Vektoren](#schritt-2-addition-der-vektoren)
+      - [Schritt 3: Betrag der resultierenden Kraft](#schritt-3-betrag-der-resultierenden-kraft)
+    - [Beispiel 2.2.10 (iv)](#beispiel-2210-iv)
 
 ## Prompt
 
@@ -37,646 +40,549 @@ Quelle: Rießinger, Thomas. Mathematik für Ingenieure: Eine anschauliche Einfü
 
 - Aufgabe: Kernpunkte zusammenfassen und das Konzept etwas vertiefen
   - Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
-Thema: Vektorrechnung / Kap. Koordinatendarstellung
 
 - Aufgabe: fasse alle Definitionen und Sätze zusammen
 
 - Aufgabe: Berechne schritt-für-schritt die Lösung. Fange mit Punkt 1. an. Vergleiche Ergebnis mit der PDF.
 
 - Visualisieren mit Python
+  - Skript soll genau die Berechnungen durchführen, die in der Aufgabenstellung beschrieben sind
   - interaktiv, speichern in PNG und SVG
+  - Maßstab des Plots anpassen
+  - Vektorendarstellung, Koordinatenursprung (0,0,0), Pfeile und Längen
+  - rechtshändiges Koordinatensystem
+  - sinnvoller Name für das Python-Skript
 
 ---
 
-## Koordinatendarstellung von Vektoren
+## Bemerkung
 
-- Vektoren können durch Koordinaten dargestellt werden:
-  - 2D: 
-  $$
-  \mathbf{a} = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix}
-  $$
-  - 3D: 
-  $$
-  \mathbf{a} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}
-  $$
-
-- Der Betrag eines Vektors berechnet sich durch:
-  - 2D: 
-  $$
-  |\mathbf{a}| = \sqrt{a_1^2 + a_2^2}
-  $$
-  - 3D: 
-  $$
-  |\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}
-  $$
-
-- Winkel und Koordinaten hängen zusammen:
-  $$
-  a_1 = |\mathbf{a}| \cdot \cos\varphi \quad \text{und} \quad a_2 = |\mathbf{a}| \cdot \sin\varphi
-  $$
-
-## Vektoroperationen in Koordinatendarstellung
-
-- Addition/Subtraktion:
-  $$
-  \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} \pm \begin{pmatrix} b_1 \\ b_2 \end{pmatrix} = \begin{pmatrix} a_1 \pm b_1 \\ a_2 \pm b_2 \end{pmatrix}
-  $$
-
-- Skalare Multiplikation:
-  $$
-  \lambda \cdot \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} = \begin{pmatrix} \lambda a_1 \\ \lambda a_2 \end{pmatrix}
-  $$
-
-
-
-
-## Definitionen
-
-1. **Koordinatendarstellung eines Vektors**:
-   - 2D: 
-   $$
-   \mathbf{a} = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix}
-   $$
-   - 3D: 
-   $$
-   \mathbf{a} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}
-   $$
-
-2. **Betrag eines Vektors**:
-   - 2D: 
-   $$
-   |\mathbf{a}| = \sqrt{a_1^2 + a_2^2}
-   $$
-   - 3D: 
-   $$
-   |\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}
-   $$
-
-3. **Rechtssystem**: Drei Vektoren $\mathbf{x}$, $\mathbf{y}$, $\mathbf{z}$ bilden ein Rechtssystem, wenn die rechte Hand so gehalten werden kann, dass Daumen, Zeigefinger und Mittelfinger in dieser Reihenfolge in die Richtung von $\mathbf{x}$, $\mathbf{y}$ bzw. $\mathbf{z}$ zeigen.
-
-4. **Linkssystem**: Analog zum Rechtssystem, aber mit der linken Hand.
-
-## Sätze
-
-1. **Zusammenhang zwischen Winkel und Koordinaten** (2D):
-   Für einen Vektor $\mathbf{a}$ mit Winkel $\varphi$ zur x-Achse gilt:
-   $$
-   a_1 = |\mathbf{a}| \cdot \cos\varphi \quad \text{und} \quad a_2 = |\mathbf{a}| \cdot \sin\varphi
-   $$
-
-2. **Vektoraddition und -subtraktion**:
-   - 2D: 
-   $$
-   (a_1, a_2) \pm (b_1, b_2) = (a_1 \pm b_1, a_2 \pm b_2)
-   $$
-   - 3D: 
-   $$
-   \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \pm \begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix} = \begin{pmatrix} a_1 \pm b_1 \\ a_2 \pm b_2 \\ a_3 \pm b_3 \end{pmatrix}
-   $$
-
-3. **Skalare Multiplikation**:
-   - 2D: 
-   $$
-   \lambda \cdot (a_1, a_2) = (\lambda a_1, \lambda a_2)
-   $$
-   - 3D: 
-   $$
-   \lambda \cdot \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} = \begin{pmatrix} \lambda a_1 \\ \lambda a_2 \\ \lambda a_3 \end{pmatrix}
-   $$
-
-4. **Koordinaten eines Vektors zwischen zwei Punkten**:
-   Für einen Vektor $\mathbf{a}$ von Punkt $P_1(a_1, a_2)$ zu $P_2(b_1, b_2)$ gilt:
-   $$
-   \mathbf{a} = (b_1 - a_1, b_2 - a_2)
-   $$
-
-
-## Einheitsvektoren
-
-1. **Definition**:
-   Einheitsvektoren sind Vektoren mit einer Länge von 1 Längeneinheit.
-
-2. **Standardeinheitsvektoren**:
-   - In 2D:
-     $$
-     \mathbf{e}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix} \quad \text{und} \quad \mathbf{e}_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
-     $$
-   - In 3D:
-     $$
-     \mathbf{e}_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \quad \mathbf{e}_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} \quad \text{und} \quad \mathbf{e}_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}
-     $$
-
-3. **Eigenschaften**:
-   - Einheitsvektoren stehen senkrecht aufeinander.
-   - Sie bilden die Basis des Koordinatensystems.
-   - In 3D bilden sie ein Rechtssystem.
-
-4. **Darstellung beliebiger Vektoren**:
-   Jeder Vektor lässt sich als Linearkombination der Einheitsvektoren darstellen:
-   - In 2D: 
-   $$
-   \mathbf{a} = a_1 \mathbf{e}_1 + a_2 \mathbf{e}_2 = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix}
-   $$
-   - In 3D: 
-   $$
-   \mathbf{a} = a_1 \mathbf{e}_1 + a_2 \mathbf{e}_2 + a_3 \mathbf{e}_3 = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}
-   $$
-
-5. **Verwendung**:
-   - Einheitsvektoren vereinfachen die Darstellung und Berechnung von Vektoren.
-   - Sie dienen als Referenz für die Richtungen im Koordinatensystem.
-   - In der Physik werden sie oft zur Beschreibung von Richtungen verwendet, z.B. bei Kräften oder Geschwindigkeiten.
-
-6. **Normierung**:
-   Jeder Vektor $\mathbf{a} \neq \mathbf{0}$ kann zu einem Einheitsvektor normiert werden:
-   $$
-   \mathbf{e}_a = \frac{\mathbf{a}}{|\mathbf{a}|}
-   $$
-
-## Beispiele
-
-### Beispiel 1: Berechnung des Betrags eines zweidimensionalen Vektors
-
-Gegeben ist der Vektor $\mathbf{a} = \begin{pmatrix} 3 \\ 4 \end{pmatrix}$. Berechnen Sie den Betrag $|\mathbf{a}|$.
-
-**Lösung:**
-
-1. Wir verwenden die Formel für den Betrag eines zweidimensionalen Vektors:
-   $$
-   |\mathbf{a}| = \sqrt{a_1^2 + a_2^2}
-   $$
-2. Setzen wir die Werte ein:
-   $$
-   |\mathbf{a}| = \sqrt{3^2 + 4^2}
-   $$
-3. Berechnen wir die Quadrate:
-   $$
-   |\mathbf{a}| = \sqrt{9 + 16}
-   $$
-4. Addieren wir unter der Wurzel:
-   $$
-   |\mathbf{a}| = \sqrt{25}
-   $$
-5. Ziehen wir die Wurzel:
-   $$
-   |\mathbf{a}| = 5
-   $$
-
-**Ergebnis:** Der Betrag des Vektors $\mathbf{a} = (3, 4)$ beträgt 5 Längeneinheiten.
-
-### Beispiel 2: Berechnung des Betrags eines dreidimensionalen Vektors
-
-Gegeben ist der Vektor:
-
+**(i) Ebene:**
+Ein Vektor $a$ in der Ebene lässt sich als Linearkombination von zwei Einheitsvektoren $e_1$ und $e_2$ darstellen. Die Koordinatendarstellung eines Vektors $a$ lautet:
 $$
-\mathbf{b} = \begin{pmatrix} 1 \\ -2 \\ 4 \end{pmatrix}
+a = a_1 \cdot e_1 + a_2 \cdot e_2
+$$
+wobei $a_1$ und $a_2$ die Komponenten von $a$ in den Richtungen von $e_1$ und $e_2$ sind. Die Einheitsvektoren haben die Koordinatendarstellungen:
+$$
+e_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad e_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
 $$
 
-**Lösung:**
-
-1. Wir verwenden die Formel für den Betrag eines dreidimensionalen Vektors:
-   $$
-   |\mathbf{b}| = \sqrt{b_1^2 + b_2^2 + b_3^2}
-   $$
-
-2. Setzen wir die Werte ein:
-   $$
-   |\mathbf{b}| = \sqrt{1^2 + (-2)^2 + 4^2}
-   $$
-
-3. Berechnen wir die Quadrate:
-   $$
-   |\mathbf{b}| = \sqrt{1 + 4 + 16}
-   $$
-
-4. Addieren wir unter der Wurzel:
-   $$
-   |\mathbf{b}| = \sqrt{21}
-   $$
-
-5. $\sqrt{21} \approx 4{,}583$
-
-**Ergebnis:** Der Betrag des Vektors $\mathbf{b} = \begin{pmatrix} 1 \\ -2 \\ 4 \end{pmatrix}$ ist $\sqrt{21}$ Längeneinheiten, was ungefähr 4,583 entspricht.
-
-### Beispiel 3: Bestimmung der Koordinaten und des Winkels eines Vektors
-
-Ein Vektor hat einen Betrag von 5 Einheiten und bildet mit der positiven x-Achse einen Winkel von $30^\circ$. Bestimmen Sie seine Koordinaten.
-
-**Lösung:**
-
-1. Wir verwenden die Formeln aus Satz 2.2.7:
-   $$
-   a_1 = |\mathbf{a}| \cdot \cos \varphi \quad \text{und} \quad a_2 = |\mathbf{a}| \cdot \sin \varphi
-   $$
-
-2. Gegeben sind:
-   $$
-   |\mathbf{a}| = 5 \quad \text{und} \quad \varphi = 30^\circ
-   $$
-
-3. Berechnung von $a_1$:
-   $$
-   a_1 = 5 \cdot \cos 30^\circ
-   $$
-   $$
-   a_1 = 5 \cdot \frac{\sqrt{3}}{2} = \frac{5\sqrt{3}}{2}
-   $$
-
-4. Berechnung von $a_2$:
-   $$
-   a_2 = 5 \cdot \sin 30^\circ
-   $$
-   $$
-   a_2 = 5 \cdot \frac{1}{2} = \frac{5}{2}
-   $$
-
-5. Der Vektor in Koordinatendarstellung lautet somit:
-   $$
-   \mathbf{a} = \left(\frac{5\sqrt{3}}{2}, \frac{5}{2}\right)
-   $$
-
-**Ergebnis:** Die Koordinaten des Vektors sind $\left(\frac{5\sqrt{3}}{2}, \frac{5}{2}\right)$.
-
-- $\frac{5\sqrt{3}}{2} \approx 4{,}33$
-- $\frac{5}{2} = 2{,}5$
-
-Somit kann der Vektor auch als $\mathbf{a} \approx (4{,}33, 2{,}5)$ dargestellt werden.
-
-### Beispiel 4: Vektoraddition und -subtraktion
-
-Gegeben sind die Vektoren $\mathbf{a} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}$ und $\mathbf{b} = \begin{pmatrix} -1 \\ 3 \end{pmatrix}$. Berechnen Sie $\mathbf{a} + \mathbf{b}$ und $\mathbf{a} - \mathbf{b}$.
-
-**Lösung:**
-
-1. **Vektoraddition $\mathbf{a} + \mathbf{b}$:**
-
-   Wir addieren die entsprechenden Komponenten:
-   $$
-   \mathbf{a} + \mathbf{b} = \begin{pmatrix} a_1 + b_1 \\ a_2 + b_2 \end{pmatrix}
-   $$
-   $$
-   \mathbf{a} + \mathbf{b} = \begin{pmatrix} 2 + (-1) \\ 1 + 3 \end{pmatrix}
-   $$
-   $$
-   \mathbf{a} + \mathbf{b} = \begin{pmatrix} 1 \\ 4 \end{pmatrix}
-   $$
-
-2. **Vektorsubtraktion $\mathbf{a} - \mathbf{b}$:**
-
-   Wir subtrahieren die entsprechenden Komponenten:
-   $$
-   \mathbf{a} - \mathbf{b} = \begin{pmatrix} a_1 - b_1 \\ a_2 - b_2 \end{pmatrix}
-   $$
-   $$
-   \mathbf{a} - \mathbf{b} = \begin{pmatrix} 2 - (-1) \\ 1 - 3 \end{pmatrix}
-   $$
-   $$
-   \mathbf{a} - \mathbf{b} = \begin{pmatrix} 2 + 1 \\ 1 - 3 \end{pmatrix}
-   $$
-   $$
-   \mathbf{a} - \mathbf{b} = \begin{pmatrix} 3 \\ -2 \end{pmatrix}
-   $$
-
-**Ergebnis:**
+**(ii) Raum:**
+Ein Vektor $a$ im Raum hat drei Koordinaten $a_1, a_2, a_3$ und wird als Linearkombination von drei Einheitsvektoren dargestellt:
 $$
-\mathbf{a} + \mathbf{b} = \begin{pmatrix} 1 \\ 4 \end{pmatrix}
+a = a_1 \cdot e_1 + a_2 \cdot e_2 + a_3 \cdot e_3
 $$
+wobei die Einheitsvektoren im Raum die Koordinaten haben:
 $$
-\mathbf{a} - \mathbf{b} = \begin{pmatrix} 3 \\ -2 \end{pmatrix}
+e_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \quad e_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \quad e_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}
 $$
 
-### Beispiel 5: Skalare Multiplikation
+## Definition
 
-Multiplizieren Sie den Vektor $\mathbf{c} = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$ mit dem Skalar $\lambda = 4$.
+Ein System von drei Vektoren $x, y, z$ im Raum bildet ein **Rechtssystem**, wenn man die rechte Hand so halten kann, dass Daumen, Zeigefinger und Mittelfinger in Richtung von $x, y$ bzw. $z$ zeigen. Analog wird ein **Linkssystem** definiert.
 
-**Lösung:**
+## Satz
 
-1. Wir verwenden die Formel für die skalare Multiplikation aus Satz
-   $$
-   \lambda \cdot \mathbf{c} = \begin{pmatrix} \lambda c_1 \\ \lambda c_2 \\ \lambda c_3 \end{pmatrix}
-   $$
+Die Länge (oder der Betrag) eines Vektors $a$ in der Ebene oder im Raum ist gegeben durch:
 
-2. Setzen wir die Werte ein:
-   $$
-   4 \cdot \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}
-   $$
-
-3. Multiplizieren wir jede Komponente mit 4:
-   $$
-   4 \cdot \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} = \begin{pmatrix} 4 \cdot 2 \\ 4 \cdot (-1) \\ 4 \cdot 3 \end{pmatrix}
-   $$
-
-4. Berechnen wir die einzelnen Komponenten:
-   $$
-   4 \cdot \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} = \begin{pmatrix} 8 \\ -4 \\ 12 \end{pmatrix}
-   $$
-
-**Ergebnis:** 
+**(i) Für Vektoren in der Ebene:**
 $$
-4 \cdot \mathbf{c} = \begin{pmatrix} 8 \\ -4 \\ 12 \end{pmatrix}
+\text{Länge}(a) = \sqrt{a_1^2 + a_2^2}
 $$
 
-
-### Beispiel 6: Kraftvektorberechnung
-
-An einem Massenpunkt greifen zwei Kräfte an: $\mathbf{F}_1$ hat den Betrag von 2 Newton unter einem Winkel von $30^\circ$, während $\mathbf{F}_2$ den Betrag von 2 Newton unter einem Winkel von $90^\circ$ hat. Gesucht sind die Koordinatendarstellungen der Kräfte $\mathbf{F}_1$ und $\mathbf{F}_2$ sowie der resultierenden Kraft $\mathbf{F} = \mathbf{F}_1 + \mathbf{F}_2$.
-
-**Lösung:**
-
-1. **Berechnung von $\mathbf{F}_1$:**
-   $$
-   |\mathbf{F}_1| = 2, \quad \varphi_1 = 30^\circ
-   $$
-   Nach Satz 2.2.7 gilt:
-   $$
-   a_1 = |\mathbf{F}_1| \cdot \cos 30^\circ = 2 \cdot \frac{\sqrt{3}}{2} = \sqrt{3}
-   $$
-   $$
-   b_1 = |\mathbf{F}_1| \cdot \sin 30^\circ = 2 \cdot \frac{1}{2} = 1
-   $$
-   Damit ist:
-   $$
-   \mathbf{F}_1 = \begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix}
-   $$
-
-2. **Berechnung von $\mathbf{F}_2$:**
-   $$
-   |\mathbf{F}_2| = 2, \quad \varphi_2 = 90^\circ
-   $$
-   Nach Satz 2.2.7 gilt:
-   $$
-   a_2 = |\mathbf{F}_2| \cdot \cos 90^\circ = 2 \cdot 0 = 0
-   $$
-   $$
-   b_2 = |\mathbf{F}_2| \cdot \sin 90^\circ = 2 \cdot 1 = 2
-   $$
-   Damit ist:
-   $$
-   \mathbf{F}_2 = \begin{pmatrix} 0 \\ 2 \end{pmatrix}
-   $$
-
-3. **Berechnung der resultierenden Kraft $\mathbf{F}$:**
-   $$
-   \mathbf{F} = \mathbf{F}_1 + \mathbf{F}_2
-   $$
-   $$
-   \mathbf{F} = \begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix} + \begin{pmatrix} 0 \\ 2 \end{pmatrix} = \begin{pmatrix} \sqrt{3} \\ 3 \end{pmatrix}
-   $$
-
-**Ergebnis:**
+**(ii) Für Vektoren im Raum:**
 $$
-\mathbf{F}_1 = \begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix}, \quad \mathbf{F}_2 = \begin{pmatrix} 0 \\ 2 \end{pmatrix}
-$$
-$$
-\mathbf{F} = \begin{pmatrix} \sqrt{3} \\ 3 \end{pmatrix}
+\text{Länge}(a) = \sqrt{a_1^2 + a_2^2 + a_3^2}
 $$
 
-### Beispiel 7: Berechnung der resultierenden Kräfte
+## Satz
 
-Es sind drei Kräfte $\mathbf{F}_1$, $\mathbf{F}_2$ und $\mathbf{F}_3$ gegeben mit den Beträgen:
-
+Ein Vektor $a$ in der Ebene, dessen Anfangspunkt der Nullpunkt ist und der mit der positiven x-Achse den Winkel $\varphi$ bildet, hat die Komponenten:
 $$
-|\mathbf{F}_1| = 2, \quad |\mathbf{F}_2| = 3, \quad |\mathbf{F}_3| = 1
+a_1 = |a| \cdot \cos(\varphi), \quad a_2 = |a| \cdot \sin(\varphi)
 $$
+wobei $|a|$ der Betrag des Vektors ist.
 
-Die Angriffswinkel betragen $0^\circ$, $30^\circ$ und $135^\circ$.
+## Satz
 
-Um die resultierende Kraft $\mathbf{F}$ zu berechnen, bestimmen wir zunächst die Koordinatendarstellungen der drei Kraftvektoren und addieren sie.
+Die Grundrechenarten für Vektoren in der Koordinatendarstellung lauten:
 
-**Berechnung der Komponenten:**
-
-1. **$\mathbf{F}_1$:**
-   $$
-   a_1 = |\mathbf{F}_1| \cdot \cos 0^\circ = 2 \cdot 1 = 2
-   $$
-   $$
-   a_2 = |\mathbf{F}_1| \cdot \sin 0^\circ = 2 \cdot 0 = 0
-   $$
-   $$
-   \mathbf{F}_1 = \begin{pmatrix} 2 \\ 0 \end{pmatrix}
-   $$
-
-2. **$\mathbf{F}_2$:**
-   $$
-   b_1 = |\mathbf{F}_2| \cdot \cos 30^\circ = 3 \cdot \frac{\sqrt{3}}{2} = \frac{3\sqrt{3}}{2}
-   $$
-   $$
-   b_2 = |\mathbf{F}_2| \cdot \sin 30^\circ = 3 \cdot \frac{1}{2} = \frac{3}{2}
-   $$
-   $$
-   \mathbf{F}_2 = \begin{pmatrix} \frac{3\sqrt{3}}{2} \\ \frac{3}{2} \end{pmatrix}
-   $$
-
-3. **$\mathbf{F}_3$:**
-   $$
-   c_1 = |\mathbf{F}_3| \cdot \cos 135^\circ = 1 \cdot \left( -\frac{\sqrt{2}}{2} \right) = -\frac{\sqrt{2}}{2}
-   $$
-   $$
-   c_2 = |\mathbf{F}_3| \cdot \sin 135^\circ = 1 \cdot \frac{\sqrt{2}}{2} = \frac{\sqrt{2}}{2}
-   $$
-   $$
-   \mathbf{F}_3 = \begin{pmatrix} -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2} \end{pmatrix}
-   $$
-
-**Summieren der Kräfte:**
-
+**(i) Addition und Subtraktion:**
 $$
-\mathbf{F} = \mathbf{F}_1 + \mathbf{F}_2 + \mathbf{F}_3
+\begin{pmatrix} a_1 \\ a_2 \end{pmatrix} \pm \begin{pmatrix} b_1 \\ b_2 \end{pmatrix} = \begin{pmatrix} a_1 \pm b_1 \\ a_2 \pm b_2 \end{pmatrix}
 $$
 
-Addieren der x-Komponenten:
+**(ii) Skalare Multiplikation:**
+$$
+\lambda \cdot \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} = \begin{pmatrix} \lambda \cdot a_1 \\ \lambda \cdot a_2 \end{pmatrix}
+$$
+für $\lambda \in \mathbb{R}$.
 
+**(iii) Vektoren im Raum:**
 $$
-F_x = 2 + \frac{3\sqrt{3}}{2} - \frac{\sqrt{2}}{2}
-$$
-
-Addieren der y-Komponenten:
-
-$$
-F_y = 0 + \frac{3}{2} + \frac{\sqrt{2}}{2}
-$$
-
-**Numerische Berechnung:**
-
-Verwenden der Näherungswerte $\sqrt{3} \approx 1{,}732$ und $\sqrt{2} \approx 1{,}414$:
-
-$$
-F_x \approx 2 + \frac{3 \cdot 1{,}732}{2} - \frac{1{,}414}{2} = 2 + 2{,}598 - 0{,}707 = 3{,}891
-$$
-$$
-F_y \approx 0 + \frac{3}{2} + \frac{1{,}414}{2} = 1{,}5 + 0{,}707 = 2{,}207
+\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \pm \begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix} = \begin{pmatrix} a_1 \pm b_1 \\ a_2 \pm b_2 \\ a_3 \pm b_3 \end{pmatrix}
 $$
 
-**Betrag der resultierenden Kraft:**
-
+**(iv) Skalare Multiplikation im Raum:**
 $$
-|\mathbf{F}| = \sqrt{F_x^2 + F_y^2} = \sqrt{(3{,}891)^2 + (2{,}207)^2} = \sqrt{20{,}011} \approx 4{,}473
-$$
-
-**Winkel der resultierenden Kraft:**
-
-$$
-\cos \varphi = \frac{F_x}{|\mathbf{F}|} = \frac{3{,}891}{4{,}473} \approx 0{,}87
-$$
-$$
-\sin \varphi = \frac{F_y}{|\mathbf{F}|} = \frac{2{,}207}{4{,}473} \approx 0{,}493
+\lambda \cdot \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} = \begin{pmatrix} \lambda \cdot a_1 \\ \lambda \cdot a_2 \\ \lambda \cdot a_3 \end{pmatrix}
 $$
 
-Da sich die resultierende Kraft im ersten Quadranten befindet, ist der Winkel:
+## Berechnungen
 
+### Beispiel 1: Berechnung der Länge eines Vektors in der Ebene
+
+Gegeben sei der Vektor $a = \begin{pmatrix} 3 \\ 4 \end{pmatrix}$. Es soll die Länge des Vektors berechnet werden.
+
+**Schritt 1: Bestimme die Komponenten**
+
+- Die x-Komponente von $a$ ist $a_1 = 3$
+- Die y-Komponente von $a$ ist $a_2 = 4$
+
+**Schritt 2: Verwende die Formel für die Länge eines Vektors in der Ebene**
 $$
-\varphi \approx \arctan\left(\frac{2{,}207}{3{,}891}\right) \approx 29{,}54^\circ
+|a| = \sqrt{a_1^2 + a_2^2}
+$$
+Setze die Werte von $a_1$ und $a_2$ in die Formel ein:
+$$
+|a| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5
 $$
 
 **Ergebnis:**
+Die Länge des Vektors $a$ beträgt $5$.
 
-Die resultierende Kraft $\mathbf{F}$ hat einen Betrag von etwa 4{,}473 Newton und greift unter einem Winkel von $29{,}54^\circ$ an.
+---
 
-### Beispiel 8: Berechnung der fehlenden Kraft
+### Beispiel 2: Berechnung der Länge eines Vektors im Raum
 
-Es greifen zwei Kräfte $\mathbf{F}_1$ und $\mathbf{F}_2$ an einem Massenpunkt an und ergeben die resultierende Kraft $\mathbf{F}$. $\mathbf{F}_1$ hat einen Betrag von 2 Newton und einen Winkel von $45^\circ$, während $\mathbf{F}$ einen Betrag von 1 Newton und einen Winkel von $180^\circ$ hat. Gesucht ist die Kraft $\mathbf{F}_2$.
+Gegeben sei der Vektor $b = \begin{pmatrix} 1 \\ -2 \\ 4 \end{pmatrix}$. Es soll die Länge des Vektors berechnet werden.
 
-Wir setzen:
+**Schritt 1: Bestimme die Komponenten**
+- Die x-Komponente von $b$ ist $b_1 = 1$
+- Die y-Komponente von $b$ ist $b_2 = -2$
+- Die z-Komponente von $b$ ist $b_3 = 4$
 
+**Schritt 2: Verwende die Formel für die Länge eines Vektors im Raum**
 $$
-\mathbf{F}_1 = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix}, \quad \mathbf{F}_2 = \begin{pmatrix} b_1 \\ b_2 \end{pmatrix}, \quad \mathbf{F} = \begin{pmatrix} c_1 \\ c_2 \end{pmatrix}
+|b| = \sqrt{b_1^2 + b_2^2 + b_3^2}
 $$
-
-**Berechnung der Komponenten:**
-
-1. **$\mathbf{F}_1$:**
-   $$
-   a_1 = |\mathbf{F}_1| \cdot \cos 45^\circ = 2 \cdot \frac{\sqrt{2}}{2} = \sqrt{2}
-   $$
-   $$
-   a_2 = |\mathbf{F}_1| \cdot \sin 45^\circ = 2 \cdot \frac{\sqrt{2}}{2} = \sqrt{2}
-   $$
-   $$
-   \mathbf{F}_1 = \begin{pmatrix} \sqrt{2} \\ \sqrt{2} \end{pmatrix}
-   $$
-
-2. **$\mathbf{F}$:**
-   $$
-   c_1 = |\mathbf{F}| \cdot \cos 180^\circ = 1 \cdot (-1) = -1
-   $$
-   $$
-   c_2 = |\mathbf{F}| \cdot \sin 180^\circ = 1 \cdot 0 = 0
-   $$
-   $$
-   \mathbf{F} = \begin{pmatrix} -1 \\ 0 \end{pmatrix}
-   $$
-
-3. **Berechnung von $\mathbf{F}_2$:**
-   $$
-   \mathbf{F}_2 = \mathbf{F} - \mathbf{F}_1
-   $$
-   $$
-   \mathbf{F}_2 = \begin{pmatrix} -1 \\ 0 \end{pmatrix} - \begin{pmatrix} \sqrt{2} \\ \sqrt{2} \end{pmatrix} = \begin{pmatrix} -1 - \sqrt{2} \\ 0 - \sqrt{2} \end{pmatrix}
-   $$
-   $$
-   \mathbf{F}_2 = \begin{pmatrix} -1 - \sqrt{2} \\ -\sqrt{2} \end{pmatrix}
-   $$
-   Verwenden wir die Näherung $\sqrt{2} \approx 1{,}414$:
-   $$
-   \mathbf{F}_2 = \begin{pmatrix} -1 - 1{,}414 \\ -1{,}414 \end{pmatrix} = \begin{pmatrix} -2{,}414 \\ -1{,}414 \end{pmatrix}
-   $$
-
-**Betrag der Kraft $\mathbf{F}_2$:**
+Setze die Werte von $b_1$, $b_2$ und $b_3$ in die Formel ein:
 $$
-|\mathbf{F}_2| = \sqrt{(-2{,}414)^2 + (-1{,}414)^2} = \sqrt{5{,}828 + 2{,}000} = \sqrt{7{,}828} \approx 2{,}798
-$$
-
-**Winkel der Kraft $\mathbf{F}_2$:**
-$$
-\cos \varphi = \frac{-2{,}414}{2{,}798} \approx -0{,}863, \quad \sin \varphi = \frac{-1{,}414}{2{,}798} \approx -0{,}505
-$$
-
-Der Cosinus liefert einen Winkel von $149{,}66^\circ$ und der Sinus von $-30{,}33^\circ$. Da sich die Kraft im dritten Quadranten befindet, müssen wir den Winkel korrekt anpassen:
-
-$$
-\varphi = 180^\circ + 30{,}34^\circ = 210{,}34^\circ
+|b| = \sqrt{1^2 + (-2)^2 + 4^2} = \sqrt{1 + 4 + 16} = \sqrt{21} \approx 4,583
 $$
 
 **Ergebnis:**
-$$
-\mathbf{F}_2 = \begin{pmatrix} -2{,}414 \\ -1{,}414 \end{pmatrix}, \quad |\mathbf{F}_2| \approx 2{,}798, \quad \varphi \approx 210{,}34^\circ
-$$
+Die Länge des Vektors $b$ beträgt ungefähr $4,583$.
 
+---
 
+### Beispiel 3: Berechnung des Richtungswinkels eines Vektors
 
-### Beispiele 9
+Gegeben sei der Vektor $a = \begin{pmatrix} 3 \\ 4 \end{pmatrix}$. Der Winkel $\varphi$, den der Vektor mit der positiven x-Achse bildet, soll berechnet werden.
 
-(i) Wir nehmen wieder den Vektor $\mathbf{a} = \begin{pmatrix} 3 \\ 4 \end{pmatrix}$. Dann ist der Betrag:
+**Schritt 1: Berechne die Länge des Vektors**
+Aus Beispiel 1 wissen wir bereits, dass die Länge von $a$ $|a| = 5$ beträgt.
 
+**Schritt 2: Verwende die Formel für die Komponenten in Abhängigkeit vom Winkel**
 $$
-|\mathbf{a}| = \sqrt{3^2 + 4^2} = \sqrt{25} = 5
-$$
-
-Nach Satz 2.2.7 gilt:
-
-$$
-a_1 = |\mathbf{a}| \cdot \cos \varphi = 5 \cdot \cos \varphi
-$$
-und
-$$
-a_2 = |\mathbf{a}| \cdot \sin \varphi = 5 \cdot \sin \varphi
+a_1 = |a| \cdot \cos(\varphi), \quad a_2 = |a| \cdot \sin(\varphi)
 $$
 
-Aus $a_1 = 3$ und $a_2 = 4$ folgt:
+**Schritt 3: Bestimme den Cosinus und Sinus des Winkels**
+- Aus $a_1 = 3$ und $|a| = 5$ folgt:
+  $$
+  \cos(\varphi) = \frac{a_1}{|a|} = \frac{3}{5} = 0,6
+  $$
+- Aus $a_2 = 4$ und $|a| = 5$ folgt:
+  $$
+  \sin(\varphi) = \frac{a_2}{|a|} = \frac{4}{5} = 0,8
+  $$
 
+**Schritt 4: Bestimme den Winkel $\varphi$**
+Verwende einen Taschenrechner, um den Winkel $\varphi$ zu bestimmen:
 $$
-\cos \varphi = \frac{3}{5} = 0{,}6 \quad \text{und} \quad \sin \varphi = \frac{4}{5} = 0{,}8
-$$
-
-Mit Hilfe eines Taschenrechners oder – etwas altmodischer – einer Sinustabelle kann leicht der Winkel $\varphi$ bestimmt werden, und man erhält:
-
-$$
-\varphi = 53{,}13^\circ
-$$
-
-(ii) Etwas anders sieht es bei $\mathbf{b} = \begin{pmatrix} -1 \\ 2 \end{pmatrix}$ aus. Es gilt:
-
-$$
-|\mathbf{b}| = \sqrt{(-1)^2 + 2^2} = \sqrt{5} \approx 2{,}236
+\varphi = \arccos(0,6) \approx 53,13^\circ
 $$
 
-Für den Winkel $\varphi$ erhält man:
+**Ergebnis:**
+Der Winkel $\varphi$, den der Vektor $a$ mit der x-Achse bildet, beträgt $53,13^\circ$.
 
-$$
--1 = \sqrt{5} \cdot \cos \varphi \quad \text{und} \quad 2 = \sqrt{5} \cdot \sin \varphi
-$$
+### Beispiel 2.2.8 (ii): Berechnung der Koordinaten eines Vektors und seines Winkels
 
-Also gilt:
+Gegeben sei der Vektor $b = \begin{pmatrix} -1 \\ 2 \end{pmatrix}$. Es soll die Länge des Vektors sowie der Winkel $\varphi$, den der Vektor mit der positiven x-Achse bildet, berechnet werden.
 
-$$
-\cos \varphi = \frac{-1}{\sqrt{5}} \quad \text{und} \quad \sin \varphi = \frac{2}{\sqrt{5}}
-$$
+**Schritt 1: Berechne die Länge des Vektors**
 
-Wenn man nun für beide Gleichungen die entsprechenden inversen Funktionstasten (auch Arcus-Funktionen genannt) des Taschenrechners verwendet, wird man feststellen, dass aus der Cosinus-Gleichung folgt:
-
+Verwende die Formel für die Länge eines Vektors in der Ebene:
 $$
-\varphi = 116{,}57^\circ
+|b| = \sqrt{b_1^2 + b_2^2}
 $$
-
-und aus der Sinus-Gleichung:
-
+Setze die Werte von $b_1 = -1$ und $b_2 = 2$ ein:
 $$
-\varphi = 63{,}43^\circ
+|b| = \sqrt{(-1)^2 + 2^2} = \sqrt{1 + 4} = \sqrt{5} \approx 2,236
 $$
 
-Es gibt jedoch nur einen richtigen Winkel $\varphi$. Dieses Phänomen tritt auf, weil es mehrere Winkel mit dem gleichen Sinus-Wert gibt, und der Taschenrechner üblicherweise einen passenden Wert zwischen $-90^\circ$ und $90^\circ$ auswählt. Anders gesagt: Natürlich ist:
+**Schritt 2: Verwende die Formel für die Komponenten in Abhängigkeit vom Winkel**
+
+Die Komponenten des Vektors sind durch $b_1 = |b| \cdot \cos(\varphi)$ und $b_2 = |b| \cdot \sin(\varphi)$ gegeben.
+
+Berechne den Cosinus und den Sinus des Winkels:
+- $b_1 = -1$, daher gilt:
+  $$
+  \cos(\varphi) = \frac{b_1}{|b|} = \frac{-1}{2,236} \approx -0,447
+  $$
+- $b_2 = 2$, daher gilt:
+  $$
+  \sin(\varphi) = \frac{b_2}{|b|} = \frac{2}{2,236} \approx 0,894
+  $$
+
+**Schritt 3: Berechne den Winkel $\varphi$**
+
+Verwende einen Taschenrechner, um den Winkel $\varphi$ zu berechnen:
+$$
+\varphi = \arccos(-0,447) \approx 116,57^\circ
+$$
+
+**Ergebnis:**
+Die Länge des Vektors beträgt $|b| \approx 2,236$, und der Winkel $\varphi$, den der Vektor mit der x-Achse bildet, beträgt $116,57^\circ$.
+
+---
+
+### Beispiel 2.2.8 (iii): Berechnung der resultierenden Kraftvektoren
+
+Gegeben sind zwei Kräfte $\vec{F}_1$ und $\vec{F}_2$, die an einem Massenpunkt angreifen. Die Beträge und Winkel der Kräfte sind:
+- $\vec{F}_1$: Betrag $|F_1| = 2$, Winkel $\varphi_1 = 30^\circ$
+- $\vec{F}_2$: Betrag $|F_2| = 2$, Winkel $\varphi_2 = 90^\circ$
+
+Es sollen die Koordinatendarstellungen der Kräfte $\vec{F}_1$ und $\vec{F}_2$ sowie die resultierende Kraft $\vec{F} = \vec{F}_1 + \vec{F}_2$ berechnet werden.
+
+**Schritt 1: Berechne die Komponenten von $\vec{F}_1$**
+
+Verwende die Formeln $F_1 = \begin{pmatrix} F_{1x} \\ F_{1y} \end{pmatrix}$, wobei:
+$$
+F_{1x} = |F_1| \cdot \cos(\varphi_1), \quad F_{1y} = |F_1| \cdot \sin(\varphi_1)
+$$
+Setze die Werte für $|F_1| = 2$, $\cos(30^\circ) = \frac{\sqrt{3}}{2}$ und $\sin(30^\circ) = \frac{1}{2}$ ein:
+$$
+F_{1x} = 2 \cdot \frac{\sqrt{3}}{2} = \sqrt{3}, \quad F_{1y} = 2 \cdot \frac{1}{2} = 1
+$$
+Somit ist:
+$$
+\vec{F}_1 = \begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix}
+$$
+
+**Schritt 2: Berechne die Komponenten von $\vec{F}_2$**
+
+Verwende die gleichen Formeln wie in Schritt 1 für $\vec{F}_2$, wobei $\varphi_2 = 90^\circ$ ist:
+$$
+F_{2x} = |F_2| \cdot \cos(90^\circ) = 2 \cdot 0 = 0, \quad F_{2y} = |F_2| \cdot \sin(90^\circ) = 2 \cdot 1 = 2
+$$
+Somit ist:
+$$
+\vec{F}_2 = \begin{pmatrix} 0 \\ 2 \end{pmatrix}
+$$
+
+**Schritt 3: Berechne die resultierende Kraft $\vec{F} = \vec{F}_1 + \vec{F}_2$**
+
+Addiere die Komponenten der beiden Kräfte:
+$$
+\vec{F} = \begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix} + \begin{pmatrix} 0 \\ 2 \end{pmatrix} = \begin{pmatrix} \sqrt{3} \\ 3 \end{pmatrix}
+$$
+
+**Schritt 4: Berechne die Länge der resultierenden Kraft**
+
+Verwende die Formel für die Länge eines Vektors in der Ebene:
+$$
+|\vec{F}| = \sqrt{F_x^2 + F_y^2} = \sqrt{(\sqrt{3})^2 + 3^2} = \sqrt{3 + 9} = \sqrt{12} \approx 3,464
+$$
+
+**Schritt 5: Berechne den Winkel $\varphi$ der resultierenden Kraft**
+
+Berechne den Cosinus und Sinus des Winkels:
+$$
+\cos(\varphi) = \frac{F_x}{|\vec{F}|} = \frac{\sqrt{3}}{3,464} \approx 0,5, \quad \sin(\varphi) = \frac{F_y}{|\vec{F}|} = \frac{3}{3,464} \approx 0,866
+$$
+Der Winkel beträgt:
+$$
+\varphi = \arccos(0,5) = 60^\circ
+$$
+
+**Ergebnis:**
+Die resultierende Kraft beträgt $|\vec{F}| \approx 3,464$ und wirkt unter einem Winkel von $60^\circ$.
+
+
+### Beispiel 2.2.10 (i): Berechnung einer Vektoroperation
+
+Gegeben ist die Vektoroperation:
+$$
+2 \cdot \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix} - 3 \cdot \begin{pmatrix} 1 \\ -2 \\ 0 \end{pmatrix} + \begin{pmatrix} 3 \\ 2 \\ -5 \end{pmatrix}
+$$
+Diese Vektoroperation soll schrittweise gelöst werden.
+
+**Schritt 1: Skalar-Multiplikation**
+
+Multipliziere die Vektoren mit den entsprechenden Skalaren:
+$$
+2 \cdot \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix} = \begin{pmatrix} 2 \\ -2 \\ 4 \end{pmatrix}, \quad 3 \cdot \begin{pmatrix} 1 \\ -2 \\ 0 \end{pmatrix} = \begin{pmatrix} 3 \\ -6 \\ 0 \end{pmatrix}
+$$
+
+**Schritt 2: Subtrahiere die beiden Vektoren**
+
+Subtrahiere den zweiten Vektor vom ersten:
+$$
+\begin{pmatrix} 2 \\ -2 \\ 4 \end{pmatrix} - \begin{pmatrix} 3 \\ -6 \\ 0 \end{pmatrix} = \begin{pmatrix} 2 - 3 \\ -2 - (-6) \\ 4 - 0 \end{pmatrix} = \begin{pmatrix} -1 \\ 4 \\ 4 \end{pmatrix}
+$$
+
+**Schritt 3: Addiere den dritten Vektor**
+
+Addiere den verbleibenden Vektor:
+$$
+\begin{pmatrix} -1 \\ 4 \\ 4 \end{pmatrix} + \begin{pmatrix} 3 \\ 2 \\ -5 \end{pmatrix} = \begin{pmatrix} -1 + 3 \\ 4 + 2 \\ 4 + (-5) \end{pmatrix} = \begin{pmatrix} 2 \\ 6 \\ -1 \end{pmatrix}
+$$
+
+**Ergebnis:**
+Das Ergebnis der Vektoroperation lautet:
+$$
+\begin{pmatrix} 2 \\ 6 \\ -1 \end{pmatrix}
+$$
+
+### Beispiel 2.2.10 (ii): Berechnung der resultierenden Kraft
+
+In diesem Beispiel geht es um die Berechnung der resultierenden Kraft $\vec{F}$ durch die Addition zweier Kräfte $\vec{F}_1$ und $\vec{F}_2$.
+
+**Gegeben:**
+- $\vec{F}_1 = \begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix}$
+- $\vec{F}_2 = \begin{pmatrix} 0 \\ 2 \end{pmatrix}$
+
+**Aufgabe:**
+Berechne die resultierende Kraft $\vec{F} = \vec{F}_1 + \vec{F}_2$.
+
+**Schritt 1: Addition der Vektoren**
+
+Die beiden Vektoren werden komponentenweise addiert:
+$$
+\vec{F} = \vec{F}_1 + \vec{F}_2 = \begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix} + \begin{pmatrix} 0 \\ 2 \end{pmatrix}
+$$
+$$
+= \begin{pmatrix} \sqrt{3} + 0 \\ 1 + 2 \end{pmatrix} = \begin{pmatrix} \sqrt{3} \\ 3 \end{pmatrix}
+$$
+
+**Schritt 2: Berechnung des Betrags der resultierenden Kraft**
+
+Der Betrag eines Vektors $\vec{F} = \begin{pmatrix} F_x \\ F_y \end{pmatrix}$ berechnet sich nach der Formel:
+$$
+|\vec{F}| = \sqrt{F_x^2 + F_y^2}
+$$
+Setze die Komponenten von $\vec{F}$ ein:
+$$
+|\vec{F}| = \sqrt{(\sqrt{3})^2 + 3^2} = \sqrt{3 + 9} = \sqrt{12} = 2\sqrt{3}
+$$
+
+**Schritt 3: Berechnung des Winkels $\varphi$**
+
+Um den Winkel $\varphi$ zu berechnen, unter dem die resultierende Kraft angreift, verwenden wir die Beziehung:
+$$
+\cos \varphi = \frac{F_x}{|\vec{F}|}, \quad \sin \varphi = \frac{F_y}{|\vec{F}|}
+$$
+Setze die Werte für $\vec{F}_x$ und $\vec{F}_y$ sowie den Betrag $|\vec{F}|$ ein:
+$$
+\cos \varphi = \frac{\sqrt{3}}{2\sqrt{3}} = \frac{1}{2}, \quad \sin \varphi = \frac{3}{2\sqrt{3}} = \frac{\sqrt{3}}{2}
+$$
+Da $\cos \varphi = \frac{1}{2}$ und $\sin \varphi = \frac{\sqrt{3}}{2}$, folgt:
+$$
+\varphi = 60^\circ
+$$
+
+**Ergebnis:**
+Die resultierende Kraft $\vec{F}$ hat den Betrag $2\sqrt{3}$ und greift unter einem Winkel von $60^\circ$ an.
+
+
+### Beispiel 2.2.10 (iii): Berechnung der resultierenden Kraft aus drei Vektoren
+
+In diesem Beispiel sollen drei Kräfte $\vec{F}_1$, $\vec{F}_2$ und $\vec{F}_3$ vektoriell addiert werden, um die resultierende Kraft $\vec{F}$ zu bestimmen.
+
+**Gegeben:**
+- $\vec{F}_1$ hat einen Betrag von $2 \, \text{N}$ und einen Winkel von $0^\circ$,
+- $\vec{F}_2$ hat einen Betrag von $3 \, \text{N}$ und einen Winkel von $30^\circ$,
+- $\vec{F}_3$ hat einen Betrag von $1 \, \text{N}$ und einen Winkel von $135^\circ$.
+
+**Aufgabe:**
+Berechne die resultierende Kraft $\vec{F} = \vec{F}_1 + \vec{F}_2 + \vec{F}_3$.
+
+---
+
+#### Schritt 1: Koordinatendarstellung der Kräfte
+
+Für jede Kraft muss die Koordinatendarstellung ermittelt werden. Die Koordinaten einer Kraft $\vec{F}_i = \begin{pmatrix} F_{i_x} \\ F_{i_y} \end{pmatrix}$ lassen sich mithilfe von Sinus und Cosinus berechnen:
 
 $$
-\sin 63{,}43^\circ = \frac{2}{\sqrt{5}}
+F_{i_x} = |\vec{F}_i| \cdot \cos(\varphi_i), \quad F_{i_y} = |\vec{F}_i| \cdot \sin(\varphi_i)
 $$
 
-aber:
+---
+
+**Kraft $\vec{F}_1$:**
+$$
+\vec{F}_1 = 2 \, \text{N}, \quad \varphi_1 = 0^\circ
+$$
+$$
+F_{1_x} = 2 \cdot \cos(0^\circ) = 2, \quad F_{1_y} = 2 \cdot \sin(0^\circ) = 0
+$$
+$$
+\vec{F}_1 = \begin{pmatrix} 2 \\ 0 \end{pmatrix}
+$$
+
+---
+
+**Kraft $\vec{F}_2$:**
+$$
+\vec{F}_2 = 3 \, \text{N}, \quad \varphi_2 = 30^\circ
+$$
+$$
+F_{2_x} = 3 \cdot \cos(30^\circ) = 3 \cdot \frac{\sqrt{3}}{2} = \frac{3\sqrt{3}}{2}, \quad F_{2_y} = 3 \cdot \sin(30^\circ) = 3 \cdot \frac{1}{2} = \frac{3}{2}
+$$
+$$
+\vec{F}_2 = \begin{pmatrix} \frac{3\sqrt{3}}{2} \\ \frac{3}{2} \end{pmatrix}
+$$
+
+---
+
+**Kraft $\vec{F}_3$:**
+$$
+\vec{F}_3 = 1 \, \text{N}, \quad \varphi_3 = 135^\circ
+$$
+$$
+F_{3_x} = 1 \cdot \cos(135^\circ) = 1 \cdot \left(-\frac{\sqrt{2}}{2}\right) = -\frac{\sqrt{2}}{2}, \quad F_{3_y} = 1 \cdot \sin(135^\circ) = 1 \cdot \frac{\sqrt{2}}{2} = \frac{\sqrt{2}}{2}
+$$
+$$
+\vec{F}_3 = \begin{pmatrix} -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2} \end{pmatrix}
+$$
+
+---
+
+#### Schritt 2: Addition der Vektoren
+
+Nun addieren wir die drei Vektoren $\vec{F}_1$, $\vec{F}_2$ und $\vec{F}_3$ komponentenweise:
 
 $$
-\sin 116{,}57^\circ = \frac{2}{\sqrt{5}}
+\vec{F} = \vec{F}_1 + \vec{F}_2 + \vec{F}_3
 $$
 
-stimmt ebenfalls. Beim Cosinus hingegen liegt die Bandbreite der Winkel, die der Taschenrechner auswählt, zwischen $0^\circ$ und $180^\circ$, und deshalb erhält man den richtigen Winkel $\varphi = 116{,}57^\circ$ in diesem Beispiel über den Cosinus.
+**x-Komponente:**
+$$
+F_x = 2 + \frac{3\sqrt{3}}{2} + \left(-\frac{\sqrt{2}}{2}\right) = 2 + \frac{3\sqrt{3}}{2} - \frac{\sqrt{2}}{2}
+$$
+
+**y-Komponente:**
+$$
+F_y = 0 + \frac{3}{2} + \frac{\sqrt{2}}{2} = \frac{3}{2} + \frac{\sqrt{2}}{2}
+$$
+
+---
+
+#### Schritt 3: Betrag der resultierenden Kraft
+
+Der Betrag des Vektors $\vec{F} = \begin{pmatrix} F_x \\ F_y \end{pmatrix}$ wird berechnet mit:
+
+$$
+|\vec{F}| = \sqrt{F_x^2 + F_y^2}
+$$
+
+Setze die Werte von $F_x$ und $F_y$ ein, um den Betrag der resultierenden Kraft zu berechnen. Da hier die exakten Werte in Wurzelform vorliegen, empfiehlt sich eine numerische Berechnung, um das Ergebnis zu präzisieren.
 
 
 
+1. **Berechnung der resultierenden Kraft $\vec{F}$**:
+
+$$
+\vec{F} = \begin{pmatrix} 2 \\ 0 \end{pmatrix} + \begin{pmatrix} \frac{3\sqrt{3}}{2} \\ \frac{3}{2} \end{pmatrix} + \begin{pmatrix} -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2} \end{pmatrix}
+$$
+
+Numerisch ergibt das:
+
+$$
+\vec{F} = \begin{pmatrix} 2 + 2{,}598 - 0{,}707 \\ 1{,}5 + 0{,}707 \end{pmatrix} = \begin{pmatrix} 3{,}891 \\ 2{,}207 \end{pmatrix}
+$$
+
+2. **Berechnung des Betrags der resultierenden Kraft**:
+
+$$
+|\vec{F}| = \sqrt{3{,}891^2 + 2{,}207^2} = \sqrt{15{,}137 + 4{,}874} = \sqrt{20{,}011} \approx 4{,}473 \, \text{N}
+$$
+
+3. **Berechnung des Winkels $\varphi$**:
+
+$$
+\cos \varphi = \frac{3{,}891}{4{,}473} \approx 0{,}87, \quad \sin \varphi = \frac{2{,}207}{4{,}473} \approx 0{,}493
+$$
+
+Da die resultierende Kraft im ersten Quadranten liegt, beträgt der Winkel:
+
+$$
+\varphi = \arctan \left(\frac{2{,}207}{3{,}891}\right) \approx 29{,}54^\circ
+$$
+
+**Ergebnis**: Die resultierende Kraft $\vec{F}$ hat einen Betrag von $4{,}473 \, \text{N}$ und greift unter einem Winkel von $29{,}54^\circ$ an.
+
+Die Schritte und Werte sind korrekt.
+
+### Beispiel 2.2.10 (iv)
+
+Gegeben:
+- Zwei Kräfte $\vec{F}_1$ und $\vec{F}_2$ greifen an einen Massenpunkt an und ergeben eine resultierende Kraft $\vec{F}$.
+- $\vec{F}_1$ hat einen Betrag von $2 \, \text{N}$ und wirkt unter einem Winkel von $45^\circ$, während $\vec{F}$ einen Betrag von $1 \, \text{N}$ hat und unter einem Winkel von $180^\circ$ wirkt.
+- Gesucht ist $\vec{F}_2$.
+
+Schritt 1: Koordinaten der Kräfte bestimmen.
+
+Für $\vec{F}_1 = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix}$:
+
+$$
+a_1 = |\vec{F}_1| \cdot \cos(45^\circ) = 2 \cdot \frac{1}{\sqrt{2}} = \sqrt{2}, \quad a_2 = |\vec{F}_1| \cdot \sin(45^\circ) = 2 \cdot \frac{1}{\sqrt{2}} = \sqrt{2}
+$$
+
+Also:
+
+$$
+\vec{F}_1 = \begin{pmatrix} \sqrt{2} \\ \sqrt{2} \end{pmatrix}
+$$
+
+Für $\vec{F} = \begin{pmatrix} c_1 \\ c_2 \end{pmatrix}$:
+
+$$
+c_1 = |\vec{F}| \cdot \cos(180^\circ) = 1 \cdot (-1) = -1, \quad c_2 = |\vec{F}| \cdot \sin(180^\circ) = 1 \cdot 0 = 0
+$$
+
+Also:
+
+$$
+\vec{F} = \begin{pmatrix} -1 \\ 0 \end{pmatrix}
+$$
+
+Schritt 2: $\vec{F}_2$ berechnen.
+
+$$
+\vec{F}_2 = \vec{F} - \vec{F}_1 = \begin{pmatrix} -1 \\ 0 \end{pmatrix} - \begin{pmatrix} \sqrt{2} \\ \sqrt{2} \end{pmatrix} = \begin{pmatrix} -1 - \sqrt{2} \\ 0 - \sqrt{2} \end{pmatrix} = \begin{pmatrix} -1{,}414 - \sqrt{2} \\ -1{,}414 \end{pmatrix}
+$$
+
+Schritt 3: Betrag von $\vec{F}_2$ berechnen.
+
+$$
+|\vec{F}_2| = \sqrt{(-1{,}414 - \sqrt{2})^2 + (-\sqrt{2})^2} \approx \sqrt{7{,}828} \approx 2{,}798 \, \text{N}
+$$
+
+Schritt 4: Winkel $\varphi$ von $\vec{F}_2$ bestimmen.
+
+$$
+\cos \varphi = \frac{-1{,}414 - \sqrt{2}}{2{,}798} \approx -0{,}863, \quad \sin \varphi = \frac{-1{,}414}{2{,}798} \approx -0{,}505
+$$
+
+Winkel $\varphi$:
+
+$$
+\varphi = 210{,}34^\circ
+$$
+
+**Ergebnis:**
+
+$\vec{F}_2$ hat einen Betrag von $2{,}798 \, \text{N}$ und wirkt unter einem Winkel von $210{,}34^\circ$.

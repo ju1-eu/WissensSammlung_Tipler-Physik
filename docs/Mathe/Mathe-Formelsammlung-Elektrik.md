@@ -205,7 +205,7 @@ $\boxed{R_{\text{ges}} = \frac{R_1 \cdot R_2}{R_1 + R_2}}$
 
 $R_{\text{ges}} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}}$
 
-$\to R_{1} = \frac{1}{\frac{1}{R_{\text{ges}}} - \frac{1}{R_2} - \frac{1}{R_3}} \quad \to R_{2} \to R_{2} = \frac{1}{\frac{1}{R_{\text{ges}}} - \frac{1}{R_1} - \frac{1}{R_3}} \quad \to R_{3} = \frac{1}{\frac{1}{R_{\text{ges}}} - \frac{1}{R_1} - \frac{1}{R_2}}$
+$\to R_{1} = \frac{1}{\frac{1}{R_{\text{ges}}} - \frac{1}{R_2} - \frac{1}{R_3}} \quad \to R_{2} = \frac{1}{\frac{1}{R_{\text{ges}}} - \frac{1}{R_1} - \frac{1}{R_3}} \quad \to R_{3} = \frac{1}{\frac{1}{R_{\text{ges}}} - \frac{1}{R_1} - \frac{1}{R_2}}$
 
 **LEISTUNG** $P$ (Power) Watt, $[\text{W}], [\text{kW}]$
 

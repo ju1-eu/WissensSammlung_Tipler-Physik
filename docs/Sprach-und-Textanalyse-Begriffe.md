@@ -1,4 +1,4 @@
----
+Kinderski Kathrein---
 title: "Sprach-und-Textanalyse-Begriffe"
 author: "Jan Unger"
 date: "2024-10-13"
@@ -14,7 +14,8 @@ Letzte Aktualisierung: 2024-10-19
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [KI-Prompts](#ki-prompts)
     - [Buch bearbeiten](#buch-bearbeiten)
-      - [Thema “Physikalische Größen und Messungen”](#thema-physikalische-größen-und-messungen)
+      - [Thema: Physik -  Physikalische Größen und Messungen](#thema-physik----physikalische-größen-und-messungen)
+      - [Thema: Mathe - Vektorrechnung - Koordinatendarstellung](#thema-mathe---vektorrechnung---koordinatendarstellung)
     - [Sprachstil: klar, präzise und sachlich](#sprachstil-klar-präzise-und-sachlich)
   - [Sprachliche Mittel und Stilistik](#sprachliche-mittel-und-stilistik)
     - [1. **Sprachstil**](#1-sprachstil)
@@ -131,17 +132,34 @@ Quelle: Tipler/Mosca Physik. 9. Aufl., 2023
 - Beispiele mit schrittweisen Rechenbeispielen im Markdown-Format mit LaTeX-Mathematik
 
 
-#### Thema “Physikalische Größen und Messungen”
+#### Thema: Physik -  Physikalische Größen und Messungen
 
-Lesestufe: Bachelor-Niveau
-beachte die Sprachstil-Richtlinien
-Ausgabe: Markdown mit LaTeX-Mathematik
+- Aufgabe: Kernpunkte zusammenfassen und das Konzept etwas vertiefen
+  - Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
 
-Aufgabe: 
+- Aufgabe: 
 
-Eingabe: [ ]
+- Eingabe: [ ]
 
-Lösung: [ ]
+- Lösung: [ ]
+
+
+#### Thema: Mathe - Vektorrechnung - Koordinatendarstellung
+
+- Aufgabe: Kernpunkte zusammenfassen und das Konzept etwas vertiefen
+  - Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
+
+- Aufgabe: fasse alle Definitionen und Sätze zusammen
+
+- Aufgabe: Berechne schritt-für-schritt die Lösung. Fange mit Beispiel 1 an.
+
+- Visualisieren mit Python
+  - Skript soll genau die Berechnungen durchführen, die in der Aufgabenstellung beschrieben sind
+  - interaktiv, speichern in PNG und SVG
+  - Maßstab des Plots anpassen
+  - Vektorendarstellung, Koordinatenursprung (0,0,0), Pfeile und Längen
+  - rechtshändiges Koordinatensystem
+  - sinnvoller Name für das Python-Skript
 
 
 ### Sprachstil: klar, präzise und sachlich
