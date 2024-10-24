@@ -13,6 +13,8 @@ Letzte Aktualisierung: 2024-10-19
 - [Begriffe der Sprach- und Textanalyse](#begriffe-der-sprach--und-textanalyse)
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [KI-Prompts](#ki-prompts)
+  - [o1-preview](#o1-preview)
+    - [Fachbuch bearbeiten](#fachbuch-bearbeiten)
     - [Buch bearbeiten](#buch-bearbeiten)
       - [Thema: Physik -  Physikalische Größen und Messungen](#thema-physik----physikalische-größen-und-messungen)
       - [Thema: Mathe - Vektorrechnung - Koordinatendarstellung](#thema-mathe---vektorrechnung---koordinatendarstellung)
@@ -60,6 +62,62 @@ Letzte Aktualisierung: 2024-10-19
 
 - Redaktionelles Feedback und Kritische Reflexion uns Allgemeine Kritik
 - Verbesserungsvorschläge umsetzen und die Schwächen in den Erklärungen und Rechenbeispielen beheben.
+
+## o1-preview
+
+- Löse eine kompliziertere Matheaufgabe für mich
+- Löse eine Streitfrage: Ist ein Hotdog ein Sandwich?
+- Löse eine Denksportaufgabe für mich
+- Löse eine Programmieraufgabe für mich
+
+- Hilf mir, meinen Code zu debuggen
+- Hilf mir, eine Funktion zu schreiben
+- Hilf mir, meinen Code zu vereinfachen
+- Hilf mir, Python zu erlernen
+
+- Erstelle eine Zusammenfassung von Besprechungsnotizen
+- Erstelle eine Zusammenfassung von Kapitel 1 eines Buches
+
+- Gib mir Tipps für ein schwieriges Gespräch
+
+- Hilf mir beim Schreiben eines Anschreibens
+- Hilf mir, einen Blogbeitrag zu schreiben
+
+
+### Fachbuch bearbeiten
+
+1. Sprachstil-Richtlinien
+2. Erstelle eine Zusammenfassung von Kapitel eines Buches
+    - Titel: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – bestehen
+    - Autor: Klaus Schreiner
+    - Kapitel:
+    - Inhalt: []
+
+3. Erstelle eine Liste der 7 Fragen aus Kapitel
+
+4. Löse die Aufgabe Schritt-für-Schritt, beachte die Lösung des Kapitels
+5. Erkläre die Frage ausführlich
+
+6. Erklärung der Fachwörter und griechischen Buchstaben aus den Aufgaben 1, 2, 3, 4, 5, 6, 7
+
+7. ABC-Liste nach Birkenbihl zu den Aufgaben 1, 2, 3, 4, 5, 6, 7
+    - in Tabellenform
+    - Hauptthema: Fahrwiderstand und Motorleistung
+8.  KAWA nach Birkenbihl zu den Aufgaben 1, 2, 3, 4, 5, 6, 7
+   - Hauptthema: Fahrwiderstand und Motorleistung
+9. Mindmap zu den Aufgaben 1, 2, 3, 4, 5, 6, 7
+    - Hauptthema: Fahrwiderstand und Motorleistung
+
+```plaintext
+# Liste der 7 Fragen aus Kapitel 1
+1. **Welche Leistung benötigt die A-Klasse bei einer Geschwindigkeit von 180 km/h?**
+2. **Wie groß ist der Benzinverbrauch in l/(100 km) bei 180 km/h?**
+3. **Welche Leistung wird bei einer Geschwindigkeit von 50 km/h benötigt? Wie groß ist dann der effektive Motorwirkungsgrad, wenn der Benzinverbrauch 5 l/(100 km) beträgt?**
+4. **Was ist beim Pkw wichtiger: der Rollwiderstand oder der Luftwiderstand?**
+5. **Was sind typische Zahlenwerte, um den Leistungsbedarf eines Pkw zu berechnen?**
+6. **Könnte man mit einem modernen Fahrzeug einen Kraftstoffverbrauch von 1 l/(100 km) realisieren?**
+7. **Wie effizient sind Pkw-Motoren im Stadtverkehr?**
+```
 
 ### Buch bearbeiten
 
