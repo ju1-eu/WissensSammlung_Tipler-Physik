@@ -23,13 +23,13 @@ Quelle: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – best
   - [Reduzierung des Kraftstoffverbrauchs: Das 1-Liter-Auto](#reduzierung-des-kraftstoffverbrauchs-das-1-liter-auto)
   - [Wirkungsgrad im Stadtverkehr](#wirkungsgrad-im-stadtverkehr)
 - [Liste der 7 Fragen aus Kapitel 1](#liste-der-7-fragen-aus-kapitel-1)
-- [Welche Leistung benötigt die A-Klasse bei einer Geschwindigkeit von (180~\\text{km/h})?](#welche-leistung-benötigt-die-a-klasse-bei-einer-geschwindigkeit-von-180textkmh)
+- [Welche Leistung benötigt die A-Klasse bei einer Geschwindigkeit von 180 km/h?](#welche-leistung-benötigt-die-a-klasse-bei-einer-geschwindigkeit-von-180-kmh)
   - [Gegebene Werte](#gegebene-werte)
-  - [Berechnung der Luftdichte $\\rho$](#berechnung-der-luftdichte-rho)
-  - [Berechnung der Luftwiderstandskraft $F\_\\text{cw}$](#berechnung-der-luftwiderstandskraft-f_textcw)
-  - [Berechnung der Rollwiderstandskraft $F\_\\text{roll}$](#berechnung-der-rollwiderstandskraft-f_textroll)
-  - [Berechnung der gesamten Widerstandskraft $F\_\\text{ges}$](#berechnung-der-gesamten-widerstandskraft-f_textges)
-  - [Berechnung der Radleistung $P\_\\text{Rad}$](#berechnung-der-radleistung-p_textrad)
+  - [Berechnung der Luftdichte](#berechnung-der-luftdichte)
+  - [Berechnung der Luftwiderstandskraft](#berechnung-der-luftwiderstandskraft)
+  - [Berechnung der Rollwiderstandskraft](#berechnung-der-rollwiderstandskraft)
+  - [Berechnung der gesamten Widerstandskraft](#berechnung-der-gesamten-widerstandskraft)
+  - [Berechnung der Radleistung](#berechnung-der-radleistung)
   - [Berücksichtigung des Getriebewirkungsgrads](#berücksichtigung-des-getriebewirkungsgrads)
   - [Ergebnis](#ergebnis)
   - [Zusammenfassung](#zusammenfassung)
@@ -42,7 +42,7 @@ Quelle: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – best
   - [Ziel der Berechnung](#ziel-der-berechnung)
   - [Bedeutung der Aufgabe](#bedeutung-der-aufgabe)
   - [Zusammenfassung](#zusammenfassung-1)
-- [Wie groß ist der Benzinverbrauch in $\\text{l}/(100,\\text{km})$ bei $180~\\text{km/h}$?](#wie-groß-ist-der-benzinverbrauch-intextl100textkm-bei-180textkmh)
+- [Wie groß ist der Benzinverbrauch in l/100 km bei 180km/h?](#wie-groß-ist-der-benzinverbrauch-inl100-km-bei-180kmh)
   - [Ziel der Aufgabe](#ziel-der-aufgabe-1)
   - [Hintergrundinformationen](#hintergrundinformationen-1)
   - [Vorgehensweise zur Lösung](#vorgehensweise-zur-lösung-1)
@@ -58,24 +58,24 @@ Quelle: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – best
   - [Bedeutung der Aufgabe](#bedeutung-der-aufgabe-2)
   - [Ziel der Berechnung](#ziel-der-berechnung-2)
   - [Zusammenfassung](#zusammenfassung-3)
-- [Welche Leistung wird bei einer Geschwindigkeit von $50~\\text{km/h}$ benötigt? Wie groß ist dann der effektive Motorwirkungsgrad, wenn der Benzinverbrauch $5~\\text{l}/(100~\\text{km})$ beträgt?](#welche-leistung-wird-bei-einer-geschwindigkeit-von-50textkmh-benötigt-wie-groß-ist-dann-der-effektive-motorwirkungsgrad-wenn-der-benzinverbrauch-5textl100textkm-beträgt)
+- [Welche Leistung wird bei einer Geschwindigkeit von 50 km/h benötigt? Wie groß ist dann der effektive Motorwirkungsgrad, wenn der Benzinverbrauch 5 l/100 km beträgt?](#welche-leistung-wird-bei-einer-geschwindigkeit-von-50-kmh-benötigt-wie-groß-ist-dann-der-effektive-motorwirkungsgrad-wenn-der-benzinverbrauch-5-l100-km-beträgt)
   - [Gegebene Werte](#gegebene-werte-1)
-  - [1. Berechnung der Luftwiderstandskraft $F\_{\\text{cw}}$](#1-berechnung-der-luftwiderstandskraft-f_textcw)
-  - [2. Berechnung der Rollwiderstandskraft $F\_{\\text{roll}}$](#2-berechnung-der-rollwiderstandskraft-f_textroll)
-  - [3. Berechnung der Gesamtwiderstandskraft $F\_{\\text{ges}}$](#3-berechnung-der-gesamtwiderstandskraft-f_textges)
-  - [4. Berechnung der Radleistung $P\_{\\text{Rad}}$](#4-berechnung-der-radleistung-p_textrad)
-  - [5. Berechnung der erforderlichen Motorleistung $P\_{\\text{Motor}}$](#5-berechnung-der-erforderlichen-motorleistung-p_textmotor)
-  - [6. Berechnung des effektiven Motorwirkungsgrades $\\eta\_{\\text{e}}$](#6-berechnung-des-effektiven-motorwirkungsgrades-eta_texte)
-    - [a) Berechnung des Kraftstoffvolumenstroms $\\dot{V}\_{\\text{B}}$](#a-berechnung-des-kraftstoffvolumenstroms-dotv_textb)
-    - [b) Umrechnung in Kraftstoffmassenstrom $\\dot{m}\_{\\text{B}}$](#b-umrechnung-in-kraftstoffmassenstrom-dotm_textb)
-    - [c) Umrechnung des Massenstroms in $\\frac{\\text{kg}}{\\text{s}}$](#c-umrechnung-des-massenstroms-in-fractextkgtexts)
-    - [d) Berechnung der zugeführten Brennstoffleistung $\\dot{Q}\_{\\text{B}}$](#d-berechnung-der-zugeführten-brennstoffleistung-dotq_textb)
-    - [e) Berechnung des effektiven Motorwirkungsgrades $\\eta\_{\\text{e}}$](#e-berechnung-des-effektiven-motorwirkungsgrades-eta_texte)
+  - [1. Berechnung der Luftwiderstandskraft](#1-berechnung-der-luftwiderstandskraft)
+  - [2. Berechnung der Rollwiderstandskraft](#2-berechnung-der-rollwiderstandskraft)
+  - [3. Berechnung der Gesamtwiderstandskraft](#3-berechnung-der-gesamtwiderstandskraft)
+  - [4. Berechnung der Radleistung](#4-berechnung-der-radleistung)
+  - [5. Berechnung der erforderlichen Motorleistung](#5-berechnung-der-erforderlichen-motorleistung)
+  - [6. Berechnung des effektiven Motorwirkungsgrades](#6-berechnung-des-effektiven-motorwirkungsgrades)
+    - [a) Berechnung des Kraftstoffvolumenstroms](#a-berechnung-des-kraftstoffvolumenstroms)
+    - [b) Umrechnung in Kraftstoffmassenstrom](#b-umrechnung-in-kraftstoffmassenstrom)
+    - [c) Umrechnung des Massenstroms](#c-umrechnung-des-massenstroms)
+    - [d) Berechnung der zugeführten Brennstoffleistung](#d-berechnung-der-zugeführten-brennstoffleistung)
+    - [e) Berechnung des effektiven Motorwirkungsgrades](#e-berechnung-des-effektiven-motorwirkungsgrades)
   - [Zusammenfassung](#zusammenfassung-4)
 - [Erklärung der Aufgabe 3](#erklärung-der-aufgabe-3)
   - [Ziel der Aufgabe](#ziel-der-aufgabe-3)
   - [Hintergrundinformationen](#hintergrundinformationen-3)
-    - [Teil 1: Berechnung der Motorleistung bei $50~\\text{km/h}$](#teil-1-berechnung-der-motorleistung-bei-50textkmh)
+    - [Teil 1: Berechnung der Motorleistung bei 50 km/h](#teil-1-berechnung-der-motorleistung-bei-50-kmh)
     - [Teil 2: Bestimmung des effektiven Motorwirkungsgrads](#teil-2-bestimmung-des-effektiven-motorwirkungsgrads)
   - [Gegebene Werte und Parameter](#gegebene-werte-und-parameter-1)
   - [Bedeutung der Aufgabe](#bedeutung-der-aufgabe-3)
@@ -94,8 +94,8 @@ Quelle: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – best
   - [Vorgehensweise zur Lösung](#vorgehensweise-zur-lösung-3)
   - [Schritt-für-Schritt-Lösung](#schritt-für-schritt-lösung)
     - [1. Gegebene Werte und Annahmen](#1-gegebene-werte-und-annahmen)
-    - [2. Berechnung der Rollwiderstandskraft ($F\_{\\text{roll}}$)](#2-berechnung-der-rollwiderstandskraft-f_textroll-1)
-    - [3. Berechnung der Luftwiderstandskraft ($F\_{\\text{cw}}$) bei verschiedenen Geschwindigkeiten](#3-berechnung-der-luftwiderstandskraft-f_textcw-bei-verschiedenen-geschwindigkeiten)
+    - [2. Berechnung der Rollwiderstandskraft](#2-berechnung-der-rollwiderstandskraft-1)
+    - [3. Berechnung der Luftwiderstandskraft bei verschiedenen Geschwindigkeiten](#3-berechnung-der-luftwiderstandskraft-bei-verschiedenen-geschwindigkeiten)
       - [Umrechnung der Geschwindigkeit in m/s](#umrechnung-der-geschwindigkeit-in-ms)
       - [Berechnungen](#berechnungen)
     - [4. Vergleich der Kräfte](#4-vergleich-der-kräfte)
@@ -132,13 +132,13 @@ Quelle: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – best
   - [Ziel der Aufgabe](#ziel-der-aufgabe-6)
   - [Hintergrundinformationen](#hintergrundinformationen-6)
   - [Typische Zahlenwerte für Pkw](#typische-zahlenwerte-für-pkw)
-    - [1. Luftwiderstandsbeiwert ($c\_{\\text{w}}$)](#1-luftwiderstandsbeiwert-c_textw)
-    - [2. Stirnfläche des Fahrzeugs ($A$)](#2-stirnfläche-des-fahrzeugs-a)
-    - [3. Rollwiderstandsbeiwert ($\\mu$)](#3-rollwiderstandsbeiwert-mu)
-    - [4. Getriebewirkungsgrad ($\\eta\_{\\text{Getriebe}}$)](#4-getriebewirkungsgrad-eta_textgetriebe)
-    - [5. Effektiver Motorwirkungsgrad ($\\eta\_{\\text{e}}$)](#5-effektiver-motorwirkungsgrad-eta_texte)
+    - [1. Luftwiderstandsbeiwert](#1-luftwiderstandsbeiwert)
+    - [2. Stirnfläche des Fahrzeugs](#2-stirnfläche-des-fahrzeugs)
+    - [3. Rollwiderstandsbeiwert](#3-rollwiderstandsbeiwert)
+    - [4. Getriebewirkungsgrad](#4-getriebewirkungsgrad)
+    - [5. Effektiver Motorwirkungsgrad](#5-effektiver-motorwirkungsgrad)
     - [6. Weitere wichtige Größen](#6-weitere-wichtige-größen)
-    - [7. Luftdichte ($\\rho$)](#7-luftdichte-rho)
+    - [7. Luftdichte](#7-luftdichte)
   - [Bedeutung dieser Werte für die Berechnung](#bedeutung-dieser-werte-für-die-berechnung)
   - [Beispielrechnung (optional)](#beispielrechnung-optional)
   - [Zusammenfassung](#zusammenfassung-8)
@@ -147,23 +147,23 @@ Quelle: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – best
   - [Hintergrundinformationen](#hintergrundinformationen-7)
   - [Bedeutung der typischen Zahlenwerte](#bedeutung-der-typischen-zahlenwerte)
   - [Typische Zahlenwerte für die Berechnung des Leistungsbedarfs](#typische-zahlenwerte-für-die-berechnung-des-leistungsbedarfs)
-    - [1. **Luftwiderstandsbeiwert ($c\_{\\text{w}}$)**](#1-luftwiderstandsbeiwert-c_textw-1)
-    - [2. **Stirnfläche des Fahrzeugs ($A$)**](#2-stirnfläche-des-fahrzeugs-a-1)
-    - [3. **Rollwiderstandsbeiwert ($\\mu$)**](#3-rollwiderstandsbeiwert-mu-1)
-    - [4. **Getriebewirkungsgrad ($\\eta\_{\\text{Getriebe}}$)**](#4-getriebewirkungsgrad-eta_textgetriebe-1)
-    - [5. **Effektiver Motorwirkungsgrad ($\\eta\_{\\text{e}}$)**](#5-effektiver-motorwirkungsgrad-eta_texte-1)
-    - [6. **Luftdichte ($\\rho$)**](#6-luftdichte-rho)
-    - [7. **Erdbeschleunigung ($g$)**](#7-erdbeschleunigung-g)
-    - [8. **Fahrzeugmasse ($m$)**](#8-fahrzeugmasse-m)
+    - [1. Luftwiderstandsbeiwert](#1-luftwiderstandsbeiwert-1)
+    - [2. Stirnfläche des Fahrzeugs](#2-stirnfläche-des-fahrzeugs-1)
+    - [3. Rollwiderstandsbeiwert](#3-rollwiderstandsbeiwert-1)
+    - [4. Getriebewirkungsgrad](#4-getriebewirkungsgrad-1)
+    - [5. Effektiver Motorwirkungsgrad](#5-effektiver-motorwirkungsgrad-1)
+    - [6. Luftdichte](#6-luftdichte)
+    - [7. Erdbeschleunigung](#7-erdbeschleunigung)
+    - [8. Fahrzeugmasse](#8-fahrzeugmasse)
   - [Anwendung dieser Werte in den Berechnungen](#anwendung-dieser-werte-in-den-berechnungen)
-    - [**1. Luftwiderstandskraft ($F\_{\\text{cw}}$)**](#1-luftwiderstandskraft-f_textcw)
-    - [**2. Rollwiderstandskraft ($F\_{\\text{roll}}$)**](#2-rollwiderstandskraft-f_textroll)
-    - [**3. Gesamtwiderstandskraft ($F\_{\\text{ges}}$)**](#3-gesamtwiderstandskraft-f_textges)
-    - [**4. Erforderliche Motorleistung ($P\_{\\text{Motor}}$)**](#4-erforderliche-motorleistung-p_textmotor)
+    - [1. Luftwiderstandskraft](#1-luftwiderstandskraft)
+    - [2. Rollwiderstandskraft](#2-rollwiderstandskraft)
+    - [3. Gesamtwiderstandskraft](#3-gesamtwiderstandskraft)
+    - [4. Erforderliche Motorleistung](#4-erforderliche-motorleistung)
     - [**5. Kraftstoffverbrauch und Motorwirkungsgrad**](#5-kraftstoffverbrauch-und-motorwirkungsgrad)
   - [Beispielrechnung](#beispielrechnung)
   - [Zusammenfassung](#zusammenfassung-9)
-- [Könnte man mit einem modernen Fahrzeug einen Kraftstoffverbrauch von $1~\\text{l}/(100~\\text{km})$ realisieren?](#könnte-man-mit-einem-modernen-fahrzeug-einen-kraftstoffverbrauch-von-1textl100textkm-realisieren)
+- [Könnte man mit einem modernen Fahrzeug einen Kraftstoffverbrauch von 1 l/100 km realisieren?](#könnte-man-mit-einem-modernen-fahrzeug-einen-kraftstoffverbrauch-von-1-l100-km-realisieren)
   - [Ziel der Aufgabe](#ziel-der-aufgabe-8)
   - [Hintergrundinformationen](#hintergrundinformationen-8)
   - [Vorgehensweise zur Lösung](#vorgehensweise-zur-lösung-4)
@@ -171,14 +171,14 @@ Quelle: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – best
     - [1. Festlegen der Fahrzeugparameter](#1-festlegen-der-fahrzeugparameter)
     - [2. Berechnung der Fahrwiderstände](#2-berechnung-der-fahrwiderstände)
       - [Umrechnung der Geschwindigkeiten in m/s](#umrechnung-der-geschwindigkeiten-in-ms)
-      - [a) Rollwiderstandskraft ($F\_{\\text{roll}}$)](#a-rollwiderstandskraft-f_textroll)
-      - [b) Luftwiderstandskraft ($F\_{\\text{cw}}$)](#b-luftwiderstandskraft-f_textcw)
-    - [3. Berechnung der erforderlichen Radleistung ($P\_{\\text{Rad}}$)](#3-berechnung-der-erforderlichen-radleistung-p_textrad)
+      - [a) Rollwiderstandskraft](#a-rollwiderstandskraft)
+      - [b) Luftwiderstandskraft](#b-luftwiderstandskraft)
+    - [3. Berechnung der erforderlichen Radleistung](#3-berechnung-der-erforderlichen-radleistung)
     - [4. Berücksichtigung der Wirkungsgrade](#4-berücksichtigung-der-wirkungsgrade)
     - [5. Berechnung des Kraftstoffverbrauchs](#5-berechnung-des-kraftstoffverbrauchs)
-      - [a) Kraftstoffmassenstrom ($\\dot{m}\_{\\text{B}}$)](#a-kraftstoffmassenstrom-dotm_textb)
+      - [a) Kraftstoffmassenstrom](#a-kraftstoffmassenstrom)
       - [b) Umrechnung in Verbrauch pro Stunde](#b-umrechnung-in-verbrauch-pro-stunde)
-      - [c) Berechnung des streckenbezogenen Kraftstoffverbrauchs ($V\_{\\text{S}}$)](#c-berechnung-des-streckenbezogenen-kraftstoffverbrauchs-v_texts)
+      - [c) Berechnung des streckenbezogenen Kraftstoffverbrauchs](#c-berechnung-des-streckenbezogenen-kraftstoffverbrauchs)
     - [6. Analyse der Ergebnisse](#6-analyse-der-ergebnisse)
     - [7. Notwendige technische Maßnahmen](#7-notwendige-technische-maßnahmen)
   - [Antwort auf die Frage](#antwort-auf-die-frage-2)
@@ -191,11 +191,11 @@ Quelle: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – best
   - [Faktoren, die den Kraftstoffverbrauch beeinflussen](#faktoren-die-den-kraftstoffverbrauch-beeinflussen)
   - [Theoretische Machbarkeit eines Verbrauchs von 1 l/100 km](#theoretische-machbarkeit-eines-verbrauchs-von-1l100km)
     - [Berechnungsgrundlagen](#berechnungsgrundlagen)
-      - [1. **Rollwiderstandskraft ($F\_{\\text{roll}}$)**](#1-rollwiderstandskraft-f_textroll)
-      - [2. **Luftwiderstandskraft ($F\_{\\text{cw}}$)**](#2-luftwiderstandskraft-f_textcw)
-      - [3. **Gesamtwiderstandskraft ($F\_{\\text{ges}}$)**](#3-gesamtwiderstandskraft-f_textges-1)
-      - [4. **Erforderliche Radleistung ($P\_{\\text{Rad}}$)**](#4-erforderliche-radleistung-p_textrad)
-      - [5. **Erforderliche Motorleistung ($P\_{\\text{Motor}}$)**](#5-erforderliche-motorleistung-p_textmotor)
+      - [1. Rollwiderstandskraft](#1-rollwiderstandskraft)
+      - [2. Luftwiderstandskraft](#2-luftwiderstandskraft)
+      - [3. Gesamtwiderstandskraft](#3-gesamtwiderstandskraft-1)
+      - [4. Erforderliche Radleistung](#4-erforderliche-radleistung)
+      - [5. Erforderliche Motorleistung](#5-erforderliche-motorleistung)
       - [6. **Kraftstoffverbrauch**](#6-kraftstoffverbrauch)
     - [Beispielrechnung](#beispielrechnung-1)
     - [Interpretation der Ergebnisse](#interpretation-der-ergebnisse)
@@ -206,7 +206,7 @@ Quelle: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – best
 - [Wie effizient sind Pkw-Motoren im Stadtverkehr?](#wie-effizient-sind-pkw-motoren-im-stadtverkehr)
   - [Ziel der Aufgabe](#ziel-der-aufgabe-10)
   - [Hintergrundinformationen](#hintergrundinformationen-10)
-    - [Motorwirkungsgrad ($\\eta\_{\\text{e}}$)](#motorwirkungsgrad-eta_texte)
+    - [Motorwirkungsgrad](#motorwirkungsgrad)
     - [Stadtverkehrsbedingungen](#stadtverkehrsbedingungen)
   - [Faktoren, die die Effizienz im Stadtverkehr beeinflussen](#faktoren-die-die-effizienz-im-stadtverkehr-beeinflussen)
   - [Schritt-für-Schritt-Lösung](#schritt-für-schritt-lösung-2)
@@ -351,7 +351,7 @@ Im Stadtverkehr ist der Kraftstoffverbrauch trotz geringer Geschwindigkeiten hoc
 6. **Könnte man mit einem modernen Fahrzeug einen Kraftstoffverbrauch von 1 l/(100 km) realisieren?**
 7. **Wie effizient sind Pkw-Motoren im Stadtverkehr?**
 
-# Welche Leistung benötigt die A-Klasse bei einer Geschwindigkeit von \(180~\text{km/h}\)?
+# Welche Leistung benötigt die A-Klasse bei einer Geschwindigkeit von 180 km/h?
 
 ## Gegebene Werte
 
@@ -362,7 +362,7 @@ Im Stadtverkehr ist der Kraftstoffverbrauch trotz geringer Geschwindigkeiten hoc
 - Getriebewirkungsgrad: $\eta_\text{Getriebe} = 0{,}92$
 - Fahrzeuggeschwindigkeit: $v_\text{Auto} = 180~\text{km/h} = 50~\text{m/s}$
 
-## Berechnung der Luftdichte $\rho$
+## Berechnung der Luftdichte
 
 Die Luftdichte $\rho$ wird mithilfe der idealen Gasgleichung berechnet:
 
@@ -372,9 +372,9 @@ $$
 
 Dabei sind:
 
-- Luftdruck: $p = 101325~\text{Pa}$
-- Gaskonstante für Luft: $R = 287~\frac{\text{J}}{\text{kg}~\text{K}}$
-- Temperatur: $T = 288{,}15~\text{K}$ (entspricht \(15^\circ\text{C}\))
+- Luftdruck: $p = 101325~\text{Pa}$ ($1 \, \text{atm} = 1{,}01325 \, \text{bar}$)
+- Gaskonstante für Luft: $R = 287~\frac{\text{J}}{\text{kg}~\text{K}}$ ($R = \frac{R_{\text{universell}}}{M_{\text{Luft}}} \approx \frac{8{,}314}{0{,}029} = 287 \, \frac{\text{J}}{\text{kg} \cdot \text{K}}$)
+- Temperatur: $T = 288{,}15~\text{K}$ ($T(\text{°C}) = T(\text{K}) - 273{,}15 = 288{,}15 - 273{,}15 = 15^\circ \text{C}$) 
 
 **Berechnung:**
 
@@ -382,7 +382,7 @@ $$
 \rho = \frac{101325~\text{Pa}}{287~\frac{\text{J}}{\text{kg}~\text{K}} \cdot 288{,}15~\text{K}} = 1{,}225~\frac{\text{kg}}{\text{m}^3}
 $$
 
-## Berechnung der Luftwiderstandskraft $F_\text{cw}$
+## Berechnung der Luftwiderstandskraft
 
 $$
 F_\text{cw} = \frac{1}{2} \cdot \rho \cdot v_\text{Auto}^2 \cdot c_\text{w} \cdot A
@@ -399,7 +399,7 @@ F_\text{cw} &= \frac{1}{2} \cdot 1{,}225~\frac{\text{kg}}{\text{m}^3} \cdot (50~
 \end{align*}
 $$
 
-## Berechnung der Rollwiderstandskraft $F_\text{roll}$
+## Berechnung der Rollwiderstandskraft
 
 Da die Straße eben ist ($\beta = 0^\circ$), gilt $\cos 0^\circ = 1$.
 
@@ -413,13 +413,13 @@ $$
 F_\text{roll} = 0{,}015 \cdot 1270~\text{kg} \cdot 9{,}81~\frac{\text{m}}{\text{s}^2} = 186{,}985~\text{N}
 $$
 
-## Berechnung der gesamten Widerstandskraft $F_\text{ges}$
+## Berechnung der gesamten Widerstandskraft
 
 $$
 F_\text{ges} = F_\text{cw} + F_\text{roll} = 1137{,}75~\text{N} + 186{,}985~\text{N} = 1324{,}735~\text{N}
 $$
 
-## Berechnung der Radleistung $P_\text{Rad}$
+## Berechnung der Radleistung
 
 $$
 P_\text{Rad} = F_\text{ges} \cdot v_\text{Auto}
@@ -445,7 +445,7 @@ $$
 
 ## Ergebnis
 
-Die A-Klasse benötigt bei einer Geschwindigkeit von \(180~\text{km/h}\) eine Motorleistung von etwa **72 kW**.
+Die A-Klasse benötigt bei einer Geschwindigkeit von $180~\text{km/h}$ eine Motorleistung von etwa **72 kW**.
 
 ## Zusammenfassung
 
@@ -581,7 +581,7 @@ Die Aufgabe erfordert eine schrittweise Berechnung unter Berücksichtigung physi
 
 **Ziel:** Ermittlung der Motorleistung $P_{\text{Motor}}$ für die A-Klasse bei $180~\text{km/h}$.
 
-# Wie groß ist der Benzinverbrauch in $\text{l}/(100\,\text{km})$ bei $180~\text{km/h}$?
+# Wie groß ist der Benzinverbrauch in l/100 km bei 180km/h?
 
 ## Ziel der Aufgabe
 
@@ -761,7 +761,7 @@ Die Aufgabe fordert eine detaillierte Berechnung, die folgende Aspekte berücksi
 
 3. **Kraftstoffeigenschaften**: Heizwert und Dichte des Kraftstoffs sind entscheidend für die Umrechnung von Energiebedarf zu verbrauchtem Kraftstoffvolumen.
 
-# Welche Leistung wird bei einer Geschwindigkeit von $50~\text{km/h}$ benötigt? Wie groß ist dann der effektive Motorwirkungsgrad, wenn der Benzinverbrauch $5~\text{l}/(100~\text{km})$ beträgt?
+# Welche Leistung wird bei einer Geschwindigkeit von 50 km/h benötigt? Wie groß ist dann der effektive Motorwirkungsgrad, wenn der Benzinverbrauch 5 l/100 km beträgt?
 
 ## Gegebene Werte
 
@@ -782,7 +782,7 @@ Die Aufgabe fordert eine detaillierte Berechnung, die folgende Aspekte berücksi
 - **Getriebewirkungsgrad:**  
   $$ \eta_{\text{Getriebe}} = 0{,}92 $$
 
-## 1. Berechnung der Luftwiderstandskraft $F_{\text{cw}}$
+## 1. Berechnung der Luftwiderstandskraft
 
 Die Luftwiderstandskraft wird berechnet mit:
 
@@ -802,7 +802,7 @@ F_{\text{cw}} &= \frac{1}{2} \cdot 1{,}2041~\frac{\text{kg}}{\text{m}^3} \cdot (
 \end{align*}
 $$
 
-## 2. Berechnung der Rollwiderstandskraft $F_{\text{roll}}$
+## 2. Berechnung der Rollwiderstandskraft
 
 $$
 F_{\text{roll}} = \mu \cdot m \cdot g
@@ -814,13 +814,13 @@ $$
 F_{\text{roll}} = 0{,}015 \cdot 1270~\text{kg} \cdot 9{,}81~\frac{\text{m}}{\text{s}^2} = 186{,}9855~\text{N}
 $$
 
-## 3. Berechnung der Gesamtwiderstandskraft $F_{\text{ges}}$
+## 3. Berechnung der Gesamtwiderstandskraft
 
 $$
 F_{\text{ges}} = F_{\text{cw}} + F_{\text{roll}} = 86{,}469~\text{N} + 186{,}9855~\text{N} = 273{,}4545~\text{N}
 $$
 
-## 4. Berechnung der Radleistung $P_{\text{Rad}}$
+## 4. Berechnung der Radleistung 
 
 $$
 P_{\text{Rad}} = F_{\text{ges}} \cdot v_{\text{Auto}}
@@ -832,7 +832,7 @@ $$
 P_{\text{Rad}} = 273{,}4545~\text{N} \cdot 13{,}89~\text{m/s} = 3797{,}5~\text{W} \approx 3{,}8~\text{kW}
 $$
 
-## 5. Berechnung der erforderlichen Motorleistung $P_{\text{Motor}}$
+## 5. Berechnung der erforderlichen Motorleistung
 
 $$
 P_{\text{Motor}} = \frac{P_{\text{Rad}}}{\eta_{\text{Getriebe}}} = \frac{3797{,}5~\text{W}}{0{,}92} = 4127{,}72~\text{W} \approx 4{,}13~\text{kW}
@@ -840,11 +840,11 @@ $$
 
 **Antwort auf den ersten Teil der Frage:** Die benötigte Motorleistung bei $50~\text{km/h}$ beträgt etwa **4{,}13 kW**.
 
-## 6. Berechnung des effektiven Motorwirkungsgrades $\eta_{\text{e}}$
+## 6. Berechnung des effektiven Motorwirkungsgrades
 
 Gegeben ist ein Benzinverbrauch von $V_{\text{S}} = 5~\text{l}/(100~\text{km})$.
 
-### a) Berechnung des Kraftstoffvolumenstroms $\dot{V}_{\text{B}}$
+### a) Berechnung des Kraftstoffvolumenstroms
 
 Bei einer Geschwindigkeit von $50~\text{km/h}$ legt das Fahrzeug pro Stunde $50~\text{km}$ zurück.
 
@@ -854,7 +854,7 @@ $$
 \dot{V}_{\text{B}} = \frac{V_{\text{S}}}{100~\text{km}} \cdot v_{\text{Auto}} = \frac{5~\text{l}}{100~\text{km}} \cdot 50~\text{km/h} = 2{,}5~\text{l/h}
 $$
 
-### b) Umrechnung in Kraftstoffmassenstrom $\dot{m}_{\text{B}}$
+### b) Umrechnung in Kraftstoffmassenstrom
 
 Mit der Kraftstoffdichte $\rho_{\text{B}} = 0{,}76~\frac{\text{kg}}{\text{l}}$:
 
@@ -862,13 +862,13 @@ $$
 \dot{m}_{\text{B}} = \dot{V}_{\text{B}} \cdot \rho_{\text{B}} = 2{,}5~\text{l/h} \cdot 0{,}76~\frac{\text{kg}}{\text{l}} = 1{,}9~\text{kg/h}
 $$
 
-### c) Umrechnung des Massenstroms in $\frac{\text{kg}}{\text{s}}$
+### c) Umrechnung des Massenstroms
 
 $$
 \dot{m}_{\text{B}} = \frac{1{,}9~\text{kg/h}}{3600~\text{s/h}} = 5{,}2778 \times 10^{-4}~\frac{\text{kg}}{\text{s}}
 $$
 
-### d) Berechnung der zugeführten Brennstoffleistung $\dot{Q}_{\text{B}}$
+### d) Berechnung der zugeführten Brennstoffleistung
 
 Mit dem Heizwert von Benzin $H_{\text{U}} = 42{,}000~\frac{\text{kJ}}{\text{kg}} = 42{,}000{,}000~\frac{\text{J}}{\text{kg}}$:
 
@@ -876,7 +876,7 @@ $$
 \dot{Q}_{\text{B}} = \dot{m}_{\text{B}} \cdot H_{\text{U}} = 5{,}2778 \times 10^{-4}~\frac{\text{kg}}{\text{s}} \cdot 42{,}000{,}000~\frac{\text{J}}{\text{kg}} = 22{,}166{,}667~\text{W}
 $$
 
-### e) Berechnung des effektiven Motorwirkungsgrades $\eta_{\text{e}}$
+### e) Berechnung des effektiven Motorwirkungsgrades
 
 $$
 \eta_{\text{e}} = \frac{P_{\text{Motor}}}{\dot{Q}_{\text{B}}} = \frac{4127{,}72~\text{W}}{22{,}166{,}667~\text{W}} = 0{,}1862 \approx 18{,}62\%
@@ -904,7 +904,7 @@ Die Aufgabe gliedert sich in zwei Teile:
 
 ## Hintergrundinformationen
 
-### Teil 1: Berechnung der Motorleistung bei $50~\text{km/h}$
+### Teil 1: Berechnung der Motorleistung bei 50 km/h
 
 Wenn ein Fahrzeug mit konstanter Geschwindigkeit auf ebener Strecke fährt, muss es verschiedene Fahrwiderstände überwinden. Die wichtigsten Widerstandskräfte sind:
 
@@ -1108,7 +1108,7 @@ Beim Fahren wirken auf ein Fahrzeug verschiedene Widerstandskräfte, die überwu
 - **Stirnfläche ($A$)**: 2,2 m²
 - **Geschwindigkeitsbereich**: 0 bis 200 km/h
 
-### 2. Berechnung der Rollwiderstandskraft ($F_{\text{roll}}$)
+### 2. Berechnung der Rollwiderstandskraft
 
 Da $F_{\text{roll}}$ unabhängig von der Geschwindigkeit ist (bei konstantem $\mu$):
 
@@ -1116,7 +1116,7 @@ $$
 F_{\text{roll}} = \mu \cdot m \cdot g = 0{,}015 \cdot 1\,500\,\text{kg} \cdot 9{,}81\,\frac{\text{m}}{\text{s}^2} = 220{,}725\,\text{N}
 $$
 
-### 3. Berechnung der Luftwiderstandskraft ($F_{\text{cw}}$) bei verschiedenen Geschwindigkeiten
+### 3. Berechnung der Luftwiderstandskraft bei verschiedenen Geschwindigkeiten
 
 Wir berechnen $F_{\text{cw}}$ für ausgewählte Geschwindigkeiten:
 
@@ -1415,7 +1415,7 @@ Bei der Berechnung des Leistungsbedarfs eines Pkw werden verschiedene physikalis
 
 ## Typische Zahlenwerte für Pkw
 
-### 1. Luftwiderstandsbeiwert ($c_{\text{w}}$)
+### 1. Luftwiderstandsbeiwert
 
 Der Luftwiderstandsbeiwert beschreibt die aerodynamische Güte eines Fahrzeugs.
 
@@ -1424,7 +1424,7 @@ Der Luftwiderstandsbeiwert beschreibt die aerodynamische Güte eines Fahrzeugs.
   - **Aerodynamisch optimierte Fahrzeuge:** $c_{\text{w}} \approx 0{,}25$
   - **SUVs und Geländewagen:** $c_{\text{w}} = 0{,}35$ bis $0{,}40$
 
-### 2. Stirnfläche des Fahrzeugs ($A$)
+### 2. Stirnfläche des Fahrzeugs
 
 Die Stirnfläche ist die projizierte Frontfläche und beeinflusst maßgeblich den Luftwiderstand.
 
@@ -1435,7 +1435,7 @@ Die Stirnfläche ist die projizierte Frontfläche und beeinflusst maßgeblich de
 - **Berechnungshinweis:**
   - Eine Faustformel ist, dass die Stirnfläche etwa **85 %** der Rechteckfläche aus Fahrzeugbreite und -höhe beträgt.
 
-### 3. Rollwiderstandsbeiwert ($\mu$)
+### 3. Rollwiderstandsbeiwert
 
 Der Rollwiderstandsbeiwert beschreibt den Rollwiderstand der Reifen.
 
@@ -1444,7 +1444,7 @@ Der Rollwiderstandsbeiwert beschreibt den Rollwiderstand der Reifen.
   - **Energiesparreifen:** $\mu = 0{,}010$ bis $0{,}012$
   - **Geländereifen:** $\mu = 0{,}020$ oder höher
 
-### 4. Getriebewirkungsgrad ($\eta_{\text{Getriebe}}$)
+### 4. Getriebewirkungsgrad
 
 Der Getriebewirkungsgrad berücksichtigt die Verluste im Antriebsstrang.
 
@@ -1453,7 +1453,7 @@ Der Getriebewirkungsgrad berücksichtigt die Verluste im Antriebsstrang.
   - **Automatikgetriebe:** $\eta_{\text{Getriebe}} = 0{,}90$ bis $0{,}92$
   - **Durchschnittswert für Berechnungen:** $\eta_{\text{Getriebe}} = 0{,}90$
 
-### 5. Effektiver Motorwirkungsgrad ($\eta_{\text{e}}$)
+### 5. Effektiver Motorwirkungsgrad
 
 Der effektive Wirkungsgrad des Motors variiert je nach Betriebsbedingungen.
 
@@ -1479,7 +1479,7 @@ Der effektive Wirkungsgrad des Motors variiert je nach Betriebsbedingungen.
 - **Erdbeschleunigung ($g$)**
   - $g = 9{,}81~\frac{\text{m}}{\text{s}^2}$ (konstanter Wert)
 
-### 7. Luftdichte ($\rho$)
+### 7. Luftdichte
 
 - **Standardbedingungen (20 °C, 1 bar):**
   - $\rho = 1{,}2041~\frac{\text{kg}}{\text{m}^3}$
@@ -1594,7 +1594,7 @@ Typische Zahlenwerte sind notwendig, um die Berechnungen auf realistischen und p
 
 ## Typische Zahlenwerte für die Berechnung des Leistungsbedarfs
 
-### 1. **Luftwiderstandsbeiwert ($c_{\text{w}}$)**
+### 1. Luftwiderstandsbeiwert
 
 - **Definition:** Beschreibt die aerodynamische Effizienz des Fahrzeugs. Ein niedrigerer Wert bedeutet geringeren Luftwiderstand.
 - **Typische Werte:**
@@ -1602,7 +1602,7 @@ Typische Zahlenwerte sind notwendig, um die Berechnungen auf realistischen und p
   - **Limousinen:** $c_{\text{w}} = 0{,}25$ bis $0{,}28$
   - **SUVs und Geländewagen:** $c_{\text{w}} = 0{,}35$ bis $0{,}40$
 
-### 2. **Stirnfläche des Fahrzeugs ($A$)**
+### 2. Stirnfläche des Fahrzeugs
 
 - **Definition:** Die projizierte Frontfläche des Fahrzeugs in Fahrtrichtung, gemessen in Quadratmetern ($\text{m}^2$).
 - **Typische Werte:**
@@ -1611,7 +1611,7 @@ Typische Zahlenwerte sind notwendig, um die Berechnungen auf realistischen und p
   - **Oberklassewagen/SUVs:** $A = 2{,}5~\text{m}^2$ bis $3{,}0~\text{m}^2$
 - **Berechnungshinweis:** Stirnfläche entspricht etwa 85 % der Rechteckfläche aus Fahrzeugbreite und -höhe.
 
-### 3. **Rollwiderstandsbeiwert ($\mu$)**
+### 3. Rollwiderstandsbeiwert
 
 - **Definition:** Beschreibt den Rollwiderstand der Reifen auf der Fahrbahn.
 - **Typische Werte:**
@@ -1619,14 +1619,14 @@ Typische Zahlenwerte sind notwendig, um die Berechnungen auf realistischen und p
   - **Energiesparreifen:** $\mu = 0{,}010$ bis $0{,}012$
   - **Geländereifen:** $\mu = 0{,}020$ oder höher
 
-### 4. **Getriebewirkungsgrad ($\eta_{\text{Getriebe}}$)**
+### 4. Getriebewirkungsgrad
 
 - **Definition:** Beschreibt die Effizienz des Antriebsstrangs bei der Übertragung der Motorleistung auf die Räder.
 - **Typische Werte:**
   - **Schaltgetriebe:** $\eta_{\text{Getriebe}} = 0{,}95$
   - **Automatikgetriebe:** $\eta_{\text{Getriebe}} = 0{,}90$ bis $0{,}92$
 
-### 5. **Effektiver Motorwirkungsgrad ($\eta_{\text{e}}$)**
+### 5. Effektiver Motorwirkungsgrad
 
 - **Definition:** Gibt den Anteil der im Kraftstoff enthaltenen Energie an, der in mechanische Arbeit umgewandelt wird.
 - **Typische Werte:**
@@ -1640,18 +1640,18 @@ Typische Zahlenwerte sind notwendig, um die Berechnungen auf realistischen und p
     - **Dieselmotor:** $\eta_{\text{e}} = 0{,}20$
   - **Leerlauf:** $\eta_{\text{e}} = 0$
 
-### 6. **Luftdichte ($\rho$)**
+### 6. Luftdichte
 
 - **Definition:** Masse pro Volumeneinheit der Luft.
 - **Typische Werte:**
   - **Standardbedingungen (20 °C, 1 bar):** $\rho = 1{,}2041~\frac{\text{kg}}{\text{m}^3}$
 
-### 7. **Erdbeschleunigung ($g$)**
+### 7. Erdbeschleunigung
 
 - **Definition:** Beschleunigung, die auf ein Objekt aufgrund der Erdanziehung wirkt.
 - **Wert:** $g = 9{,}81~\frac{\text{m}}{\text{s}^2}$
 
-### 8. **Fahrzeugmasse ($m$)**
+### 8. Fahrzeugmasse
 
 - **Definition:** Gesamtmasse des Fahrzeugs inklusive Insassen und Gepäck.
 - **Typische Werte:**
@@ -1661,7 +1661,7 @@ Typische Zahlenwerte sind notwendig, um die Berechnungen auf realistischen und p
 
 ## Anwendung dieser Werte in den Berechnungen
 
-### **1. Luftwiderstandskraft ($F_{\text{cw}}$)**
+### 1. Luftwiderstandskraft
 
 Die Luftwiderstandskraft wird berechnet mit:
 
@@ -1674,7 +1674,7 @@ $$
   - **Luftwiderstandsbeiwert ($c_{\text{w}}$)**: Direkter Einfluss; geringerer $c_{\text{w}}$ reduziert $F_{\text{cw}}$
   - **Stirnfläche ($A$)**: Größere Fläche erhöht $F_{\text{cw}}$
 
-### **2. Rollwiderstandskraft ($F_{\text{roll}}$)**
+### 2. Rollwiderstandskraft
 
 Die Rollwiderstandskraft wird berechnet mit:
 
@@ -1687,13 +1687,13 @@ $$
   - **Fahrzeugmasse ($m$)**: Höhere Masse erhöht $F_{\text{roll}}$
   - **Erdbeschleunigung ($g$)**: Konstant, aber essentiell für die Berechnung
 
-### **3. Gesamtwiderstandskraft ($F_{\text{ges}}$)**
+### 3. Gesamtwiderstandskraft
 
 $$
 F_{\text{ges}} = F_{\text{cw}} + F_{\text{roll}}
 $$
 
-### **4. Erforderliche Motorleistung ($P_{\text{Motor}}$)**
+### 4. Erforderliche Motorleistung
 
 $$
 P_{\text{Motor}} = \frac{F_{\text{ges}} \cdot v_{\text{Auto}}}{\eta_{\text{Getriebe}}}
@@ -1789,7 +1789,7 @@ $$
 - **Kraftstoffverbrauch:** Kenntnis der Einflussgrößen hilft Fahrern, den Verbrauch durch angepasstes Fahrverhalten zu reduzieren.
 - **Umweltaspekte:** Effizientere Fahrzeuge tragen zur Reduktion von Emissionen bei.
 
-# Könnte man mit einem modernen Fahrzeug einen Kraftstoffverbrauch von $1~\text{l}/(100~\text{km})$ realisieren?
+# Könnte man mit einem modernen Fahrzeug einen Kraftstoffverbrauch von 1 l/100 km realisieren?
 
 ## Ziel der Aufgabe
 
@@ -1867,7 +1867,7 @@ $$
 - **80 km/h**: $v = \frac{80}{3{,}6} = 22{,}22~\text{m/s}$
 - **100 km/h**: $v = \frac{100}{3{,}6} = 27{,}78~\text{m/s}$
 
-#### a) Rollwiderstandskraft ($F_{\text{roll}}$)
+#### a) Rollwiderstandskraft
 
 $$
 F_{\text{roll}} = \mu \cdot m \cdot g
@@ -1881,7 +1881,7 @@ $$
 
 *Die Rollwiderstandskraft ist konstant, da sie von der Geschwindigkeit unabhängig ist.*
 
-#### b) Luftwiderstandskraft ($F_{\text{cw}}$)
+#### b) Luftwiderstandskraft
 
 $$
 F_{\text{cw}} = \frac{1}{2} \cdot \rho \cdot c_{\text{w}} \cdot A \cdot v^2
@@ -1913,7 +1913,7 @@ $$
 F_{\text{cw}} = 0{,}5 \cdot 1{,}2041 \cdot 0{,}25 \cdot 1{,}8 \cdot (27{,}78)^2 = 314{,}55~\text{N}
 $$
 
-### 3. Berechnung der erforderlichen Radleistung ($P_{\text{Rad}}$)
+### 3. Berechnung der erforderlichen Radleistung
 
 $$
 P_{\text{Rad}} = (F_{\text{roll}} + F_{\text{cw}}) \cdot v
@@ -1981,7 +1981,7 @@ $$
 
 ### 5. Berechnung des Kraftstoffverbrauchs
 
-#### a) Kraftstoffmassenstrom ($\dot{m}_{\text{B}}$)
+#### a) Kraftstoffmassenstrom
 
 $$
 \dot{m}_{\text{B}} = \frac{P_{\text{Motor}}}{\eta_{\text{e}} \cdot H_{\text{U}}}
@@ -2046,7 +2046,7 @@ $$
 \dot{m}_{\text{B, h}} = 0{,}6431~\text{g/s} \cdot 3\,600 = 2\,315~\text{g/h}
 $$
 
-#### c) Berechnung des streckenbezogenen Kraftstoffverbrauchs ($V_{\text{S}}$)
+#### c) Berechnung des streckenbezogenen Kraftstoffverbrauchs
 
 $$
 V_{\text{S}} = \frac{\dot{m}_{\text{B, h}}}{\rho_{\text{B}}} \cdot \frac{100~\text{km}}{v_{\text{Auto}} \cdot 1~\text{h}}
@@ -2193,7 +2193,7 @@ Der Kraftstoffverbrauch eines Fahrzeugs ist ein entscheidender Faktor für:
 
 Um zu beurteilen, ob ein Verbrauch von 1 l/100 km realisierbar ist, müssen wir die **erforderliche Motorleistung** und den **Kraftstoffverbrauch** bei einer bestimmten Fahrgeschwindigkeit berechnen.
 
-#### 1. **Rollwiderstandskraft ($F_{\text{roll}}$)**
+#### 1. Rollwiderstandskraft
 
 $$
 F_{\text{roll}} = \mu \cdot m \cdot g
@@ -2203,8 +2203,7 @@ $$
 - **$m$**: Fahrzeugmasse (ein sehr leichtes Fahrzeug könnte $500~\text{kg}$ wiegen)
 - **$g$**: Erdbeschleunigung ($9{,}81~\text{m/s}^2$)
 
-#### 2. **Luftwiderstandskraft ($F_{\text{cw}}$)**
-
+#### 2. Luftwiderstandskraft
 $$
 F_{\text{cw}} = \frac{1}{2} \cdot \rho \cdot c_{\text{w}} \cdot A \cdot v^2
 $$
@@ -2214,19 +2213,19 @@ $$
 - **$A$**: Stirnfläche (möglichst klein, z. B. $1{,}0~\text{m}^2$)
 - **$v$**: Fahrgeschwindigkeit (niedrige Geschwindigkeit bevorzugt, z. B. $45~\text{km/h}$)
 
-#### 3. **Gesamtwiderstandskraft ($F_{\text{ges}}$)**
+#### 3. Gesamtwiderstandskraft
 
 $$
 F_{\text{ges}} = F_{\text{roll}} + F_{\text{cw}}
 $$
 
-#### 4. **Erforderliche Radleistung ($P_{\text{Rad}}$)**
+#### 4. Erforderliche Radleistung
 
 $$
 P_{\text{Rad}} = F_{\text{ges}} \cdot v
 $$
 
-#### 5. **Erforderliche Motorleistung ($P_{\text{Motor}}$)**
+#### 5. Erforderliche Motorleistung
 
 $$
 P_{\text{Motor}} = \frac{P_{\text{Rad}}}{\eta_{\text{Getriebe}}}
@@ -2373,7 +2372,7 @@ Die Aufgabe besteht darin, die Effizienz von Pkw-Motoren im Stadtverkehr zu unte
 
 ## Hintergrundinformationen
 
-### Motorwirkungsgrad ($\eta_{\text{e}}$)
+### Motorwirkungsgrad
 
 - **Definition:** Der effektive Motorwirkungsgrad ($\eta_{\text{e}}$) gibt an, welcher Anteil der im Kraftstoff enthaltenen chemischen Energie in nutzbare mechanische Arbeit umgewandelt wird.
 - **Typische Werte:**
