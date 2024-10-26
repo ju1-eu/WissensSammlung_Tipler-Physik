@@ -6,45 +6,40 @@ date: "2024-10-24"
 
 # Welche Leistung benötigt die A-Klasse bei einer Geschwindigkeit von 180 km/h?
 
-Letzte Aktualisierung: 2024-10-24
+Letzte Aktualisierung: 2024-10-26
 
-Quelle: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – bestehen (Schreiner 2020)
+Quelle: K. Schreiner, *Basiswissen Verbrennungsmotor: Fragen – rechnen – verstehen – bestehen*, 3., erweiterte und aktualisierte Auflage. Wiesbaden: Springer Fachmedien Wiesbaden, 2020. Verfügbar: https://doi.org/10.1007/978-3-658-29226-3
 
 ## Inhaltsverzeichnis
 
 - [Welche Leistung benötigt die A-Klasse bei einer Geschwindigkeit von 180 km/h?](#welche-leistung-benötigt-die-a-klasse-bei-einer-geschwindigkeit-von-180-kmh)
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
-- [Prompt](#prompt)
 - [Formeln zur Leistungsberechnung der A-Klasse](#formeln-zur-leistungsberechnung-der-a-klasse)
   - [Grundlegende Gleichungen](#grundlegende-gleichungen)
     - [Luftdichte aus thermischer Zustandsgleichung](#luftdichte-aus-thermischer-zustandsgleichung)
     - [Widerstandskräfte](#widerstandskräfte)
     - [Leistungen](#leistungen)
-  - [2. Parameter](#2-parameter)
+  - [Parameter](#parameter)
     - [Fahrzeugspezifische Größen](#fahrzeugspezifische-größen)
     - [Betriebsbedingungen](#betriebsbedingungen)
     - [Variante 0](#variante-0)
     - [Variante 2](#variante-2)
-  - [3. Ergebnisse](#3-ergebnisse)
+  - [Ergebnisse](#ergebnisse)
     - [Variante 0](#variante-0-1)
     - [Variante 2](#variante-2-1)
 - [Leistungsberechnung A-Klasse bei 180 km/h - Vergleich zweier Varianten](#leistungsberechnung-a-klasse-bei-180-kmh---vergleich-zweier-varianten)
-  - [1. Gegebene Werte der A-Klasse](#1-gegebene-werte-der-a-klasse)
+  - [Gegebene Werte der A-Klasse](#gegebene-werte-der-a-klasse)
     - [Gemeinsame Parameter:](#gemeinsame-parameter)
     - [Variantenspezifische Parameter:](#variantenspezifische-parameter)
-  - [2. Berechnung der Widerstandskräfte](#2-berechnung-der-widerstandskräfte)
+  - [Berechnung der Widerstandskräfte](#berechnung-der-widerstandskräfte)
     - [a) Luftwiderstandskraft (identisch für beide Varianten)](#a-luftwiderstandskraft-identisch-für-beide-varianten)
     - [b) Rollwiderstandskraft](#b-rollwiderstandskraft)
-    - [c) Gesamtwiderstandskraft](#c-gesamtwiderstandskraft)
-  - [3. Berechnung der Leistungen](#3-berechnung-der-leistungen)
+    - [Gesamtwiderstandskraft](#gesamtwiderstandskraft)
+  - [Berechnung der Leistungen](#berechnung-der-leistungen)
     - [a) Radleistung](#a-radleistung)
     - [b) Motorleistung](#b-motorleistung)
   - [4. Vergleichende Analyse](#4-vergleichende-analyse)
   - [5. Auswirkungen der Parameteränderungen](#5-auswirkungen-der-parameteränderungen)
-
-# Prompt
-
-erstelle eine Zusammenfassung aller Formeln 
 
 # Formeln zur Leistungsberechnung der A-Klasse
 
@@ -79,7 +74,7 @@ $$P_\text{Rad} = \mathbf{F}_\text{gesamt} \cdot v_\text{Auto}$$
 2. Motorleistung:
 $$P_\text{Motor} = \frac{P_\text{Rad}}{\eta_\text{Getriebe}}$$
 
-## 2. Parameter
+## Parameter
 
 ### Fahrzeugspezifische Größen
 
@@ -103,7 +98,7 @@ $$P_\text{Motor} = \frac{P_\text{Rad}}{\eta_\text{Getriebe}}$$
 - Getriebewirkungsgrad: $$\eta_\text{Getriebe} = 0{,}90$$
 - Rollwiderstandsbeiwert: $$\mu = 0{,}0205$$
 
-## 3. Ergebnisse
+## Ergebnisse
 
 ### Variante 0
 
@@ -124,7 +119,9 @@ $$P_\text{Motor} = \frac{P_\text{Rad}}{\eta_\text{Getriebe}}$$
 
 # Leistungsberechnung A-Klasse bei 180 km/h - Vergleich zweier Varianten
 
-## 1. Gegebene Werte der A-Klasse
+![Leistungsberechnung A-Klasse bei 180 km/h - Vergleich zweier Varianten](images/01-Leistungsberechnung_Sankey.png)
+
+## Gegebene Werte der A-Klasse
 
 ### Gemeinsame Parameter:
 
@@ -143,7 +140,7 @@ $$P_\text{Motor} = \frac{P_\text{Rad}}{\eta_\text{Getriebe}}$$
 | $$\eta_\text{Getriebe}$$ | $$0{,}92$$   | $$0{,}90$$   |
 | $$\mu$$                  | $$0{,}0150$$ | $$0{,}0205$$ |
 
-## 2. Berechnung der Widerstandskräfte
+## Berechnung der Widerstandskräfte
 
 ### a) Luftwiderstandskraft (identisch für beide Varianten)
 
@@ -158,7 +155,7 @@ $$\mathbf{F}_\text{roll} = 0{,}0150 \cdot 1270~\text{kg} \cdot 9{,}81~\text{m}/\
 **Variante 2:**
 $$\mathbf{F}_\text{roll} = 0{,}0205 \cdot 1270~\text{kg} \cdot 9{,}81~\text{m}/\text{s}^2 \cdot \cos(0^\circ) = 255{,}40~\text{N}$$
 
-### c) Gesamtwiderstandskraft
+### Gesamtwiderstandskraft
 
 **Variante 0:**
 $$\mathbf{F}_\text{gesamt} = 1105{,}77~\text{N} + 186{,}88~\text{N} = 1292{,}65~\text{N}$$
@@ -166,7 +163,7 @@ $$\mathbf{F}_\text{gesamt} = 1105{,}77~\text{N} + 186{,}88~\text{N} = 1292{,}65~
 **Variante 2:**
 $$\mathbf{F}_\text{gesamt} = 1105{,}77~\text{N} + 255{,}40~\text{N} = 1361{,}17~\text{N}$$
 
-## 3. Berechnung der Leistungen
+## Berechnung der Leistungen
 
 ### a) Radleistung
 
@@ -201,11 +198,11 @@ $$P_\text{Motor} = \frac{68{,}06~\text{kW}}{0{,}90} = 75{,}62~\text{kW}$$
 
 ## 5. Auswirkungen der Parameteränderungen
 
-1. Der erhöhte Rollwiderstandsbeiwert ($$+36{,}7\%$$) führt zu:
+1. Der erhöhte Rollwiderstandsbeiwert ($+36{,}7\%$) führt zu:
    - Höherer Rollwiderstandskraft
    - Gesteigerter Gesamtwiderstandskraft
    - Erhöhter Radleistung
-2. Der reduzierte Getriebewirkungsgrad ($$-2{,}2\%$$) bewirkt:
+2. Der reduzierte Getriebewirkungsgrad ($-2{,}2\%$) bewirkt:
    - Zusätzliche Steigerung der erforderlichen Motorleistung
 
-Die Kombination beider Effekte führt zu einer Erhöhung der erforderlichen Motorleistung um $$7{,}6\%$$.
+Die Kombination beider Effekte führt zu einer Erhöhung der erforderlichen Motorleistung um $7{,}6\%$.

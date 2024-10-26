@@ -37,3 +37,4 @@ docs/start.md
 # Editor spezifisch
 !.vscode/
 .idea/
+src/output/

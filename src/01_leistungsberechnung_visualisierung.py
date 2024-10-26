@@ -136,8 +136,8 @@ def erstelle_sankey_diagramm(varianten):
     plt.tight_layout()
     
     # Speichern
-    plt.savefig('Leistungsberechnung_Sankey.png', dpi=300, bbox_inches='tight')
-    plt.savefig('Leistungsberechnung_Sankey.svg', bbox_inches='tight')
+    plt.savefig('01_Leistungsberechnung_Sankey.png', dpi=300, bbox_inches='tight')
+    plt.savefig('01_Leistungsberechnung_Sankey.svg', bbox_inches='tight')
     
     return fig
 

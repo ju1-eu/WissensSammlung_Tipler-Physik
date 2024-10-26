@@ -6,7 +6,7 @@ date: "2024-10-13"
 
 # Begriffe der Sprach- und Textanalyse
 
-Letzte Aktualisierung: 2024-10-19
+Letzte Aktualisierung: 2024-10-26
 
 ## Inhaltsverzeichnis
 
@@ -14,11 +14,12 @@ Letzte Aktualisierung: 2024-10-19
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [KI-Prompts](#ki-prompts)
   - [o1-preview](#o1-preview)
-    - [Fachbuch bearbeiten](#fachbuch-bearbeiten)
-    - [Buch bearbeiten](#buch-bearbeiten)
-      - [Thema: Physik -  Physikalische Größen und Messungen](#thema-physik----physikalische-größen-und-messungen)
-      - [Thema: Mathe - Vektorrechnung - Koordinatendarstellung](#thema-mathe---vektorrechnung---koordinatendarstellung)
-    - [Sprachstil: klar, präzise und sachlich](#sprachstil-klar-präzise-und-sachlich)
+      - [Fachbuch bearbeiten](#fachbuch-bearbeiten)
+  - [Buch Basiswissen Verbrennungsmotor bearbeiten](#buch-basiswissen-verbrennungsmotor-bearbeiten)
+  - [Buch Tipler-Physik bearbeiten](#buch-tipler-physik-bearbeiten)
+    - [Thema: Physik -  Physikalische Größen und Messungen](#thema-physik----physikalische-größen-und-messungen)
+  - [Buch Rießinger-Mathe - Vektorrechnung](#buch-rießinger-mathe---vektorrechnung)
+  - [Sprachstil: klar, präzise und sachlich](#sprachstil-klar-präzise-und-sachlich)
   - [Sprachliche Mittel und Stilistik](#sprachliche-mittel-und-stilistik)
     - [1. **Sprachstil**](#1-sprachstil)
     - [2. **Metaphern**](#2-metaphern)
@@ -32,12 +33,12 @@ Letzte Aktualisierung: 2024-10-19
     - [8. **Brainstorming**](#8-brainstorming)
     - [9. **Gegenargumente**](#9-gegenargumente)
     - [10. **Redaktionelles Feedback**](#10-redaktionelles-feedback)
-  - [Fazit](#fazit)
+- [Tipps für effizientes Lesen](#tipps-für-effizientes-lesen)
 
 
 ## KI-Prompts
 
-- Thema "Physikalische Größen und Messungen"
+- Thema:
 - **Lesestufe**: Bachelor-Niveau
 
 - Erstelle mir Notizen und eine Zusammenfassung und beachte die Sprachstil-Richtlinien
@@ -84,12 +85,12 @@ Letzte Aktualisierung: 2024-10-19
 - Hilf mir, einen Blogbeitrag zu schreiben
 
 
-### Fachbuch bearbeiten
+#### Fachbuch bearbeiten
 
 1. Sprachstil-Richtlinien
 2. Erstelle eine Zusammenfassung von Kapitel eines Buches
-    - Titel: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – bestehen
-    - Autor: Klaus Schreiner
+    - Titel: 
+    - Autor: 
     - Kapitel:
     - Inhalt: []
 
@@ -108,20 +109,70 @@ Letzte Aktualisierung: 2024-10-19
 9. Mindmap zu den Aufgaben 1, 2, 3, 4, 5, 6, 7
     - Hauptthema: Fahrwiderstand und Motorleistung
 
-```plaintext
-# Liste der 7 Fragen aus Kapitel 1
-1. **Welche Leistung benötigt die A-Klasse bei einer Geschwindigkeit von 180 km/h?**
-2. **Wie groß ist der Benzinverbrauch in l/(100 km) bei 180 km/h?**
-3. **Welche Leistung wird bei einer Geschwindigkeit von 50 km/h benötigt? Wie groß ist dann der effektive Motorwirkungsgrad, wenn der Benzinverbrauch 5 l/(100 km) beträgt?**
-4. **Was ist beim Pkw wichtiger: der Rollwiderstand oder der Luftwiderstand?**
-5. **Was sind typische Zahlenwerte, um den Leistungsbedarf eines Pkw zu berechnen?**
-6. **Könnte man mit einem modernen Fahrzeug einen Kraftstoffverbrauch von 1 l/(100 km) realisieren?**
-7. **Wie effizient sind Pkw-Motoren im Stadtverkehr?**
-```
 
-### Buch bearbeiten
+## Buch Basiswissen Verbrennungsmotor bearbeiten
 
-Quelle: Tipler/Mosca Physik. 9. Aufl., 2023
+**Quelle**: K. Schreiner, *Basiswissen Verbrennungsmotor: Fragen – rechnen – verstehen – bestehen*, 3., erweiterte und aktualisierte Auflage. Wiesbaden: Springer Fachmedien Wiesbaden, 2020. Verfügbar: https://doi.org/10.1007/978-3-658-29226-3
+
+- **Hauptthema**: Basiswissen Verbrennungsmotor: Fahrwiderstand und Motorleistung
+- **Thema/Kernfrage**: Wie groß ist der Benzinverbrauch in l/(100 km) bei 180 km/h?
+- **Lernziele**: Luftwiderstandskraft, Rollwiderstandskraft, mechanischer Wirkungsgrad des Antriebsstrangs, thermische Zustandsgleichung, Luftdichte.
+
+- Aufgabe: Erstelle eine strukturierte **Zusammenfassung** der Berechnung 
+  - beachte die Sprachstil-Richtlinien (siehe Anhang)
+  - Ausgabe: Markdown mit LaTeX-Mathematik
+  - Eingabe: []
+
+- **Rechnen**: erstelle eine Schritt-für-Schritt-Berechnung
+  - beachte die Sprachstil-Richtlinien (siehe Anhang)
+  - Ausgabe: Markdown mit LaTeX-Mathematik
+  - Eingabe: []
+
+- **Verstehen**: Erkläre genau
+
+
+- Erstelle eine Zusammenfassung aller **Formeln** für die Berechnung.
+- Erkläre die **Fachbegriffe und Symbole** (Griechische Buchstaben)
+- **Python-Script** zur Nachrechnung aller Werte (Kontrolle)
+
+- **Python-Skript** für die interaktive Visualisierung
+  - Fokussierte Darstellung, das sich auf die Kernaspekte konzentriert
+  - Interaktivität: Slider für stufenlose Anpassung und Echtzeitanzeige
+  - Kernfrage: 
+
+- Prüfe **Python-Skript**
+  - Code-Qualität
+  - Benutzerfreundlichkeit
+  - Wartbarkeit
+  - Berechnungsgenauigkeit
+  - Dokumentation
+  - Plausibilität
+  - Script: [siehe Anhang]
+
+- Aufgabe 1: Erstelle eine **ABC-Liste** nach Birkenbihl
+  - in Tabellenform
+- Aufgabe 2: Erstelle eine **KAWA** (Kreative Wortassoziation) nach Birkenbihl
+  - in strukturierter Listenform
+- Aufgabe 3: Erstelle eine **Mindmap**
+  - in strukturierter Listenform
+- Aufgabe 4: **Kategorische Wissensanalyse**
+  - beachte die Richtlinien (siehe Anhang)
+  - Die verschiedenen Analysemethoden sollen sich ergänzen und unterschiedliche Perspektiven auf das Thema bieten.
+  - Ausgabe: Markdown mit LaTeX-Mathematik
+  - Eingabe: []
+
+- Erstelle eine **Checkliste** zur Strukturierung der Kapitel
+  - Buch-Inhaltsverzeichnis: []
+
+- korrekt **Zitieren**: IEEE-Stil (Zitierstil für Ingenieurwissenschaft)
+  - Im Text: [1]
+  - Literaturverzeichnis:
+
+## Buch Tipler-Physik bearbeiten
+
+Quelle: P. A. Tipler und G. Mosca, *Tipler Physik für Studierende der Naturwissenschaften und Technik*, 9., vollständig überarbeitete und ergänzte Auflage, P. Kersten, Hrsg. Heidelberg, Deutschland: Springer Spektrum, 2024. Verfügbar: https://doi.org/10.1007/978-3-662-67936-4
+
+K. Langeheinecke, A. Kaufmann, K. Langeheinecke und G. Thieleke, *Thermodynamik für Ingenieure*, 11. Auflage. Wiesbaden, Deutschland: Springer Vieweg, 2020. Verfügbar: https://doi.org/10.1007/978-3-658-30644-1
 
 - Kapitel extraieren: Teil I Physikalische Größen und Messungen
 
@@ -190,7 +241,7 @@ Quelle: Tipler/Mosca Physik. 9. Aufl., 2023
 - Beispiele mit schrittweisen Rechenbeispielen im Markdown-Format mit LaTeX-Mathematik
 
 
-#### Thema: Physik -  Physikalische Größen und Messungen
+### Thema: Physik -  Physikalische Größen und Messungen
 
 - Aufgabe: Kernpunkte zusammenfassen und das Konzept etwas vertiefen
   - Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
@@ -202,7 +253,9 @@ Quelle: Tipler/Mosca Physik. 9. Aufl., 2023
 - Lösung: [ ]
 
 
-#### Thema: Mathe - Vektorrechnung - Koordinatendarstellung
+## Buch Rießinger-Mathe - Vektorrechnung
+
+Quelle: T. Rießinger, *Mathematik für Ingenieure: Eine anschauliche Einführung für das praxisorientierte Studium*, 9. Auflage. Berlin, Heidelberg: Springer Vieweg, 2013. Verfügbar: https://doi.org/10.1007/978-3-642-36859-2
 
 - Aufgabe: Kernpunkte zusammenfassen und das Konzept etwas vertiefen
   - Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
@@ -221,7 +274,7 @@ Quelle: Tipler/Mosca Physik. 9. Aufl., 2023
   - B5-Querformat: Größe von 250 x 176 mm
 
 
-### Sprachstil: klar, präzise und sachlich
+## Sprachstil: klar, präzise und sachlich
 
 Lesestufe: Bachelor-Niveau. Sprache: Deutsch, beachte Sprachstil-Richtlinien
 
@@ -411,8 +464,15 @@ Redaktionelles Feedback ist die Rückmeldung an einen Autor, um die Qualität ei
 - **Stilistische Hinweise**: Empfehlungen zur Verbesserung des Leseflusses oder zur Vermeidung von Wiederholungen.
 - **Inhaltliche Anmerkungen**: Aufzeigen von Unklarheiten oder Widersprüchen im Text.
 
----
+# Tipps für effizientes Lesen
 
-## Fazit
+1. **Höhere Lesegeschwindigkeit**:
+   - **Schneller lesen** hilft, das Gehirn aktiv zu halten, wodurch es weniger abgelenkt ist.
+   - Selbst langweilige Texte wirken interessanter, da das Gehirn stärker gefordert wird.
+2. **Vermeidung von Lesefehlern**:
+   - **Inneres Mitsprechen minimieren**: Nur noch wichtige Wörter innerlich mitsprechen.
+   - **Zurückspringen vermeiden**: Nicht immer zurückspringen, sondern sich auf das Verständnis beim ersten Lesen konzentrieren.
+   - **Wortgruppen lesen**: Statt Wort für Wort, mehrere Wörter als sinnvolle Einheiten erfassen.
+   - **Breiteren Blickfokus nutzen**: Erwachsene können durch den größeren Wortschatz und breiteren Blickfokus ganze Wortgruppen schneller erkennen.
 
-Das Verständnis und die Anwendung dieser Begriffe sind essenziell für die erfolgreiche Analyse und Erstellung von Texten im akademischen Kontext. Sie ermöglichen es Studierenden, komplexe Inhalte zu erschließen, kritisch zu hinterfragen und eigene Ideen kreativ und fundiert zu entwickeln.
+
