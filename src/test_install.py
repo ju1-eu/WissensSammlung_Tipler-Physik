@@ -5,11 +5,13 @@ import pygame
 
 print("Python-Version:", sys.version)
 print("tkinter-Version:", tkinter.TkVersion)
-print("pygame-Version:", pygame.ver)
+print("pygame-Version:", pygame.__version__)
 
-root = tkinter.Tk()
-root.title("Testfenster")
-root.mainloop()
+if __name__ == "__main__":
+    root = tkinter.Tk()
+    root.title("Testfenster")
+    root.mainloop()
+
 
 
 

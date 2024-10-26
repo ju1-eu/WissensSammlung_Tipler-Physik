@@ -1,0 +1,10 @@
+matplotlib
+numpy
+pandas
+scipy
+seaborn
+pillow
+PyPDF2
+openpyxl
+sympy
+Pint

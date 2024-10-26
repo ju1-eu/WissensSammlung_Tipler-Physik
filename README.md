@@ -15,7 +15,7 @@ Quelle: K. Schreiner, *Basiswissen Verbrennungsmotor: Fragen – rechnen – ver
 
 1. **Fahrwiderstand und Motorleistung**
    - [x] Leistung bei hohen Geschwindigkeiten (z. B. 180 km/h)
-   - [ ] Benzinverbrauch bei hohen Geschwindigkeiten
+   - [x] Benzinverbrauch bei hohen Geschwindigkeiten
    - [ ] Leistung und Motorwirkungsgrad bei Stadtgeschwindigkeit (50 km/h)
    - [ ] Einfluss von Roll- und Luftwiderstand
    - [ ] Berechnung des Leistungsbedarfs eines Pkw
