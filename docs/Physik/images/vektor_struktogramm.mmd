@@ -1,0 +1,45 @@
+flowchart TB
+    subgraph Hauptprogramm[Vektorberechnungen]
+        direction TB
+        
+        subgraph Eingabe[Eingabedaten]
+            direction LR
+            E1[Verschiebungen oder] --- E2[Senderpositionen]
+            style Eingabe fill:none,stroke:#000
+        end
+
+        subgraph Auswahl[Aufgabenauswahl]
+            direction LR
+            A1[Bär-Verschiebung] --- A2[Schiffsposition]
+            style Auswahl fill:none,stroke:#000
+        end
+
+        subgraph BärRechnung[Bär-Verschiebung berechnen]
+            direction TB
+            B1[Vektorzerlegung r1] --> B2[Vektorzerlegung r2]
+            B2 --> B3[Vektoraddition]
+            B3 --> B4[Rückwegberechnung]
+            style BärRechnung fill:none,stroke:#000
+        end
+
+        subgraph SchiffRechnung[Schiffsposition berechnen]
+            direction TB
+            S1[Koordinatensystem definieren] --> S2[Gleichungssystem aufstellen]
+            S2 --> S3[Position berechnen]
+            style SchiffRechnung fill:none,stroke:#000
+        end
+
+        subgraph Ausgabe[Ergebnisausgabe]
+            direction LR
+            O1[Numerische] --- O2[Werte formatieren]
+            style Ausgabe fill:none,stroke:#000
+        end
+
+        Eingabe --> Auswahl
+        Auswahl --> BärRechnung
+        Auswahl --> SchiffRechnung
+        BärRechnung --> Ausgabe
+        SchiffRechnung --> Ausgabe
+    end
+
+classDef default fill:none,stroke:#000;

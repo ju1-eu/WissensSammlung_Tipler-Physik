@@ -1,0 +1,38 @@
+flowchart TB
+    classDef default fill:none,stroke:#000
+    
+    subgraph Input["Parameter einlesen"]
+        direction LR
+        I1["h: Fallhöhe"] --- I2["dy: Eindringtiefe"] --- I3["g: Erdbeschleunigung = 9.81"]
+        style Input fill:none,stroke:#000
+    end
+
+    subgraph Phase1["Phase 1: Freier Fall"]
+        direction LR
+        P1["v1 = √(2gh)"] --- P2["t_fall = √(2h/g)"]
+        style Phase1 fill:none,stroke:#000
+    end
+
+    subgraph Phase2["Phase 2: Abbremsung"]
+        direction LR
+        P3["a_h = -v1²/(2dy)"] --- P4["t_brems = -v1/a_h"]
+        style Phase2 fill:none,stroke:#000
+    end
+
+    subgraph Calc["Bewegungsdaten generieren"]
+        direction LR
+        C1["t1 = linspace(0, t_fall, 100)"] --- C2["y1 = h - 0.5g * t1²"] --- C3["v1 = g * t1"] --- C4["t2 = linspace(t_fall, t_fall + t_brems, 25)"]
+        C5["dt = t2 - t_fall"] --- C6["y2 = -0.5a_h * dt² + v1 * dt"] --- C7["v2 = v1 + a_h * dt"]
+        style Calc fill:none,stroke:#000
+    end
+
+    subgraph Output["Ergebnisausgabe"]
+        direction LR
+        O1["Position(t)"] --- O2["Geschwindigkeit(t)"] --- O3["Auftreffgeschwindigkeit"] --- O4["Bremsbeschleunigung"] --- O5["Fallzeit"] --- O6["Bremszeit"] --- O7["G-Belastung"]
+        style Output fill:none,stroke:#000
+    end
+
+    Input --> Phase1
+    Phase1 --> Phase2
+    Phase2 --> Calc
+    Calc --> Output
