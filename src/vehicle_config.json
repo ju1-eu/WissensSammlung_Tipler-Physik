@@ -1,0 +1,14 @@
+{
+    "rho_air": 1.189,
+    "cw": 0.31,
+    "A": 2.4,
+    "m": 1270,
+    "g": 9.81,
+    "mu_base": 0.015,
+    "mu_v_factor": 0.0001,
+    "H_u": 42000000,
+    "rho_fuel": 0.76,
+    "eta_base": 0.30,
+    "eta_part_factor": 0.615,
+    "P_aux_factor": 0.05
+}

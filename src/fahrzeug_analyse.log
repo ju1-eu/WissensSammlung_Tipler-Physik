@@ -1,0 +1,12 @@
+2024-10-29 17:37:49,305 - INFO - PowerAnalyzer initialisiert
+2024-10-29 17:37:49,306 - INFO - Ausgabeverzeichnis erstellt: fahrzeug_analyse_20241029_173749
+2024-10-29 17:37:49,443 - INFO - Visualizer initialisiert
+2024-10-29 17:52:11,624 - INFO - Programm durch Benutzer beendet
+2024-10-29 17:52:12,973 - INFO - Plot gespeichert: fahrzeug_analyse_20241029_173749/fahrzeug_analyse_eta_30_0_20241029_175211.png
+2024-10-29 17:52:13,225 - INFO - Plot gespeichert: fahrzeug_analyse_20241029_173749/fahrzeug_analyse_eta_30_0_20241029_175211.svg
+2024-10-29 17:52:13,683 - INFO - Plot gespeichert: fahrzeug_analyse_20241029_173749/fahrzeug_analyse_eta_30_0_20241029_175211.pdf
+2024-10-29 17:54:13,028 - INFO - PowerAnalyzer initialisiert
+2024-10-29 17:54:13,029 - INFO - Ausgabeverzeichnis erstellt: fahrzeug_analyse_20241029_175413
+2024-10-29 17:54:13,154 - INFO - Visualizer initialisiert
+2024-10-29 17:54:13,154 - INFO - Leistung bei 50 km/h: 4.0 kW (Soll: 4.1 kW)
+2024-10-29 17:54:13,154 - INFO - Verbrauch bei 50 km/h: 4.9 l/100km (Soll: 5.0 l/100km)
