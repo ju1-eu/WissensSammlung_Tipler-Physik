@@ -56,6 +56,8 @@ wobei:
 
 ## Geschwindigkeitsabhängige Effekte
 
+![Geschwindigkeitsabhängige Effekte](images/fahrwiderstand_analyse.svg)
+
 ### Niedrige Geschwindigkeiten 
 
 ($v < 50~\text{km}/\text{h}$)
@@ -107,13 +109,13 @@ Die lineare Interpolation verbindet zwei bekannte Punkte (Stützstellen) durch e
 ## Mathematische Herleitung
 
 1. **Steigung der Geraden ($$m$$)**:
-   $$m = \frac{y_2 - y_1}{x_2 - x_1}$$
+   $m = \frac{y_2 - y_1}{x_2 - x_1}$
 
 2. **Geradengleichung**:
-   $$\frac{y - y_1}{x - x_1} = m$$
+   $\frac{y - y_1}{x - x_1} = m$
 
 3. **Interpolationsformel**:
-   $$y = \frac{y_2 - y_1}{x_2 - x_1} \cdot (x - x_1) + y_1$$
+   $y = \frac{y_2 - y_1}{x_2 - x_1} \cdot (x - x_1) + y_1$
 
 ## Anwendungsbereiche
 
@@ -143,10 +145,11 @@ Die lineare Interpolation verbindet zwei bekannte Punkte (Stützstellen) durch e
 
 Für den Rollwiderstandskoeffizienten mit:
 
-- $$x_1 = 50~\text{km}/\text{h}$$, $$y_1 = 0{,}008$$
-- $$x_2 = 150~\text{km}/\text{h}$$, $$y_2 = 0{,}015$$
+- $x_1 = 50~\text{km}/\text{h}$, $y_1 = 0{,}008$
+- $x_2 = 150~\text{km}/\text{h}$, $y_2 = 0{,}015$
 
 Berechnung für $x = 100~\text{km}/\text{h}$:
+
 $$
 f_\text{roll} = \frac{0{,}015 - 0{,}008}{150 - 50} \cdot (100 - 50) + 0{,}008 = 0{,}0115
 $$
@@ -167,7 +170,7 @@ $$
 | Parameter                                                                   | Symbol                   | Wert(e)                                                                                                    |
 | --------------------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | Luftwiderstandsbeiwert                                                      | $$c_\text{w}$$           | $0{,}29 \dots 0{,}32$                                                                                      |
-| Fahrzeugquerschnittsfläche                                                  | $$A$$                    | $2{,}2~\text{m}^2$ oder $85~\%$ der mit der Fahrzeugbreite und der Höhe berechneten Rechteckfläche         |
+| Fahrzeugquerschnittsfläche                                                  | $$A$$                    | $2{,}2~\text{m}^2$ oder $85%$ der mit der Fahrzeugbreite und der Höhe berechneten Rechteckfläche           |
 | Rollwiderstandsbeiwert                                                      | $$\mu$$                  | $0{,}015$                                                                                                  |
 | Getriebewirkungsgrad                                                        | $$\eta_\text{Getriebe}$$ | $0{,}90$                                                                                                   |
 | Effektiver Motorwirkungsgrad bei Nennleistung                               | $$\eta_\text{e}$$        | $0{,}30$ (Ottomotor)<br>$0{,}35$ (Dieselmotor)                                                             |
