@@ -1,0 +1,27 @@
+flowchart TB
+    Start[Patient Daten] --> Split[Random Forest Klassifikation]
+    
+    Split --> B1A
+    Split --> B2A
+    Split --> B3A
+
+    B1A{HbA1c >= 5.7%} -->|Ja| B1B{BMI >= 30}
+    B1A -->|Nein| B1E[Kein Diabetes P=0.9]
+    B1B -->|Ja| B1C[Diabetes P=0.8]
+    B1B -->|Nein| B1D[OGTT erforderlich]
+
+    B2A{Alter >= 45} -->|Ja| B2B{RR >= 140/90}
+    B2A -->|Nein| B2E[Kein Diabetes P=0.85]
+    B2B -->|Ja| B2C[Diabetes P=0.7]
+    B2B -->|Nein| B2D[Weitere Faktoren]
+
+    B3A{BMI >= 28} -->|Ja| B3B{Glukose >= 110}
+    B3A -->|Nein| B3E[Kein Diabetes P=0.95]
+    B3B -->|Ja| B3C[Diabetes P=0.75]
+    B3B -->|Nein| B3D[Glukosetoleranz]
+    
+    B1C & B1D & B1E --> Voting[Mehrheitsentscheidung]
+    B2C & B2D & B2E --> Voting
+    B3C & B3D & B3E --> Voting
+    
+    Voting --> Result[Finale Diagnose]

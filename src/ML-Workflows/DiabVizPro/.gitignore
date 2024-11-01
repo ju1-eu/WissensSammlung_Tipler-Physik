@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtuelle Umgebungen
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Distribution / Packaging
+dist/
+build/
+*.egg-info/
+
+# Test Cache
+.coverage
+.pytest_cache/
+.mypy_cache/
+
+# Output Dateien
+output/*.png
+output/*.svg
+output/*.pdf
+
+# MacOS
+.DS_Store
