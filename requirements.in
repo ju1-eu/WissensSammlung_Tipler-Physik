@@ -8,3 +8,9 @@ PyPDF2
 openpyxl
 sympy
 Pint
+pytest
+black[jupyter]
+flake8
+mypy
+types-seaborn
+scikit-learn
