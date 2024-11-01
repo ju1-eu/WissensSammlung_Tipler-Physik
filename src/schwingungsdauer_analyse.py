@@ -21,17 +21,23 @@ print(f"Standardabweichung des Mittelwerts σ_<T>: {T_std_mittelwert:.3f} s")
 
 # Histogramm erstellen
 plt.figure(figsize=(10, 6))
-plt.hist(T, bins='auto', edgecolor='black')
-plt.title('Verteilung der Schwingungsdauer-Messungen')
-plt.xlabel('Schwingungsdauer (s)')
-plt.ylabel('Häufigkeit')
-plt.axvline(T_mittel, color='r', linestyle='dashed', linewidth=2, label=f'Mittelwert: {T_mittel:.3f} s')
+plt.hist(T, bins="auto", edgecolor="black")
+plt.title("Verteilung der Schwingungsdauer-Messungen")
+plt.xlabel("Schwingungsdauer (s)")
+plt.ylabel("Häufigkeit")
+plt.axvline(
+    T_mittel,
+    color="r",
+    linestyle="dashed",
+    linewidth=2,
+    label=f"Mittelwert: {T_mittel:.3f} s",
+)
 plt.legend()
 plt.grid(True, alpha=0.3)
-plt.savefig('schwingungsdauer_histogramm.png')
+plt.savefig("schwingungsdauer_histogramm.png")
 plt.show()
 
 # Optional: Daten in Excel-Datei speichern
-df = pd.DataFrame({'Messung': range(1, len(T)+1), 'Schwingungsdauer (s)': T})
-df.to_excel('schwingungsdauer_messungen.xlsx', index=False)
+df = pd.DataFrame({"Messung": range(1, len(T) + 1), "Schwingungsdauer (s)": T})
+df.to_excel("schwingungsdauer_messungen.xlsx", index=False)
 print("\nDaten wurden in 'schwingungsdauer_messungen.xlsx' gespeichert.")

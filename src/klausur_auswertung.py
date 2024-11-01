@@ -25,19 +25,21 @@ print(f"Prozentualer Unterschied: {prozent_diff:.2f}%")
 
 # Erstellen eines Histogramms
 plt.figure(figsize=(10, 6))
-plt.hist(P, bins=range(min(P), max(P)+2, 1), edgecolor='black', align='left')
-plt.title('Verteilung der Klausurergebnisse')
-plt.xlabel('Punktzahl')
-plt.ylabel('Häufigkeit')
-plt.xticks(range(min(P), max(P)+1, 1))
+plt.hist(P, bins=range(min(P), max(P) + 2, 1), edgecolor="black", align="left")
+plt.title("Verteilung der Klausurergebnisse")
+plt.xlabel("Punktzahl")
+plt.ylabel("Häufigkeit")
+plt.xticks(range(min(P), max(P) + 1, 1))
 plt.grid(True, alpha=0.3)
 
 # Hinzufügen von Mittelwert und RMS als vertikale Linien
-plt.axvline(s, color='r', linestyle='dashed', linewidth=2, label=f'Mittelwert ({s:.1f})')
-plt.axvline(srms, color='g', linestyle='dashed', linewidth=2, label=f'RMS ({srms:.1f})')
+plt.axvline(
+    s, color="r", linestyle="dashed", linewidth=2, label=f"Mittelwert ({s:.1f})"
+)
+plt.axvline(srms, color="g", linestyle="dashed", linewidth=2, label=f"RMS ({srms:.1f})")
 
 plt.legend()
-plt.savefig('klausur_histogramm.png')
+plt.savefig("klausur_histogramm.png")
 plt.show()
 
 # Berechnung zusätzlicher statistischer Kennzahlen
@@ -46,7 +48,7 @@ std_dev = np.std(P)
 min_val = np.min(P)
 max_val = np.max(P)
 
-print(f"\nZusätzliche statistische Kennzahlen:")
+print("\nZusätzliche statistische Kennzahlen:")
 print(f"Median: {median:.1f} Punkte")
 print(f"Standardabweichung: {std_dev:.2f} Punkte")
 print(f"Minimum: {min_val} Punkte")

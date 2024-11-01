@@ -170,7 +170,7 @@ $$
 | Parameter                                                                   | Symbol                   | Wert(e)                                                                                                    |
 | --------------------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | Luftwiderstandsbeiwert                                                      | $$c_\text{w}$$           | $0{,}29 \dots 0{,}32$                                                                                      |
-| Fahrzeugquerschnittsfläche                                                  | $$A$$                    | $2{,}2~\text{m}^2$ oder $85%$ der mit der Fahrzeugbreite und der Höhe berechneten Rechteckfläche           |
+| Fahrzeugquerschnittsfläche                                                  | $$A$$                    | $2{,}2~\text{m}^2$ oder $85\%$ der mit der Fahrzeugbreite und der Höhe berechneten Rechteckfläche          |
 | Rollwiderstandsbeiwert                                                      | $$\mu$$                  | $0{,}015$                                                                                                  |
 | Getriebewirkungsgrad                                                        | $$\eta_\text{Getriebe}$$ | $0{,}90$                                                                                                   |
 | Effektiver Motorwirkungsgrad bei Nennleistung                               | $$\eta_\text{e}$$        | $0{,}30$ (Ottomotor)<br>$0{,}35$ (Dieselmotor)                                                             |

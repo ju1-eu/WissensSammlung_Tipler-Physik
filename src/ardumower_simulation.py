@@ -5,9 +5,12 @@ from matplotlib.animation import FuncAnimation
 from matplotlib.patches import Rectangle
 from matplotlib.collections import PatchCollection
 
+
 # Fahrzeugmodell-Klasse
 class VehicleModel:
-    def __init__(self, wheelbase, track_width, sensor_distance, vehicle_width, vehicle_length):
+    def __init__(
+        self, wheelbase, track_width, sensor_distance, vehicle_width, vehicle_length
+    ):
         """
         Initialisiert das Fahrzeugmodell.
 
@@ -70,12 +73,14 @@ class VehicleModel:
             print(f"Fehler während der Simulation: {e}")
             return None
 
+
 # Hindernisse definieren
 obstacles = [
     Rectangle((1, 1), 0.5, 0.5),
     Rectangle((-1, -1), 0.5, 0.5),
-    Rectangle((2, -1), 0.5, 0.5)
+    Rectangle((2, -1), 0.5, 0.5),
 ]
+
 
 # Funktion zur erweiterten Kollisionserkennung
 def check_collision(vehicle_rect):
@@ -95,12 +100,14 @@ def check_collision(vehicle_rect):
             return True
     return False
 
+
 # Animation initialisieren
 fig, ax = plt.subplots(figsize=(10, 10))
 ax.set_xlim(-2, 3)
 ax.set_ylim(-2, 3)
-ax.set_aspect('equal')
+ax.set_aspect("equal")
 ax.grid(True)
+
 
 # Potentialfeld zur Hindernisvermeidung mit Begrenzungen
 def potential_field(x, y):
@@ -133,7 +140,7 @@ def potential_field(x, y):
 
     # Repulsive Kräfte von den Begrenzungen
     boundary_margin = 0.5  # Abstand zur Grenze, ab dem die Kraft wirkt
-    boundary_force = 1.0   # Stärke der Kraft
+    boundary_force = 1.0  # Stärke der Kraft
 
     # Linke Grenze
     if x < ax.get_xlim()[0] + boundary_margin:
@@ -164,6 +171,7 @@ def potential_field(x, y):
         force_y -= boundary_force / dist**2
 
     return force_x, force_y
+
 
 # Angepasste Steuerungsfunktion mit Hindernisvermeidung
 def control_inputs(t, x, y, theta):
@@ -207,6 +215,7 @@ def control_inputs(t, x, y, theta):
 
     return v_right, v_left
 
+
 # Parameter
 wheelbase = 0.4
 track_width = 0.4
@@ -219,7 +228,9 @@ initial_state = [0, 0.5, 0, 0, 0.5 + sensor_distance]
 t = np.linspace(0, 40, 1000)
 
 # Modell erstellen und simulieren
-vehicle = VehicleModel(wheelbase, track_width, sensor_distance, vehicle_width, vehicle_length)
+vehicle = VehicleModel(
+    wheelbase, track_width, sensor_distance, vehicle_width, vehicle_length
+)
 solution = vehicle.simulate(t, control_inputs, initial_state)
 
 # Überprüfen, ob die Simulation erfolgreich war
@@ -228,6 +239,7 @@ if solution is None:
 
 # Ergebnisse extrahieren
 x, y, theta, x_d, y_d = solution.T
+
 
 # Animation
 def animate_simulation(x, y, theta):
@@ -240,20 +252,22 @@ def animate_simulation(x, y, theta):
         theta (array): Orientierungen des Fahrzeugs.
     """
     # Hindernisse zeichnen
-    obstacle_patches = PatchCollection(obstacles, facecolor='gray')
+    obstacle_patches = PatchCollection(obstacles, facecolor="gray")
     ax.add_collection(obstacle_patches)
 
     # Fahrzeugdarstellung initialisieren
-    vehicle_patch = Rectangle((0, 0), vehicle_length, vehicle_width, fc='blue', ec='black')
+    vehicle_patch = Rectangle(
+        (0, 0), vehicle_length, vehicle_width, fc="blue", ec="black"
+    )
     ax.add_patch(vehicle_patch)
-    sensor_plot, = ax.plot([], [], 'ro', markersize=5)
-    path_plot, = ax.plot([], [], 'g-', lw=1, alpha=0.5)
+    (sensor_plot,) = ax.plot([], [], "ro", markersize=5)
+    (path_plot,) = ax.plot([], [], "g-", lw=1, alpha=0.5)
 
     # Legende hinzufügen
-    ax.legend(['Sensor', 'Pfad', 'Hindernisse'])
+    ax.legend(["Sensor", "Pfad", "Hindernisse"])
 
     def init():
-        vehicle_patch.set_xy((-vehicle_length/2, -vehicle_width/2))
+        vehicle_patch.set_xy((-vehicle_length / 2, -vehicle_width / 2))
         vehicle_patch.angle = 0
         sensor_plot.set_data([], [])
         path_plot.set_data([], [])
@@ -261,7 +275,7 @@ def animate_simulation(x, y, theta):
 
     def animate(i):
         # Fahrzeugposition und -orientierung aktualisieren
-        vehicle_patch.set_xy((x[i] - vehicle_length/2, y[i] - vehicle_width/2))
+        vehicle_patch.set_xy((x[i] - vehicle_length / 2, y[i] - vehicle_width / 2))
         vehicle_patch.angle = np.degrees(theta[i])
 
         # Sensorposition aktualisieren
@@ -274,11 +288,12 @@ def animate_simulation(x, y, theta):
 
         return vehicle_patch, sensor_plot, path_plot
 
-    anim = FuncAnimation(fig, animate, init_func=init, frames=len(t), interval=20, blit=True)
-    plt.title('ArduMower Bewegungssimulation mit Hindernissen')
-    plt.xlabel('X-Position (m)')
-    plt.ylabel('Y-Position (m)')
+    FuncAnimation(fig, animate, init_func=init, frames=len(t), interval=20, blit=True)
+    plt.title("ArduMower Bewegungssimulation mit Hindernissen")
+    plt.xlabel("X-Position (m)")
+    plt.ylabel("Y-Position (m)")
     plt.show()
+
 
 # Animation starten
 animate_simulation(x, y, theta)
